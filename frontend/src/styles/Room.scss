@@ -1,0 +1,118 @@
+.Room {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+    h3 {
+        font-size: 40px;
+        margin: 40px auto 40px auto;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    h4 {
+        font-family: $font-family-2;
+        font-size: 30px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    li {
+        font-family: $font-family-3;
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    &_container {
+        background-color: var(--background-container);
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+
+        .infos {
+            width: 90%;
+        }
+
+        &_carte {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            h2 {
+                color: var(--text-color);
+                font-size: 40px;
+                text-decoration: underline;
+                font-style: oblique;
+                margin: 30px auto 30px auto;
+            }
+
+
+            &_description {
+                display: flex;
+                flex-direction: row;
+                width: 70vw;
+                margin-top: 60px;
+
+
+                &_left {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    &_general {
+                        margin-bottom: 30px;
+                    }
+
+                    &_washing {
+                        margin-bottom: 30px;
+                    }
+
+                    &_facilities {}
+                }
+
+                &_right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    gap: 200px;
+
+                    &_price {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+
+
+                        p {
+                            font-family: $font-family-3;
+                            font-weight: bolder;
+                            font-size: 40px;
+                            color: #BEAD8E;
+                            margin-bottom: 50px;
+
+                        }
+
+                        a {
+                            font-family: $font-family-3;
+                            font-size: 40px;
+                            font-weight: bolder;
+                            margin-bottom: 140px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

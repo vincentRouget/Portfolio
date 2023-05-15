@@ -1,0 +1,41 @@
+.LinkSidebar {
+    position: fixed;
+    right: -124px;
+    top: 20vh;
+    width: 160px;
+    height: 220px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+
+    &_circle {
+        background-color: var(--secondary-color-2);
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        width: 240px;
+        height: 120px;
+
+        img {
+            scale: 0.8;
+        }
+    }
+
+    &_link {
+        background-color: var(--secondary-color-2);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        left: -48px;
+        width: 200px;
+        height: 300px;
+        align-items: center;
+    }
+
+    &:hover {
+        transform: translateX(-74px);
+    }
+}

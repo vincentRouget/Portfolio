@@ -1,0 +1,21 @@
+Components :
+
+logo
+banniere
+introduction
+contenant1
+contenant2
+contenant3
+contenant4
+vignette1
+vignette2
+vignette3
+vignette4
+slider1
+slider2
+slider3
+slider4
+video1
+video2
+video3
+video4

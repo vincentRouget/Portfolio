@@ -1,0 +1,34 @@
+$font-family: "Public Sans", sans-serif;
+$primary-color: #1423dc;
+$secondary-color-1: #8991ee;
+$secondary-color-2: #c8cbf0;
+$accent-color: #96cd32;
+$delete-color: #eb6e3c;
+$background-color: #ebf2fb;
+$shadow-card: 4px 4px 20px rgba(20, 35, 220, 0.2);
+$text-color: #292929;
+
+.TestStylesContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: var(--background-color);
+  margin-top: $height-navbar;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .Column {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-container);
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 1.25rem;
+    padding: 1.875rem;
+    box-shadow: $shadow-card;
+    border-radius: 1.25rem;
+  }
+}

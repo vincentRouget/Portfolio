@@ -1,0 +1,85 @@
+    .CarteRoom {
+            width: 100%;
+
+            &_container {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 50px;
+
+                    &_formule {
+                            background-color: var(--background-color);
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            align-items: center;
+                            width: 400px;
+                            height: 600px;
+                            border: 1px solid var(--secondary-color-1);
+                            border-radius: 20px;
+                            transition: 0.3s ease-in-out;
+
+                            &:hover {
+                                    border: 1px solid white;
+                                    -webkit-box-shadow: 5px 5px 20px -2px var(--text-color);
+                                    box-shadow: 5px 5px 20px -2px var(--text-color);
+                            }
+
+
+                            &_icone {
+                                    background-color: var(--background-container);
+                                    width: 100%;
+                                    border-radius: 20px 20px 0px 0px;
+                                    transition: 0.3s ease-in-out;
+                                    height: 20%;
+
+                                    &_infos {
+                                            width: 100%;
+                                            margin: auto;
+                                            border-radius: 20px 20px 0px 0px;
+                                    }
+                            }
+
+                            &_carte {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                    height: 60%;
+
+                                    h2 {
+                                            text-align: center;
+                                            font-size: 40px;
+                                    }
+                            }
+
+
+
+                            &_description {
+                                    width: 86%;
+                                    max-height: 200px;
+                                    text-align: center;
+                                    overflow: hidden;
+                                    height: 60%;
+                            }
+
+                            &_image {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 90%;
+                                    max-height: 300px;
+                                    border-radius: 20px;
+                                    overflow: hidden;
+                                    height: 100%;
+
+                                    img {
+                                            object-fit: cover;
+                                            border: 1px solid var(--secondary-color-1);
+                                            border-radius: 20px;
+                                            width: 100%;
+                                    }
+                            }
+                    }
+            }
+    }

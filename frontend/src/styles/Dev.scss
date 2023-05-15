@@ -1,0 +1,10 @@
+.Build {
+    background-color: aqua;
+    width: 100%;
+
+    &_container {
+        background-color: aqua;
+        margin-top: $height-navbar;
+        width: 100%;
+    }
+}

@@ -1,0 +1,624 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    &::-webkit-scrollbar {
+        // display: none;
+    }
+}
+
+.dark {
+    --background-color: black;
+    --color-r: 0;
+    --color-g: 0;
+    --color-b: 0;
+    --background-container: #858585;
+    --primary-color: #484848;
+    --title-color: #DADADA;
+    --hover-button-color: #EAEAEA;
+    --hover-color: #858585;
+    --secondary-color-1: #858585;
+    --secondary-color-2: #FFFFFF;
+    --text-color: white;
+}
+
+.light {
+    // BLANC :
+    --background-color: #FFFFFF;
+    --color-r: 255;
+    --color-g: 255;
+    --color-b: 255;
+    --background-container: #FFFFFF;
+    --primary-color: rgb(20, 35, 220);
+    --title-color: rgb(137, 145, 238);
+    --hover-color: #2e3176;
+    --hover-button-color: #2e3176;
+    --secondary-color-1: rgb(137, 145, 238);
+    --secondary-color-2: #FFFFFF;
+    --text-color: #000000;
+    // BLEU :
+    // --background-color: #EBF2FB;
+    // --color-r: 235;
+    // --color-g: 242;
+    // --color-b: 251;
+    // --background-container: #FFFFFF;
+    // --primary-color: rgb(20, 35, 220);
+    // --title-color: rgb(20, 35, 220);
+    // --hover-color: #2e3176;
+    // --hover-button-color: #2E3176;
+    // --secondary-color-1: rgb(137, 145, 238);
+    // --secondary-color-2: rgb(200, 203, 240);
+    // --text-color: #292929;
+    //VERT :
+    // --background-color: #EDF6F3;
+    // --color-r: 235;
+    // --color-g: 242;
+    // --color-b: 251;
+    // --background-container: #ffffff;
+    // --primary-color: #54AE8A;
+    // --title-color: #54AE8A;
+    // --hover-color: #214537;
+    // --hover-button-color: #214537;
+    // --secondary-color-1: #65B695;
+    // --secondary-color-2: #BADED0;
+    // --text-color: #292929;
+    //ORANGE :
+    // --background-color: #FDF0EB;
+    // --color-r: 235;
+    // --color-g: 242;
+    // --color-b: 251;
+    // --background-container: #ffffff;
+    // --primary-color: #EB6E3C;
+    // --title-color: #EB6E3C;
+    // --hover-color: #8D4224;
+    // --hover-button-color: #8D4224;
+    // --secondary-color-1: #ED7C4F;
+    // --secondary-color-2: #F7C5B1;
+    // --text-color: #292929;
+}
+
+//------------------------------------------------------------------- //
+//------------------------------ Divers ----------------------------- //
+//------------------------------------------------------------------- //
+
+$accent-color: rgb(150, 205, 50);
+$error-delete-color: rgb(235, 110, 60);
+$shadow-card: 4px 4px 20px rgba(20, 35, 220, 0.2);
+$height-navbar: 100px;
+
+body {
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+
+//------------------------------------------------------------------- //
+//--------------------------- Family Fonts -------------------------- //
+//------------------------------------------------------------------- //
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+$font-family: 'Playfair Display', serif;
+// 'Public Sans', sans-serif;
+
+h1,
+h2,
+h3 {
+    font-family: $font-family;
+}
+
+$font-family-2: 'Roboto', sans-serif;
+// 'EB Garamond', serif;
+
+h4,
+h5,
+h6 {
+    font-family: $font-family;
+}
+
+$font-family-3: 'Sorts Mill Goudy', serif;
+
+p,
+small,
+button,
+span,
+a,
+label {
+    font-family: $font-family-3;
+}
+
+
+
+.App {
+    display: flex;
+    width: 100vw;
+
+    //------------------------------------------------------------------- //
+    //------------------------------ Titles ----------------------------- //
+    //------------------------------------------------------------------- //
+
+    h1 {
+        font-size: 3.875rem;
+        line-height: 4.5rem;
+        font-weight: 800;
+        color: var(--title-color);
+    }
+
+    h2 {
+        font-size: 2.625rem;
+        line-height: 3.25rem;
+        font-weight: 800;
+        color: var(--title-color);
+    }
+
+    .TitlePlan {
+        color: var(--text-color);
+    }
+
+    h3 {
+        font-size: 1.375rem;
+        line-height: 2rem;
+        font-weight: 800;
+        color: var(--title-color);
+    }
+
+    h4 {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        font-weight: 800;
+        color: var(--title-color);
+    }
+
+    h5 {
+        font-size: 1.1rem;
+        line-height: 1.25rem;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+
+    h6 {
+        font-size: 1.1rem;
+        line-height: 1rem;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+
+    //------------------------------------------------------------------- //
+    //---------------------------- Text Body ---------------------------- //
+    //------------------------------------------------------------------- //
+    a {
+        color: var(--secondary-color-1);
+        font-size: 1.4rem;
+        line-height: 1.625rem;
+        transition: 0.3s ease-in-out;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--hover-button-color);
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.625rem;
+        color: var(--text-color);
+    }
+
+    label {
+        font-size: 1rem;
+        line-height: 1.625rem;
+        color: var(--title-color);
+
+        span {
+            color: $error-delete-color;
+        }
+    }
+
+    //------------------------------------------------------------------- //
+    //---------------------------- Small Text --------------------------- //
+    //------------------------------------------------------------------- //
+
+    small {
+        font-size: 0.8125rem;
+        line-height: 1.4375rem;
+    }
+
+    //------------------------------------------------------------------- //
+    //------------------------------- Tags ------------------------------ //
+    //------------------------------------------------------------------- //
+
+    .TagArchived {
+        display: flex;
+        width: fit-content;
+        border: 1px solid $error-delete-color;
+        padding: 0.125rem 0.75rem;
+        border-radius: 1rem;
+        color: $error-delete-color;
+    }
+
+    .TagServiceRegion {
+        display: flex;
+        width: fit-content;
+        border: 1px solid var(--secondary-color-1);
+        padding: 0.125rem 0.75rem;
+        border-radius: 1rem;
+        color: var(--secondary-color-1);
+    }
+
+    //------------------------------------------------------------------- //
+    //----------------------------- Buttons ----------------------------- //
+    //------------------------------------------------------------------- //
+
+    button {
+        border: 0;
+        color: white;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: fit-content;
+        height: 50px;
+        font-size: 1.25em;
+        gap: 0.6rem;
+        padding: 1rem 1.25rem;
+        border-radius: 10rem;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:focus-within {
+            outline: none;
+        }
+    }
+
+    svg {
+        position: relative;
+        top: -2px;
+    }
+
+    .PrimaryButton {
+        background-color: var(--primary-color);
+
+        p {
+            color: white;
+        }
+
+        &:hover {
+            background-color: var(--hover-color);
+        }
+    }
+
+    .SecondaryButton {
+        border: 1px solid var(--title-color);
+        transition: 0.3s ease-in-out;
+
+        p {
+            color: var(--title-color);
+        }
+
+        &:hover {
+            border: 1px solid white;
+            background-color: var(--primary-color);
+
+            p {
+                color: white;
+            }
+        }
+    }
+
+    .DeleteButton {
+        background-color: $error-delete-color;
+
+        p {
+            color: white;
+        }
+
+        &:hover {
+            background-color: #da4f18;
+        }
+    }
+
+    .ModifyButtonText {
+        padding: 0rem;
+
+        .input-file {
+            background: transparent;
+            opacity: 0;
+        }
+
+        p {
+            color: var(--secondary-color-1);
+        }
+
+        &:hover {
+            p {
+                color: var(--primary-color);
+            }
+
+            path {
+                fill: var(--primary-color);
+            }
+        }
+    }
+
+    .ArchiveButtonText {
+        padding: 0rem;
+
+        p {
+            color: $accent-color;
+        }
+
+        &:hover {
+            p {
+                color: #74a51a;
+            }
+
+            path {
+                fill: #74a51a;
+            }
+        }
+    }
+
+    .DeleteButtonText {
+        padding: 0rem;
+
+        p {
+            color: $error-delete-color;
+        }
+
+        &:hover {
+            p {
+                color: #da4f18;
+            }
+
+            path {
+                fill: #da4f18;
+            }
+        }
+    }
+
+    //------------------------------------------------------------------- //
+    //------------------------ Validation Message ----------------------- //
+    //------------------------------------------------------------------- //
+
+    .ValidationMessage {
+        display: flex;
+        width: fit-content;
+        background-color: $accent-color;
+        flex-direction: row;
+        gap: 0.6rem;
+        padding: 1rem 1.25rem;
+        border-radius: 10rem;
+        align-items: center;
+        position: absolute;
+        bottom: 5rem;
+        animation: FadeInOut 3s linear forwards;
+
+        @keyframes FadeInOut {
+            0% {
+                opacity: 0;
+            }
+
+            5% {
+                opacity: 1;
+            }
+
+            95% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        p {
+            color: white;
+        }
+
+        svg {
+            position: relative;
+            top: -2px;
+        }
+
+    }
+
+    //------------------------------------------------------------------- //
+    //------------------------ Error Message ----------------------- //
+    //------------------------------------------------------------------- //
+
+    .messageError {
+        display: flex;
+        border: 1px solid $error-delete-color;
+        background-color: rgba(245, 180, 154, 0.1);
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        height: 40px;
+        padding: 1rem 1.25rem;
+        white-space: nowrap;
+        gap: 0.6rem;
+        outline: 0;
+        color: #DA4F18;
+        font-style: italic;
+        border-radius: 10rem;
+        transition: 0.3s ease-in-out;
+
+
+        &:hover {
+            border: 1px solid #DA4F18;
+        }
+
+        p {
+            color: black;
+        }
+
+        @keyframes FadeInOut {
+            0% {
+                opacity: 0;
+            }
+
+            5% {
+                opacity: 1;
+            }
+
+            95% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        p {
+            color: white;
+        }
+
+        svg {
+            position: relative;
+            top: -2px;
+        }
+
+    }
+
+    //------------------------------------------------------------------- //    
+    //--------------------- Input, Select & TextArea -------------------- //
+    //------------------------------------------------------------------- //
+
+    .input,
+    .select,
+    .textarea {
+        all: unset;
+        font-family: $font-family-3;
+        width: 20em;
+        height: 2em;
+        border: 1px solid var(--secondary-color-1);
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+        padding: 0.5rem;
+        border-radius: 0.6rem;
+        transition: 0.3s ease-in-out;
+        color: var(--primary-color);
+
+        &:hover {
+            border: 1px solid var(--primary-color);
+        }
+
+        &::placeholder {
+            color: var(--secondary-color-1);
+        }
+
+        &:focus-within {
+            outline: 1px solid var(--primary-color);
+        }
+
+
+
+        .SearchInput,
+        .SelectFilter {
+            display: flex;
+            border: 1px solid var(--secondary-color-1);
+            background-color: white;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 1rem 1.25rem;
+            border-radius: 10rem;
+            transition: 0.3s ease-in-out;
+            width: 12.5rem;
+            cursor: pointer;
+
+
+
+            path {
+                fill: var(--primary-color);
+            }
+        }
+    }
+
+    .SearchInput {
+        color: var(--text-color);
+        width: 12rem;
+    }
+
+    .SelectFilter {
+        color: var(--primary-color);
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .ArrowTop {
+        display: flex;
+        border: 1px solid var(--secondary-color-1);
+        background-color: white;
+        position: fixed;
+        z-index: 4;
+        bottom: 4rem;
+        right: 26.6rem;
+
+    }
+
+    //------------------------------------------------------------------- //
+    //--------------------------- Card Example -------------------------- //
+    //------------------------------------------------------------------- //
+
+    .Card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 1.25rem;
+        padding: 1.875rem;
+        gap: 1.25rem;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: $shadow-card;
+        }
+    }
+}
+
+// Components styles imports
+
+@import "./AddImage.scss";
+@import "./Banniere.scss";
+@import "./Carrousel.scss";
+@import "./Carte.scss";
+@import "./CarteRoom.scss";
+@import "./Composant.scss";
+@import "./Footer.scss";
+@import "./Infos.scss";
+@import "./LinkSidebar.scss";
+@import "./MentionsLegales.scss";
+@import "./Navbar.scss";
+@import "./Slider.scss";
+@import "./Style.scss";
+@import "./Theme.scss";
+@import "./Toggle.scss";
+@import "./User.scss";
+@import "./Window.scss";
+
+
+// Pages styles imports
+
+@import "./Accueil.scss";
+@import "./Contact.scss";
+@import "./Database.scss";
+@import "./Dev.scss";
+@import "./Formule.scss";
+@import "./Login.scss";
+@import "./Mail.scss";
+@import "./Quit.scss";
+@import "./Room.scss";
+@import "./Sign.scss";
+@import "./Style.scss";

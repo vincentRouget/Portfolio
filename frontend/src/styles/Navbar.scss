@@ -1,0 +1,83 @@
+.Navbar {
+    background-color: var(--background-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: $height-navbar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--secondary-color-1);
+    z-index: 10;
+
+    &_left {
+        display: flex;
+        width: 60%;
+        padding-left: 40px;
+
+        &_info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
+
+            &_image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 68px;
+                height: 68px;
+                border-radius: 50%;
+                border: 2px solid var(--primary-color);
+                overflow: hidden;
+
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            h2 {
+                font-style: italic;
+            }
+        }
+    }
+
+    &_middle {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        .selectFormule {
+            background-color: var(--background-color);
+            border: none;
+            color: var(--textcolor);
+        }
+
+        &_admin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: italic;
+            font-weight: bold;
+            gap: 40px;
+        }
+    }
+
+    &_right {
+        width: 60%;
+
+        &_navlink {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            display: flex;
+            padding-right: 20px;
+            gap: 20px;
+        }
+    }
+}

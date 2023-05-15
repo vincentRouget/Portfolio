@@ -1,0 +1,69 @@
+.Contact {
+    background-color: var(--background-color);
+    width: 100%;
+
+    &_container {
+        margin-top: $height-navbar;
+
+        &_carte {
+            padding-right: 10px;
+        }
+
+        &_form {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 20vh;
+
+
+            &_google {
+                background-color: var(--background-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                // border-top: 1px solid var(--secondary-color-1);
+
+                a {
+                    font-size: 30px;
+                    text-decoration: underline;
+                }
+            }
+
+            &_itineraire {
+                background-color: var(--background-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                a {
+                    font-size: 30px;
+                    text-decoration: underline;
+                }
+            }
+
+            &_contacter {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                .PrimaryButton {
+
+                    p {
+                        font-size: 26px;
+                    }
+
+                    svg {
+                        margin-left: 10px;
+                        top: 1px;
+                        scale: 1.4;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

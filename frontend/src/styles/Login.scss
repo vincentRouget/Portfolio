@@ -1,0 +1,72 @@
+.Login {
+    background-color: var(--background-color);
+    width: 100%;
+
+    &_test {
+        background-color: var(--background-container);
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &_form {
+        margin-top: $height-navbar;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        padding: 40px;
+
+        &_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+            width: 54vw;
+            min-width: 1000px;
+            height: 70vh;
+            min-height: 600px;
+            border-radius: 20px;
+            transition: 0.3s ease-in-out;
+
+            &_email {
+                display: flex;
+                flex-direction: column;
+
+                &_input {}
+            }
+
+            &_password {
+                display: flex;
+                flex-direction: column;
+
+                &_input {}
+            }
+
+            .messagePosition {
+                margin-top: 30px;
+                position: relative;
+                width: fit-content;
+            }
+
+            &_button {
+                display: flex;
+                gap: 100px;
+                margin-bottom: -30px;
+            }
+        }
+
+        .eye {
+            color: var(--primary-color);
+            position: relative;
+            top: -38px;
+            left: 440px;
+            scale: 2;
+            cursor: pointer;
+            z-index: 1;
+        }
+    }
+}

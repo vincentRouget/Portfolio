@@ -1,0 +1,18 @@
+.Infos {
+    background-color: var(--background-container);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80px;
+    top: 0;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+
+    .nombre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+}
