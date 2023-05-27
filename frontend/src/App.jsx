@@ -5,6 +5,7 @@ import UserContext from "./context/UserContext";
 
 import './styles/App.scss';
 
+import Portfolio from './pages/Portfolio';
 import Login from './pages/Login';
 import Sign from './pages/Sign';
 import Quit from './pages/Quit';
@@ -91,7 +92,7 @@ function App() {
         <Routes>
           <Route path="/" element={
             <Wrapper>
-              <Accueil />
+              <Portfolio />
             </Wrapper>
           } />
           <Route path="/login" element={
@@ -161,7 +162,7 @@ function App() {
           } />
         </Routes>
       </UserContext.Provider>
-      <LinkSidebar />
+      {/* <LinkSidebar /> */}
       <ScrollButton />
     </div>
   );

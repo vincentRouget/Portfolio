@@ -18,7 +18,7 @@ const migrate = async () => {
   await connection.query(`use ${DB_NAME}`);
 
   // Verifier le chemin et le nom de la DB :
-  const sql = fs.readFileSync("./database.sql", "utf8");
+  const sql = fs.readFileSync("./portfolio.sql", "utf8");
 
   await connection.query(sql);
 

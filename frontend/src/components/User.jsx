@@ -14,9 +14,9 @@ const User = () => {
         <div className='Navbar_left'>
             {user ?
                 <div className='Navbar_left_info'>
-                    <div className='Navbar_left_info_image'>
+                    {/* <div className='Navbar_left_info_image'>
                         <img src={`${import.meta.env.VITE_BACKEND_URL}/${user.image_user}`} alt={user.firstname}></img>
-                    </div>
+                    </div> */}
                     <h2>{user.firstname}</h2>
                 </div>
                 :

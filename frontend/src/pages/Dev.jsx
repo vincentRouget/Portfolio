@@ -14,7 +14,6 @@ import Carte from '../components/Carte';
 import LinkSidebar from '../components/LinkSidebar';
 
 const Dev = () => {
-
     const { user } = useContext(UserContext);
     const navigate = useNavigate();
 
@@ -31,16 +30,16 @@ const Dev = () => {
 
     return (
         <div className='Build'>
-            <Navbar />
             <div className='Build_container'>
+                {/* <Navbar /> */}
+                {/* <h1>DEVELOPPEMENT END</h1> */}
                 {/* <Banniere /> */}
                 {/* <Carte /> */}
                 {/* <CarteRoom /> */}
                 {/* <Slider /> */}
                 {/* <Carrousel /> */}
                 {/* <Window name_component='contenant1' /> */}
-                {/* <LinkSidebar/> */}
-                <h1>DEVELOPPEMENT END</h1>
+                {/* <LinkSidebar/> */}      
             </div>
             {/* <Footer /> */}
         </div>
