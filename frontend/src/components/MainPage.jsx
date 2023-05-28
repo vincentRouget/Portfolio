@@ -2,13 +2,13 @@ import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import UserContext from "../context/UserContext";
+import Presentation from "@pages/Presentation";
+import ApplicationMobile from "@pages/ApplicationMobile";
 
-import Navbar from '../components/Navbar';
-import CarteRoom from '../components/CarteRoom';
-import Footer from '../components/Footer';
+const MainPage = () => {
 
-
-const Formule = () => {
+    const { user } = useContext(UserContext);
+    const navigate = useNavigate();
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -22,14 +22,10 @@ const Formule = () => {
     }, []);
 
     return (
-        <div className='Formule'>
-            <Navbar />
-            <div className='Formule_container'>
-                <CarteRoom />
-            </div>
-            <Footer />
+        <div className='Main_container'>
+
         </div>
     );
 };
 
-export default Formule;
+export default MainPage;

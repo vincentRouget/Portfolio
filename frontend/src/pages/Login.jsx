@@ -2,14 +2,10 @@ import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import UserContext from "../context/UserContext";
-
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import AiOutlineEyeInvisible from '@meronex/icons/ai/AiOutlineEyeInvisible';
 import AiOutlineEye from '@meronex/icons/ai/AiOutlineEye';
 
 const Login = () => {
-
     const { user, setUser } = useContext(UserContext);
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
@@ -45,7 +41,7 @@ const Login = () => {
                 });
                 const { token } = res.data;
                 localStorage.setItem("token", `Bearer ${token}`);
-                navigate("/", {
+                navigate("/portfolio", {
                     state: {
                         token,
                     },
@@ -108,7 +104,6 @@ const Login = () => {
 
     return (
         <div className='Login'>
-            <Navbar />
             <div className='Login_form'>
                 <div className='Login_form_container'>
                     <div className='Login_form_container_email'>
@@ -168,7 +163,6 @@ const Login = () => {
                     <NavLink to='/contact'>Mot de passe oublié?</NavLink>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };

@@ -3,11 +3,7 @@ import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom'
 import axios from 'axios';
 import UserContext from "../context/UserContext";
 
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-
 const Quit = () => {
-
     const { user, setUser } = useContext(UserContext);
     const navigate = useNavigate();
 
@@ -16,7 +12,7 @@ const Quit = () => {
         const token = "token";
         localStorage.removeItem("token", `Bearer ${token}`);
         setUser(null);
-        navigate("/", {
+        history.push("/portfolio", {
             state: {
                 token,
             },
@@ -35,7 +31,6 @@ const Quit = () => {
 
     return (
         <div className='Quit'>
-            <Navbar />
             <div className='Quit_form'>
                 <div className='Quit_form_content'>
                     <h1>Voulez-vous vous déconnecter?</h1>
@@ -47,7 +42,6 @@ const Quit = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };

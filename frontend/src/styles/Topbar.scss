@@ -1,3 +1,27 @@
 .Topbar_container {
-    height: 300px;
+    background-color: lightblue;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+
+    &_middle {
+        background-color: aqua;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+    }
+
+    &_update {
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 30%;
+    }
+
 }

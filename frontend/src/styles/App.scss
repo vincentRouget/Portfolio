@@ -11,13 +11,15 @@
 }
 
 body {
-    background-color: var(--background-color);
+    // background-color: red;
     overflow-x: hidden;
 }
 
 .App {
+    background-color: green;
     display: flex;
     width: 100vw;
+    height: 100vh;
 }
 
 //------------------------------ Variables ----------------------------- //
@@ -147,11 +149,12 @@ label {
 
 // Components styles imports
 
-@import "./Main.scss";
 @import "./Sidebar.scss";
 @import "./Theme.scss";
 @import "./Topbar.scss";
 
 // Pages styles imports
 
+@import "./Accueil.scss";
 @import "./Portfolio.scss";
+@import "./MainPage.scss";

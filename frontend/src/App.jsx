@@ -2,24 +2,16 @@ import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import UserContext from "./context/UserContext";
-
 import './styles/App.scss';
-
+import Accueil from "@pages/Accueil";
 import Portfolio from './pages/Portfolio';
 import Login from './pages/Login';
 import Sign from './pages/Sign';
 import Quit from './pages/Quit';
-import Accueil from './pages/Accueil';
 import Dev from './pages/Dev';
-import Formule from './pages/Formule';
-import DoubleRoom from './pages/DoubleRoom';
-import FamilyRoom from './pages/FamilyRoom';
-import TwinRoom from './pages/TwinRoom';
-import DeluxeRoom from './pages/DeluxeRoom';
-import Mail from './pages/Mail';
-import Contact from './pages/Contact';
 import Database from './pages/Database';
-import Style from './pages/Style';
+import ApplicationMobile from "@pages/ApplicationMobile";
+import Presentation from "@pages/Presentation";
 import LinkSidebar from "@components/LinkSidebar";
 import ScrollButton from "@components/ScrollButton";
 // import LegendaryCursor from "legendary-cursor";
@@ -92,6 +84,11 @@ function App() {
         <Routes>
           <Route path="/" element={
             <Wrapper>
+              <Accueil />
+            </Wrapper>
+          } />
+          <Route path="/portfolio" element={
+            <Wrapper>
               <Portfolio />
             </Wrapper>
           } />
@@ -110,41 +107,6 @@ function App() {
               <Quit />
             </Wrapper>
           } />
-          <Route path="/formule" element={
-            <Wrapper>
-              <Formule />
-            </Wrapper>
-          } />
-          <Route path="/double-room" element={
-            <Wrapper>
-              <DoubleRoom />
-            </Wrapper>
-          } />
-          <Route path="/family-room" element={
-            <Wrapper>
-              <FamilyRoom />
-            </Wrapper>
-          } />
-          <Route path="/twin-room" element={
-            <Wrapper>
-              <TwinRoom />
-            </Wrapper>
-          } />
-          <Route path="/deluxe-room" element={
-            <Wrapper>
-              <DeluxeRoom />
-            </Wrapper>
-          } />
-          <Route path="/mail" element={
-            <Wrapper>
-              <Mail />
-            </Wrapper>
-          } />
-          <Route path="/contact" element={
-            <Wrapper>
-              <Contact />
-            </Wrapper>
-          } />
           <Route path="/dev" element={
             <Wrapper>
               <Dev />
@@ -155,9 +117,14 @@ function App() {
               <Database />
             </Wrapper>
           } />
-          <Route path="/style" element={
+          <Route path="/Presentation" element={
             <Wrapper>
-              <Style />
+              <Presentation />
+            </Wrapper>
+          } />
+          <Route path="/Application" element={
+            <Wrapper>
+              <ApplicationMobile />
             </Wrapper>
           } />
         </Routes>

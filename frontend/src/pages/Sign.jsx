@@ -3,8 +3,6 @@ import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom'
 import axios from 'axios';
 import UserContext from "../context/UserContext";
 
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import Toggle from '../components/Toggle';
 import AiOutlineEyeInvisible from '@meronex/icons/ai/AiOutlineEyeInvisible';
 import AiOutlineEye from '@meronex/icons/ai/AiOutlineEye';
@@ -102,8 +100,7 @@ const Sign = () => {
     }, []);
 
     return (
-        <div className='Sign'>
-            <Navbar />
+        <div className='Sign'>   
             <div className='Sign_form'>
                 <div className='Sign_form_container'>
                     <div className='Sign_form_container_picture'>
@@ -230,8 +227,7 @@ const Sign = () => {
                         <p className={error ? 'messageError' : 'hide'}>Tous les champs sont requis</p>
                     </div>
                 </div>
-            </div>
-            <Footer />
+            </div>        
         </div>
     );
 };

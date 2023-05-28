@@ -2,11 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import UserContext from "../context/UserContext";
-import Topbar from '../components/Topbar';
-import MainPage from '../components/MainPage';
-import Presentation from "./Presentation";
-import Sidebar from '../components/Sidebar';
-
+import Sidebar from "@components/Sidebar";
+import Topbar from "@components/Topbar";
+import MainPage from "@components/MainPage";
 
 // ***VERSION FRONTEND***
 import Window from '../components/Window';
@@ -29,16 +27,13 @@ import Ete1 from '../assets/Image/ete1.jpg';
 import Hiver4 from '../assets/Image/hiver4.jpg';
 import Hiver1 from '../assets/Image/hiver1.jpg';
 import Hiver2 from '../assets/Image/hiver2.jpg';
-import ApplicationMobile from "./ApplicationMobile";
 // ***
 
 
-const Portfolio = () => {
+const Presentation = () => {
 
     const { user, theme, dataImage } = useContext(UserContext);
     const navigate = useNavigate();
-    const [presentationON, setPresentationON] = useState(true)
-    const [applicationMobileON, setApplicationMobileON] = useState(false)
     // ***VERSION FRONTEND***
     const interieur = [
         { name: Commune2 },
@@ -75,29 +70,11 @@ const Portfolio = () => {
     }, []);
 
     return (
-        <div className='Portfolio'>
-            <div className='Sidebar'>
-                <Sidebar
-                    presentationON={presentationON}
-                    setPresentationON={setPresentationON}
-                    applicationMobileON={applicationMobileON}
-                    setApplicationMobileON={setApplicationMobileON} />
-            </div>
-            <div className='Right'>
-                <div className='Topbar'>
-                    <Topbar />
-                </div>
-                {presentationON &&
-                    <div className='Main'>
-                        <Presentation />
-                    </div>}
-                {applicationMobileON &&
-                    <div className='Main'>
-                        <ApplicationMobile />
-                    </div>}
-            </div>
+        <div className='ApplicationMobile'>
+            <h1>Présentation</h1>
+
         </div>
     );
 };
 
-export default Portfolio;
+export default Presentation;
