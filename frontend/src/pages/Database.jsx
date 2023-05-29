@@ -1,13 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import UserContext from "../context/UserContext";
-
 import AddImage from '../components/AddImage';
 import Composant from '../components/Composant';
 
 const Database = () => {
-
     const { user, dataImage, setDataImage } = useContext(UserContext);
     const [component, setComponent] = useState('');
     const [dataComponent, setDataComponent] = useState([]);

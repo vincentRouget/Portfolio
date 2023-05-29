@@ -37,22 +37,24 @@ body {
     --secondary-color-1: #858585;
     --secondary-color-2: #FFFFFF;
     --text-color: white;
+    --link-color: #D5D8DC;
 }
 
 .light {
     // BLANC :
-    --background-color: #FFFFFF;
+    --background-color: white;
     --color-r: 255;
     --color-g: 255;
     --color-b: 255;
     --background-container: #FFFFFF;
-    --primary-color: rgb(20, 35, 220);
-    --title-color: rgb(137, 145, 238);
+    --primary-color: rgb(137, 145, 238);
+    --title-color: rgb(20, 35, 220);
     --hover-color: #2e3176;
     --hover-button-color: #2e3176;
     --secondary-color-1: rgb(137, 145, 238);
     --secondary-color-2: #FFFFFF;
     --text-color: #000000;
+    --link-color: #402a73;
     // BLEU :
     // --background-color: #EBF2FB;
     // --color-r: 235;
@@ -140,11 +142,116 @@ h6 {
 
 p,
 small,
-button,
 span,
 a,
 label {
     font-family: $font-family-3;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-family: $font-family-3;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1.75rem;
+    line-height: 1.625rem;
+    font-weight: bold;
+    color: var(--title-color);
+    margin-bottom: 4px;
+
+    span {
+        color: $error-delete-color;
+    }
+}
+
+.input,
+.select,
+.textarea {
+    all: unset;
+    font-family: $font-family-3;
+    width: 20em;
+    height: 2em;
+    border: 1px solid var(--secondary-color-1);
+    font-size: 2rem;
+    line-height: 1.625rem;
+    padding-left: 0.5rem;
+    border-radius: 0.6rem;
+    transition: 0.3s ease-in-out;
+    color: var(--title-color);
+
+    &:hover {
+        border: 1px solid var(--title-color);
+    }
+
+    &::placeholder {
+        color: var(--secondary-color-1);
+    }
+
+    &:focus-within {
+        outline: 1px solid var(--title-color);
+    }
+
+}
+
+.messageError {
+    display: flex;
+    border: 1px solid $error-delete-color;
+    background-color: rgba(245, 180, 154, 0.1);
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    gap: 0.6rem;
+    outline: 0;
+    color: #DA4F18;
+    font-size: 20px;
+    font-style: italic;
+    border-radius: 10rem;
+    transition: 0.3s ease-in-out;
+
+
+    &:hover {
+        border: 1px solid #DA4F18;
+    }
+
+    p {
+        color: black;
+    }
+
+    @keyframes FadeInOut {
+        0% {
+            opacity: 0;
+        }
+
+        5% {
+            opacity: 1;
+        }
+
+        95% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+}
+
+.PrimaryButton {
+    background-color: transparent;
+    color: var(--title-color);
+    font-size: 40px;
+    font-weight: bold;
+
+    &:hover {
+        // background-color: var(--hover-color);
+    }
 }
 
 // Components styles imports
@@ -156,5 +263,6 @@ label {
 // Pages styles imports
 
 @import "./Accueil.scss";
+@import "./Login.scss";
 @import "./Portfolio.scss";
 @import "./MainPage.scss";

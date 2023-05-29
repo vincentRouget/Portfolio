@@ -2,11 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import UserContext from "../context/UserContext";
-
 import Fleche from '../../src/assets/icon/icons8-chevron-double-40.png';
 
 const Window = ({ name_component }) => {
-
     const { user, dataImage, setDataImage } = useContext(UserContext);
     const [count, setCount] = useState(0);
 

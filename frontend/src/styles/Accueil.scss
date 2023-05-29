@@ -1,12 +1,137 @@
 .Accueil {
     display: flex;
-    margin: auto;
+    flex-direction: column;
+    width: 100%;
+    background:
+        linear-gradient(0deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
+        // linear-gradient(90deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
+        linear-gradient(180deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
+        // linear-gradient(270deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 30%),
+        // linear-gradient(90deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
+        // radial-gradient(circle, rgba(var(--color-r), var(--color-g), var(--color-b), 0.6) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0.3) 20%),
+        // url('https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+        url("https://images.pexels.com/photos/1568607/pexels-photo-1568607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    // url("https://images.pexels.com/photos/3527786/pexels-photo-3527786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    // url("https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1072&q=80");
+    // url("https://images.pexels.com/photos/3109807/pexels-photo-3109807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_dark {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background:
+            linear-gradient(0deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
+            // linear-gradient(90deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
+            linear-gradient(180deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
+            // linear-gradient(270deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 30%),
+            // linear-gradient(90deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
+            // radial-gradient(circle, rgba(var(--color-r), var(--color-g), var(--color-b), 0.6) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0.3) 20%),
+            // url('https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+            // url("https://images.pexels.com/photos/1568607/pexels-photo-1568607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            // url("https://images.pexels.com/photos/3527786/pexels-photo-3527786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            // url("https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1072&q=80");
+            url("https://images.pexels.com/photos/3109807/pexels-photo-3109807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &_topbar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        &_left {
+            display: flex;
+
+            .Logo {
+                width: 40%;
+                margin: 10px auto auto 10px;
+            }
+        }
+
+        &_middle {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &_right {
+            // background-color: pink;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 500px;
+            margin: 20px 20px auto auto;
+
+            a {
+                // background-color: blue;
+                display: flex;
+                height: 40px;
+                font-size: 32px;
+                color: var(--link-color);
+                text-decoration: none;
+            }
+
+            .Linkedin {
+                // background-color: blue;
+                display: flex;
+                width: 40px;
+            }
+
+            .Github {
+                // background-color: blue;
+                display: flex;
+                width: 40px;
+            }
+        }
+    }
 
     &_page {
+        // background-color: blue;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: auto;
+        gap: 20px;
 
+        h1 {
+            font-size: 80px;
+            color: var(--text-color)
+        }
+
+        p {
+            font-size: 56px;
+            color: var(--text-color)
+        }
+
+        a {
+            // background-color: yellow;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            height: 80px;
+            font-size: 32px;
+            font-weight: bold;
+            color: var(--text-color);
+            border-radius: 20px;
+            padding-right: 20px;
+            transition: 300ms ease-in;
+            border: 1px solid var(--text-color);
+
+            &:hover {
+                background-color: var(--background-color);
+                transition: 200ms ease-in;
+                -webkit-box-shadow: 5px 5px 20px -2px black;
+                box-shadow: 5px 5px 20px -2px black;
+            }
+        }
+
+        .Arrow {
+            scale: 0.5;
+        }
     }
+
 }

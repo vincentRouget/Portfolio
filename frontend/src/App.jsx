@@ -12,7 +12,6 @@ import Dev from './pages/Dev';
 import Database from './pages/Database';
 import ApplicationMobile from "@pages/ApplicationMobile";
 import Presentation from "@pages/Presentation";
-import LinkSidebar from "@components/LinkSidebar";
 import ScrollButton from "@components/ScrollButton";
 // import LegendaryCursor from "legendary-cursor";
 
@@ -129,7 +128,6 @@ function App() {
           } />
         </Routes>
       </UserContext.Provider>
-      {/* <LinkSidebar /> */}
       <ScrollButton />
     </div>
   );

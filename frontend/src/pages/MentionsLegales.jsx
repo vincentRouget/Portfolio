@@ -2,8 +2,7 @@ import React from 'react';
 
 const MentionsLegales = () => {
     return (
-        <div>
-            
+        <div>            
         </div>
     );
 };

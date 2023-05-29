@@ -2,11 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import UserContext from "../context/UserContext";
-
 import imageDefault from '../../src/assets/Image/avatar-default.jpg';
 
 const User = () => {
-
     const { user, setUser, theme, setTheme, dataImage } = useContext(UserContext);
     const navigate = useNavigate();
 
@@ -41,8 +39,7 @@ const User = () => {
                 // </div>
 
                 /////////////////////////////////////////    Rien    ////////////////////////////////////////
-                null
-            }
+                null}
         </div>
     );
 };

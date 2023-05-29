@@ -1,13 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import UserContext from "../context/UserContext";
-
-import Sun from '../assets/Icon/icons8-summer-48.png';
-import Moon from '../assets/Icon/icons8-crescent-moon-32.png';
+// import Sun from '../assets/Icon/icons8-summer-48.png';
+// import Moon from '../assets/Icon/icons8-crescent-moon-32.png';
+import Dark from "../assets/Icon/icons8-dark-96ter.png"
 
 const Theme = () => {
-
     const { user, theme, setTheme, dataImage, setDataImage } = useContext(UserContext);
     const navigate = useNavigate();
 
@@ -25,12 +23,7 @@ const Theme = () => {
 
     return (
         <div className='Theme'>
-            <button onClick={toggleTheme}>
-                {theme === 'light' ?
-                    <img src={Sun} alt='Dark'></img>
-                    :
-                    <img src={Moon} alt='Light'></img>
-                }</button>
+            <button onClick={toggleTheme}><img src={Dark} alt='Dark'></img></button>
         </div>
     );
 };

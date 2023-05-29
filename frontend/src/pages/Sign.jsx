@@ -2,19 +2,16 @@ import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import UserContext from "../context/UserContext";
-
 import Toggle from '../components/Toggle';
 import AiOutlineEyeInvisible from '@meronex/icons/ai/AiOutlineEyeInvisible';
 import AiOutlineEye from '@meronex/icons/ai/AiOutlineEye';
 import imageDefault from '../../src/assets/Image/avatar-default.jpg';
 
 const Sign = () => {
-
     const { user, setUser } = useContext(UserContext);
     const navigate = useNavigate();
     const current = new Date();
     const date = `${current.getFullYear()}/${current.getMonth() + 1}/${current.getDate()}`;
-
     const [image_user, setImage_user] = useState('');
     const [imageBis, setImageBis] = useState('');
     const [inputImage, setInputImage] = useState('');

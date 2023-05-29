@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import UserContext from "../context/UserContext";
 
 const Dev = () => {
@@ -24,8 +23,7 @@ const Dev = () => {
                 <h1>DEVELOPPEMENT END</h1>         
                 {/* <Slider /> */}
                 {/* <Carrousel /> */}
-                {/* <Window name_component='contenant1' /> */}
-                {/* <LinkSidebar/> */}      
+                {/* <Window name_component='contenant1' /> */}    
             </div>
             {/* <Footer /> */}
         </div>

@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import UserContext from "../context/UserContext";
 
 const Quit = () => {
