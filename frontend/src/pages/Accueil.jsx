@@ -26,6 +26,7 @@ const Accueil = () => {
             <div className="Accueil_topbar">
                 <div className="Accueil_topbar_left">
                     <img src={Logo} alt=" " className="Logo"></img>
+                    <h1>Vincent Rouget</h1>
                 </div>
                 <div className="Accueil_topbar_middle">
                 </div>
@@ -42,8 +43,7 @@ const Accueil = () => {
                     <a href={`mailto:vincent.rouget86@gmail.com`}>Contact me</a>
                 </div>
             </div>
-            <div className='Accueil_page'>
-                <h1>I AM VINCENT ROUGET</h1>
+            <div className='Accueil_page'>  
                 <h1>WEB & MOBILE DEVELOPER</h1>
                 <p>Front-end & Back-end</p>
                 <NavLink to='/Portfolio' onClick={scrollToTop} className="Link">

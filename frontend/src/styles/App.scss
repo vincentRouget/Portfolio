@@ -47,7 +47,7 @@ body {
     --color-g: 255;
     --color-b: 255;
     --background-container: #FFFFFF;
-    --primary-color: rgb(137, 145, 238);
+    --primary-color: #F4F6F6;
     --title-color: rgb(20, 35, 220);
     --hover-color: #2e3176;
     --hover-button-color: #2e3176;
@@ -159,7 +159,6 @@ button {
 label {
     font-size: 1.75rem;
     line-height: 1.625rem;
-    font-weight: bold;
     color: var(--title-color);
     margin-bottom: 4px;
 
@@ -247,7 +246,6 @@ label {
     background-color: transparent;
     color: var(--title-color);
     font-size: 40px;
-    font-weight: bold;
 
     &:hover {
         // background-color: var(--hover-color);

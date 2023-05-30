@@ -59,16 +59,17 @@
         height: 100vh;
 
         &_container {
-            // background-color: lightcoral;
+            background-color: var(--primary-color);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 80px;
-            width: 54vw;
-            min-width: 1000px;
-            height: 70vh;
+            gap: 60px;
+            width: 44vw;
+            min-width: 800px;
+            height: 66vh;
             min-height: 600px;
+            border: 1px solid var(--title-color);
             border-radius: 20px;
             transition: 0.3s ease-in-out;
 
@@ -117,8 +118,6 @@
                 // background-color: violet;
                 display: flex;
                 gap: 100px;
-                margin-left: -80px;
-                ;
             }
 
             &_forget {
@@ -132,7 +131,7 @@
                 // background-color: red;
                 color: var(--title-color);
                 margin-top: 290px;
-                margin-left: 30px;
+                margin-left: 50px;
                 scale: 2;
                 cursor: pointer;
                 z-index: 1;
