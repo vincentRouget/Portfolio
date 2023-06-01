@@ -13,7 +13,6 @@ import Database from './pages/Database';
 import ApplicationMobile from "@pages/ApplicationMobile";
 import Presentation from "@pages/Presentation";
 import ScrollButton from "@components/ScrollButton";
-// import LegendaryCursor from "legendary-cursor";
 
 function App() {
 
@@ -22,6 +21,7 @@ function App() {
   const [theme, setTheme] = useState('light');
   const [dataImage, setDataImage] = useState([]);
   const [maxImage, setMaxImage] = useState(0);
+  const [refresh, setRefresh] = useState(false);
 
   const getImage = () => {
     axios
@@ -39,24 +39,6 @@ function App() {
         setMaxImage(res.data[0].max);
       });
   };
-
-  // Trainée de souris :
-
-  // window.addEventListener("load", () => {
-  //   LegendaryCursor.init({
-  //     lineSize: 0.1, // Taille de la trainée
-  //     opacityDecrement: 0.9, // Vitesse de disparition
-  //     speedExpFactor: 0.9, // ?
-  //     lineExpFactor: 0.9, // ?
-  //     sparklesCount: 200, // Nombre de particules libres
-  //     maxOpacity: 1.99,  // Opacité de la trainée / particules : should be a number between [0 ... 1]
-
-  //     // Can change images:
-  //     texture1: "https://images.pexels.com/photos/73873/star-clusters-rosette-nebula-star-galaxies-73873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",      // texture displayed on mouse hover
-  //     texture2: "https://cdn.pixabay.com/photo/2022/06/08/05/47/stars-7249785_1280.jpg",      // texture displayed on mouse click
-  //     // texture3:         "https://cdn.pixabay.com/photo/2017/12/10/13/37/christmas-3009949_1280.jpg",      // texture displayed on sparkles
-  //   });
-  // });
 
   useEffect(() => {
     if (!user) {
@@ -79,7 +61,7 @@ function App() {
 
   return (
     <div className={`App ${theme}`}>
-      <UserContext.Provider value={{ user, setUser, theme, setTheme, dataImage, setDataImage }}>
+      <UserContext.Provider value={{ user, setUser, theme, setTheme, dataImage, setDataImage, refresh, setRefresh }}>
         <Routes>
           <Route path="/" element={
             <Wrapper>

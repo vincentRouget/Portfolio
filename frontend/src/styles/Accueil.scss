@@ -43,17 +43,105 @@
         width: 100%;
 
         &_left {
-            // background-color: red;
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
-            gap: 20px;
+            width: 700px;
 
-            .Logo {
-                // background-color: pink;
-                width: 20%;
+            .Texte_first {
+                display: none;
+
+            }
+
+            &:hover {
+                overflow: hidden;
+
+                .Texte_police {
+                    color: var(--text-color);
+                    font-size: 64px;
+                }
+
+                .Texte_first {
+                    display: inline-block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    margin-top: 20px;
+                    animation: showup 5s infinite;
+                }
+
+                .Texte_two_span {
+                    width: 0px;
+                    animation: reveal 5s infinite;
+                    animation: slidein 5s infinite;
+                }
+
+                @keyframes showup {
+                    0% {
+                        opacity: 1;
+                    }
+
+                    20% {
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 0;
+                    }
+                }
+
+                @keyframes slidein {
+                    0% {
+                        margin-left: -800px;
+                    }
+
+                    10% {
+                        margin-left: 0px;
+                    }
+
+                    80% {
+                        margin-left: 0px;
+                    }
+
+                    100% {
+                        margin-left: 0px;
+                    }
+                }
+
+                @keyframes reveal {
+                    0% {
+                        opacity: 0;
+                        width: 0px;
+                    }
+
+                    20% {
+                        opacity: 1;
+                        width: 0px;
+                    }
+
+                    30% {
+                        width: 355px;
+                    }
+
+                    80% {
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 0;
+                        width: 355px;
+                    }
+                }
+            }
+
+            a {
+                width: 200px;
+                height: 200px;
                 margin: 10px 0px 0px 10px;
+
+                .Logo {
+                    width: 100%;
+                }
             }
 
             h1 {

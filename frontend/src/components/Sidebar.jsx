@@ -15,7 +15,7 @@ const Sidebar = ({
     setLogicielON,
 }) => {
 
-    const { user } = useContext(UserContext);
+    const { user, refresh, setRefresh } = useContext(UserContext);
     const navigate = useNavigate();
 
     const scrollToTop = () => {
@@ -33,7 +33,10 @@ const Sidebar = ({
         <div className="Sidebar_container">
             <User />
             <div className="Sidebar_container_top">
-                <NavLink to="/" onClick={scrollToTop}>Accueil</NavLink>
+                <NavLink to="/" onClick={() => {
+                    scrollToTop();
+                    setRefresh(true);
+                }}>Accueil</NavLink>
             </div>
             <div className="Sidebar_container_middle">
                 <button onClick={() => {

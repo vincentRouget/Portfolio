@@ -16,7 +16,7 @@ body {
 }
 
 .App {
-    background-color: green;
+    background-color: grey;
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -255,6 +255,7 @@ label {
 // Components styles imports
 
 @import "./Sidebar.scss";
+@import "./Texte.scss";
 @import "./Theme.scss";
 @import "./Topbar.scss";
 
