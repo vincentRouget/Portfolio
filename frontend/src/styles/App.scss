@@ -11,12 +11,12 @@
 }
 
 body {
-    // background-color: red;
+    background-color: grey;
     overflow-x: hidden;
 }
 
 .App {
-    background-color: grey;
+    background-color: lightgray;
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -25,36 +25,45 @@ body {
 //------------------------------ Variables ----------------------------- //
 
 .dark {
-    --background-color: black;
+    --theme: black;
     --color-r: 0;
     --color-g: 0;
     --color-b: 0;
-    --background-container: #858585;
-    --primary-color: #484848;
-    --title-color: #DADADA;
-    --hover-button-color: #EAEAEA;
-    --hover-color: #858585;
-    --secondary-color-1: #858585;
-    --secondary-color-2: #FFFFFF;
-    --text-color: white;
-    --link-color: #D5D8DC;
+    --opacity: rgba(255, 255, 255, 0.2);
+    --background: black;
+    --container: #858585;
+    --primary: #484848;
+    --tertiary: #FFFFFF;
+    --secondary: #858585;
+    --title: #DADADA;
+    --text: white;
+    --link: #D5D8DC;
+    --button: #858585;
+    --hover: #EAEAEA;
 }
 
 .light {
     // BLANC :
-    --background-color: white;
+    --theme: white;
     --color-r: 255;
     --color-g: 255;
     --color-b: 255;
-    --background-container: #FFFFFF;
-    --primary-color: #F4F6F6;
-    --title-color: rgb(20, 35, 220);
-    --hover-color: #2e3176;
-    --hover-button-color: #2e3176;
-    --secondary-color-1: rgb(137, 145, 238);
-    --secondary-color-2: #FFFFFF;
-    --text-color: #000000;
-    --link-color: #402a73;
+    --opacity: rgba(255, 255, 255, 0.5);
+    --background: #e8f2f9;
+    --container1: #bbd8ef;
+    --container2: #8ebfe5;
+    --container3: #61a5da;
+    --container4: #1e7fcb;
+    --container5: #1b72b6;
+    --container6: #15588e;
+    --primary: #3333FF;
+    --secondary: #8484ff;
+    --tertiary: #1e1e99;
+    --title: #1424dc;
+    --text: black;
+    --link: #402a73;
+    --button: #575a91;
+    --hover: #402a73;
     // BLEU :
     // --background-color: #EBF2FB;
     // --color-r: 235;
@@ -109,12 +118,26 @@ $shadow-card: 4px 4px 20px rgba(20, 35, 220, 0.2);
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
-
-$font-family: 'Playfair Display', serif;
-// 'Public Sans', sans-serif;
-$font-family-2: 'Roboto', sans-serif;
-// 'EB Garamond', serif;
-$font-family-3: 'Sorts Mill Goudy', serif;
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+//------------------------------------------------------------------- //
+// $font-family: 'EB Garamond', serif;
+// $font-family: 'League Spartan', sans-serif;
+// $font-family: 'Libre Baskerville', serif;
+// $font-family: 'Montserrat', sans-serif;
+// $font-family: 'Open Sans', sans-serif;
+// $font-family: 'Playfair Display', serif;
+// $font-family: 'PT Sans', sans-serif;
+// $font-family: 'Public Sans', sans-serif;
+// $font-family: 'Roboto', sans-serif;
+// $font-family: 'Sorts Mill Goudy', serif;
+//------------------------------------------------------------------- //
+$font-family: 'League Spartan', sans-serif;
+$font-family-2: 'PT Sans', sans-serif;
+$font-family-3: 'Montserrat', sans-serif;
 
 h1 {
     font-family: $font-family;
@@ -129,15 +152,15 @@ h3 {
 }
 
 h4 {
-    font-family: $font-family;
+    font-family: $font-family-2;
 }
 
 h5 {
-    font-family: $font-family;
+    font-family: $font-family-2;
 }
 
 h6 {
-    font-family: $font-family;
+    font-family: $font-family-2;
 }
 
 p,
@@ -151,7 +174,7 @@ label {
 button {
     background-color: transparent;
     border: none;
-    font-family: $font-family-3;
+    font-family: $font-family-2;
     font-size: 24px;
     cursor: pointer;
 }
@@ -159,7 +182,7 @@ button {
 label {
     font-size: 1.75rem;
     line-height: 1.625rem;
-    color: var(--title-color);
+    color: var(--title);
     margin-bottom: 4px;
 
     span {
@@ -171,27 +194,28 @@ label {
 .select,
 .textarea {
     all: unset;
+    background-color: var(--background);
     font-family: $font-family-3;
     width: 20em;
     height: 2em;
-    border: 1px solid var(--secondary-color-1);
+    border: 1px solid var(--secondary);
     font-size: 2rem;
     line-height: 1.625rem;
     padding-left: 0.5rem;
     border-radius: 0.6rem;
     transition: 0.3s ease-in-out;
-    color: var(--title-color);
+    color: var(--title);
 
     &:hover {
-        border: 1px solid var(--title-color);
+        border: 1px solid var(--title);
     }
 
     &::placeholder {
-        color: var(--secondary-color-1);
+        color: var(--secondary);
     }
 
     &:focus-within {
-        outline: 1px solid var(--title-color);
+        outline: 1px solid var(--title);
     }
 
 }
@@ -244,11 +268,11 @@ label {
 
 .PrimaryButton {
     background-color: transparent;
-    color: var(--title-color);
+    color: var(--title);
     font-size: 40px;
 
     &:hover {
-        // background-color: var(--hover-color);
+        // background-color: var(--hover);
     }
 }
 
@@ -262,6 +286,7 @@ label {
 // Pages styles imports
 
 @import "./Accueil.scss";
+@import "./Enigma.scss";
 @import "./Login.scss";
 @import "./Portfolio.scss";
 @import "./MainPage.scss";

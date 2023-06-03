@@ -1,11 +1,11 @@
 .Footer {
-    background-color: var(--background-color);
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    border-top: 1px solid var(--secondary-color-1);
+    border-top: 1px solid var(--secondary);
 
     label {
         font-size: 30px;
@@ -47,16 +47,16 @@
                     &_image {
 
                         img {
-                            background-color: var(--background-color);
+                            background-color: var(--background);
                             width: 100%;
-                            border: 1px solid var(--secondary-color-2);
+                            border: 1px solid var(--tertiary);
                             border-radius: 50%;
                             scale: 1.6;
                             transition: 0.2s ease-in-out;
 
                             &:hover {
                                 scale: 1.7;
-                                box-shadow: 0px 0px 50px -10px var(--text-color);
+                                box-shadow: 0px 0px 50px -10px var(--text);
                             }
                         }
                     }
@@ -135,7 +135,7 @@
                         }
 
                         &_logo {
-                            background-color: var(--background-container);
+                            background-color: var(--container);
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -184,7 +184,7 @@
                         }
 
                         &_logo {
-                            background-color: var(--background-container);
+                            background-color: var(--container);
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -223,7 +223,7 @@
             flex-direction: row;
             justify-content: space-around;
             width: 100%;
-            border-top: 1px solid var(--secondary-color-1);
+            border-top: 1px solid var(--secondary);
 
             p {
                 font-size: 24px;

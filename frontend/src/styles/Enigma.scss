@@ -1,0 +1,112 @@
+.style_h1 {
+    font-size: 80px;
+    color: var(--text);
+}
+
+.style_h4 {
+    font-size: 30px;
+    letter-spacing: 0.5rem;
+    color: var(--text);
+}
+
+.style_h6 {
+    font-size: 20px;
+    color: var(--text);
+}
+
+.style_p {
+    font-size: 16px;
+    color: var(--text);
+}
+
+.style_button {
+    background-color: var(--background);
+    padding: 5px;
+    border: 2px solid var(--title);
+    border-radius: 10px;
+    color: var(--button);
+
+    &:hover {
+        color: var(--hover);
+    }
+}
+
+.style_input {
+    all: unset;
+    background-color: var(--background);
+    font-family: $font-family-3;
+    width: 20em;
+    height: 2em;
+    border: 1px solid var(--secondary);
+    font-size: 2rem;
+    line-height: 1.625rem;
+    padding-left: 0.5rem;
+    border-radius: 0.6rem;
+    transition: 0.3s ease-in-out;
+    color: var(--title);
+
+    &:hover {
+        border: 1px solid var(--title);
+    }
+
+    &::placeholder {
+        color: var(--secondary);
+    }
+
+    &:focus-within {
+        outline: 1px solid var(--title);
+    }
+}
+
+.style_a {
+    color: var(--link);
+}
+
+.Enigma {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .un {
+        background-color: var(--container1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+        height: 400px;
+        gap: 20px;
+
+        .deux {
+            background-color: var(--container2);
+            width: 800px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .trois {
+        background-color: var(--container3);
+        width: 1000px;
+        height: 100px;
+    }
+
+    .quatre {
+        background-color: var(--container4);
+        width: 1000px;
+        height: 100px;
+    }
+
+    .cinq {
+        background-color: var(--container5);
+        width: 1000px;
+        height: 80px;
+    }
+
+    .six {
+        background-color: var(--container6);
+        width: 1000px;
+        height: 80px;
+    }
+}

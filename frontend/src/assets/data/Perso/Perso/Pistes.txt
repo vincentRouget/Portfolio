@@ -1,0 +1,16 @@
+<h1> Welcome </h1>
+<p> I'm Vincent Rouget </p>
+
+couleur dominante "bleu" charte 'light', contraste avec dominance bleu foncé/gris pour la charte 'dark'.
+https://www.webdesignrankings.com/resources/lolcolors/?source=codeur-com-blog&utm_source=codeur-com-blog
+https://www.palettedecouleur.net/?utm_source=Codeur&utm_medium=blog&utm_campaign=outils-palette-couleur
+
+dans la sidebar, une ligne "etiquettes", pour afficher les projets sous formes d'étiquettes dans la fenetre principale.
+
+Exemples :https://github.com/emmabostian/developer-portfolios
+
+Github des particules volantes : https://github.com/adamalston/v2
+
+
+
+

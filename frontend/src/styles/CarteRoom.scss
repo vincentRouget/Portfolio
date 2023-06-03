@@ -8,26 +8,26 @@
                     gap: 50px;
 
                     &_formule {
-                            background-color: var(--background-color);
+                            background-color: var(--background);
                             display: flex;
                             flex-direction: column;
                             justify-content: space-around;
                             align-items: center;
                             width: 400px;
                             height: 600px;
-                            border: 1px solid var(--secondary-color-1);
+                            border: 1px solid var(--secondary);
                             border-radius: 20px;
                             transition: 0.3s ease-in-out;
 
                             &:hover {
                                     border: 1px solid white;
-                                    -webkit-box-shadow: 5px 5px 20px -2px var(--text-color);
-                                    box-shadow: 5px 5px 20px -2px var(--text-color);
+                                    -webkit-box-shadow: 5px 5px 20px -2px var(--text);
+                                    box-shadow: 5px 5px 20px -2px var(--text);
                             }
 
 
                             &_icone {
-                                    background-color: var(--background-container);
+                                    background-color: var(--container);
                                     width: 100%;
                                     border-radius: 20px 20px 0px 0px;
                                     transition: 0.3s ease-in-out;
@@ -75,7 +75,7 @@
 
                                     img {
                                             object-fit: cover;
-                                            border: 1px solid var(--secondary-color-1);
+                                            border: 1px solid var(--secondary);
                                             border-radius: 20px;
                                             width: 100%;
                                     }

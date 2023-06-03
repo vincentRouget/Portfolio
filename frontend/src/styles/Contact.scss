@@ -1,5 +1,5 @@
 .Contact {
-    background-color: var(--background-color);
+    background-color: var(--background);
     width: 100%;
 
     &_container {
@@ -17,12 +17,12 @@
 
 
             &_google {
-                background-color: var(--background-color);
+                background-color: var(--background);
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                // border-top: 1px solid var(--secondary-color-1);
+                // border-top: 1px solid var(--secondary);
 
                 a {
                     font-size: 30px;
@@ -31,7 +31,7 @@
             }
 
             &_itineraire {
-                background-color: var(--background-color);
+                background-color: var(--background);
                 display: flex;
                 justify-content: center;
                 align-items: center;

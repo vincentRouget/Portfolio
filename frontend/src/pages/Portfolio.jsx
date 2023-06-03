@@ -3,6 +3,7 @@ import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom'
 import Sidebar from '../components/Sidebar';
 import Topbar from '../components/Topbar';
 import Presentation from "./Presentation";
+import Etiquette from "./Etiquette";
 import Wild from "./Wild";
 import Enecom from "./Enecom";
 import ApplicationMobile from "./ApplicationMobile";
@@ -12,13 +13,14 @@ import Logiciel from "./Logiciel";
 
 const Portfolio = () => {
     const navigate = useNavigate();
-    const [presentationON, setPresentationON] = useState(true)
+    const [etiquetteON, setEtiquetteON] = useState(true)
     const [wildON, setWildON] = useState(false)
     const [enecomON, setEnecomON] = useState(false)
     const [appON, setAppON] = useState(false)
     const [maisonON, setMaisonON] = useState(false)
-    const [enigmaON, setEnigmaON] = useState(false)
     const [logicielON, setLogicielON] = useState(false)
+    const [enigmaON, setEnigmaON] = useState(false)
+    const [presentationON, setPresentationON] = useState(false)
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -35,8 +37,8 @@ const Portfolio = () => {
         <div className='Portfolio'>
             <div className='Sidebar'>
                 <Sidebar
-                    presentationON={presentationON}
-                    setPresentationON={setPresentationON}
+                    etiquetteON={etiquetteON}
+                    setEtiquetteON={setEtiquetteON}
                     wildON={wildON}
                     setWildON={setWildON}
                     enecomON={enecomON}
@@ -45,10 +47,12 @@ const Portfolio = () => {
                     setAppON={setAppON}
                     maisonON={maisonON}
                     setMaisonON={setMaisonON}
-                    enigmaON={enigmaON}
-                    setEnigmaON={setEnigmaON}
                     logicielON={logicielON}
                     setLogicielON={setLogicielON}
+                    enigmaON={enigmaON}
+                    setEnigmaON={setEnigmaON}
+                    presentationON={presentationON}
+                    setPresentationON={setPresentationON}
                 />
             </div>
             <div className='Right'>
@@ -56,13 +60,14 @@ const Portfolio = () => {
                     <Topbar />
                 </div>
                 <div className="Main">
-                    {presentationON && <Presentation />}
+                    {etiquetteON && <Etiquette />}
                     {wildON && <Wild />}
                     {enecomON && <Enecom />}
                     {appON && <ApplicationMobile />}
                     {maisonON && <Maison />}
-                    {enigmaON && <Enigma />}
                     {logicielON && <Logiciel />}
+                    {enigmaON && <Enigma />}
+                    {presentationON && <Presentation />}
                 </div>
             </div>
         </div>

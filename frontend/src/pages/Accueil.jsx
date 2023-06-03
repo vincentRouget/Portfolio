@@ -48,7 +48,9 @@ const Accueil = () => {
                     </a>
                     <div className='Texte_first'>
                         <div className='Texte_two'>
-                            <span className='Texte_two_span Texte_police'>&nbsp;Vincent Rouget</span>
+                            <span className='Texte_two_span Texte_police'>&nbsp;&lt;h1&gt;&nbsp;WELCOME&nbsp;&lt;/h1&gt;</span>
+                            <br></br>
+                            <span className='Texte_two_span Texte_police'>&nbsp;&lt;p&gt;&nbsp;I'm Vincent Rouget&nbsp;&lt;/p&gt;</span>
                         </div>
                     </div>
                 </div>

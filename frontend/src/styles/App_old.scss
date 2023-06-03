@@ -90,7 +90,7 @@ $shadow-card: 4px 4px 20px rgba(20, 35, 220, 0.2);
 $height-navbar: 100px;
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--background);
     overflow-x: hidden;
 }
 
@@ -147,25 +147,25 @@ label {
         font-size: 3.875rem;
         line-height: 4.5rem;
         font-weight: 800;
-        color: var(--title-color);
+        color: var(--title);
     }
 
     h2 {
         font-size: 2.625rem;
         line-height: 3.25rem;
         font-weight: 800;
-        color: var(--title-color);
+        color: var(--title);
     }
 
     .TitlePlan {
-        color: var(--text-color);
+        color: var(--text);
     }
 
     h3 {
         font-size: 1.375rem;
         line-height: 2rem;
         font-weight: 800;
-        color: var(--title-color);
+        color: var(--title);
     }
 
     h4 {

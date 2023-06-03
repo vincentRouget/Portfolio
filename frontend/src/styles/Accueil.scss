@@ -9,11 +9,7 @@
         // linear-gradient(270deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 30%),
         // linear-gradient(90deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
         // radial-gradient(circle, rgba(var(--color-r), var(--color-g), var(--color-b), 0.6) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0.3) 20%),
-        // url('https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
         url("https://images.pexels.com/photos/1568607/pexels-photo-1568607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    // url("https://images.pexels.com/photos/3527786/pexels-photo-3527786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    // url("https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1072&q=80");
-    // url("https://images.pexels.com/photos/3109807/pexels-photo-3109807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -28,10 +24,6 @@
             // linear-gradient(270deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 30%),
             // linear-gradient(90deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
             // radial-gradient(circle, rgba(var(--color-r), var(--color-g), var(--color-b), 0.6) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0.3) 20%),
-            // url('https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
-            // url("https://images.pexels.com/photos/1568607/pexels-photo-1568607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-            // url("https://images.pexels.com/photos/3527786/pexels-photo-3527786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-            // url("https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1072&q=80");
             url("https://images.pexels.com/photos/3109807/pexels-photo-3109807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
         background-repeat: no-repeat;
         background-size: cover;
@@ -58,8 +50,9 @@
                 overflow: hidden;
 
                 .Texte_police {
-                    color: var(--text-color);
-                    font-size: 64px;
+                    font-family: var(--font-family-3);
+                    color: var(--text);
+                    font-size: 32px;
                 }
 
                 .Texte_first {
@@ -146,7 +139,7 @@
 
             h1 {
                 font-size: 40px;
-                color: var(--text-color)
+                color: var(--text)
             }
         }
 
@@ -169,7 +162,7 @@
                 display: flex;
                 height: 40px;
                 font-size: 32px;
-                color: var(--link-color);
+                color: var(--link);
                 text-decoration: none;
             }
 
@@ -198,12 +191,12 @@
 
         h1 {
             font-size: 80px;
-            color: var(--text-color)
+            color: var(--text)
         }
 
         p {
             font-size: 56px;
-            color: var(--text-color)
+            color: var(--text)
         }
 
         a {
@@ -214,14 +207,14 @@
             height: 80px;
             font-size: 32px;
             font-weight: bold;
-            color: var(--text-color);
+            color: var(--text);
             border-radius: 20px;
             padding-right: 20px;
             transition: 300ms ease-in;
-            border: 1px solid var(--text-color);
+            border: 1px solid var(--text);
 
             &:hover {
-                background-color: var(--background-color);
+                background-color: var(--background);
                 transition: 200ms ease-in;
                 -webkit-box-shadow: 5px 5px 20px -2px black;
                 box-shadow: 5px 5px 20px -2px black;

@@ -1,17 +1,17 @@
 .Quit {
-    background-color: var(--background-color);
+    background-color: var(--background);
     width: 100%;
 
     &_form {
         margin-top: $height-navbar;
-        background-color: var(--background-color);
+        background-color: var(--background);
         width: 100%;
         display: flex;
         justify-content: center;
         height: 90vh;
 
         &_content {
-            background-color: var(--background-color);
+            background-color: var(--background);
             display: flex;
             flex-direction: column;
             align-items: center;

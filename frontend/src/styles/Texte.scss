@@ -5,6 +5,10 @@
     transition: none;
 }
 
+.txt-rotate {
+    letter-spacing: 0.2rem;
+}
+
 @keyframes clignoter {
     0% {
         opacity: 1;

@@ -1,5 +1,5 @@
 .Mail {
-    background-color: var(--background-color);
+    background-color: var(--background);
     width: 100%;
 
     &_container {
@@ -12,7 +12,7 @@
         height: 90vh;
 
         &_form {
-            background-color: var(--background-color);
+            background-color: var(--background);
             display: flex;
             flex-direction: column;
             justify-content: center;

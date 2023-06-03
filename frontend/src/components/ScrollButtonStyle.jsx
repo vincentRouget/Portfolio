@@ -18,7 +18,7 @@ export const Button = styled.div`
    height: 20px;
    font-size: 4rem;
    cursor: pointer;
-   color: var(--text-color);
+   color: var(--text);
    transition : 0.3s ease-in;
    z-index: 2;
    // &:hover {
@@ -30,7 +30,7 @@ export const Button = styled.div`
    //    font-size: 10rem;
    //    z-index: 1;
    //    cursor: pointer;
-   //    color: var(--text-color);
+   //    color: var(--text);
    //    transform : scale 1.2;    
    //    z-index: 2;     
     }

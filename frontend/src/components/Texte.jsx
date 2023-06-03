@@ -49,7 +49,7 @@ const Texte = () => {
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        // css.innerHTML = ".txt-rotate > .wrap { border-right: 0.6em solid var(--text-color) }";
+        // css.innerHTML = ".txt-rotate > .wrap { border-right: 0.6em solid var(--text) }";
         document.body.appendChild(css);
         setRefresh(false)
     };
@@ -67,7 +67,7 @@ const Texte = () => {
                 <span
                     className="txt-rotate"
                     data-period="1000"
-                    data-rotate='[ "Front-end", "Back-end", "Full Stack", "# Passionate"]'>
+                    data-rotate='[ "Front-end", "Back-end", "Full Stack", "Mobile", "# Passionate"]'>
                 </span>
                 <span className='cursor'>&#10072;</span>
             </p>
