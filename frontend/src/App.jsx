@@ -22,6 +22,7 @@ function App() {
   const [dataImage, setDataImage] = useState([]);
   const [maxImage, setMaxImage] = useState(0);
   const [refresh, setRefresh] = useState(false);
+  const [minimize, setMinimize] = useState(false);
 
   const getImage = () => {
     axios
@@ -61,7 +62,7 @@ function App() {
 
   return (
     <div className={`App ${theme}`}>
-      <UserContext.Provider value={{ user, setUser, theme, setTheme, dataImage, setDataImage, refresh, setRefresh }}>
+      <UserContext.Provider value={{ user, setUser, theme, setTheme, dataImage, setDataImage, refresh, setRefresh, minimize, setMinimize }}>
         <Routes>
           <Route path="/" element={
             <Wrapper>

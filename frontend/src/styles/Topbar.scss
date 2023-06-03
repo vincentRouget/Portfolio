@@ -1,27 +1,32 @@
 .Topbar_container {
-    background-color: lightblue;
     display: flex;
     justify-content: center;
     width: 80%;
     height: 80px;
+    background:
+        linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 50%),
+        linear-gradient(270deg, rgba(132, 132, 255, 0.4) 0%, rgba(255, 100, 236, 0.6) 80%, rgba(255, 100, 236, 1) 100%),
+        url("https://images.pexels.com/photos/15833633/pexels-photo-15833633/free-photo-of-rhume-neige-paysage-nature.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &_left {
-        background-color: blue;
+        // background-color: blue;
         display: flex;
         width: 100%;
     }
 
     &_middle {
-        background-color: aqua;
+        // background-color: aqua;
         display: flex;
         width: 100%;
     }
 
     &_right {
-        background-color: red;
+        // background-color: red;
         display: flex;
         justify-content: center;
-        // align-items: center;
+        align-items: center;
         gap: 30px;
         width: 100%;
     }

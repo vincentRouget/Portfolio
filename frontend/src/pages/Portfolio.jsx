@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
+import UserContext from "../context/UserContext";
 import Sidebar from '../components/Sidebar';
 import Topbar from '../components/Topbar';
 import Presentation from "./Presentation";
@@ -12,6 +13,7 @@ import Enigma from "./Enigma";
 import Logiciel from "./Logiciel";
 
 const Portfolio = () => {
+    const { user, theme, refresh, setRefresh, minimize, setMinimize } = useContext(UserContext);
     const navigate = useNavigate();
     const [etiquetteON, setEtiquetteON] = useState(true)
     const [wildON, setWildON] = useState(false)
@@ -35,7 +37,7 @@ const Portfolio = () => {
 
     return (
         <div className='Portfolio'>
-            <div className='Sidebar'>
+            <div className={!minimize ? 'Sidebar' : 'Sidebar_mini'}>
                 <Sidebar
                     etiquetteON={etiquetteON}
                     setEtiquetteON={setEtiquetteON}
@@ -56,9 +58,9 @@ const Portfolio = () => {
                 />
             </div>
             <div className='Right'>
-                <div className='Topbar'>
+                {/* <div className='Topbar'>
                     <Topbar />
-                </div>
+                </div> */}
                 <div className="Main">
                     {etiquetteON && <Etiquette />}
                     {wildON && <Wild />}
