@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from "react-router-dom";
 import UserContext from "../context/UserContext";
+import Topbar from "@components/Topbar";
 
 const Enecom = () => {
     const { user, theme, dataImage } = useContext(UserContext);
@@ -19,6 +20,7 @@ const Enecom = () => {
 
     return (
         <div className="Enecom">
+            {/* <Topbar /> */}
             <h1>Enecom</h1>
         </div>
     );

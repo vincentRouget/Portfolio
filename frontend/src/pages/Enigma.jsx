@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from "react-router-dom";
 import UserContext from "../context/UserContext";
+import Topbar from "@components/Topbar";
 
 const Enigma = () => {
     const { user, theme, dataImage } = useContext(UserContext);
@@ -19,6 +20,7 @@ const Enigma = () => {
 
     return (
         <div className="Enigma">
+            {/* <Topbar /> */}
             <div className="un">
                 <p className="style_p">1</p>
                 <div className="deux">

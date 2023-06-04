@@ -19,7 +19,7 @@ body {
     background-color: lightgray;
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 //------------------------------ Variables ----------------------------- //
@@ -34,6 +34,7 @@ body {
     --container: #858585;
     --primary: #484848;
     --tertiary: #FFFFFF;
+    --four: #33285c;
     --secondary: #858585;
     --title: #DADADA;
     --text: white;
@@ -59,6 +60,7 @@ body {
     --primary: #3333FF;
     --secondary: #8484ff;
     --tertiary: #1e1e99;
+    --four: #33215c;
     --title: #1424dc;
     --text: black;
     --link: #402a73;
@@ -277,16 +279,26 @@ label {
 }
 
 // Components styles imports
-
+@import "./Infos.scss";
 @import "./Sidebar.scss";
 @import "./Texte.scss";
 @import "./Theme.scss";
 @import "./Topbar.scss";
+@import "./User.scss";
 
 // Pages styles imports
-
+@import "./About.scss";
 @import "./Accueil.scss";
+@import "./Database.scss";
+@import "./Dating.scss";
+@import "./Dev.scss";
+@import "./Enecom.scss";
 @import "./Enigma.scss";
 @import "./Login.scss";
+@import "./Main.scss";
+@import "./Maison.scss";
 @import "./Portfolio.scss";
-@import "./MainPage.scss";
+@import "./Quit.scss";
+@import "./Sign.scss";
+@import "./Software.scss";
+@import "./Wild.scss";

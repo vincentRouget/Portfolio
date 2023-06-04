@@ -2,15 +2,14 @@ import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
 import UserContext from "../context/UserContext";
 import Sidebar from '../components/Sidebar';
-import Topbar from '../components/Topbar';
-import Presentation from "./Presentation";
-import Etiquette from "./Etiquette";
+import About from "./About";
+import Main from "./Main";
 import Wild from "./Wild";
 import Enecom from "./Enecom";
-import ApplicationMobile from "./ApplicationMobile";
+import Dating from "./Dating";
 import Maison from "./Maison";
 import Enigma from "./Enigma";
-import Logiciel from "./Logiciel";
+import Software from "./Software";
 
 const Portfolio = () => {
     const { user, theme, refresh, setRefresh, minimize, setMinimize } = useContext(UserContext);
@@ -36,7 +35,7 @@ const Portfolio = () => {
     }, []);
 
     return (
-        <div className='Portfolio'>
+        <div className={theme == 'light' ? 'Portfolio' : 'Portfolio_dark'}>
             <div className={!minimize ? 'Sidebar' : 'Sidebar_mini'}>
                 <Sidebar
                     etiquetteON={etiquetteON}
@@ -57,20 +56,143 @@ const Portfolio = () => {
                     setPresentationON={setPresentationON}
                 />
             </div>
-            <div className='Right'>
-                {/* <div className='Topbar'>
-                    <Topbar />
-                </div> */}
-                <div className="Main">
-                    {etiquetteON && <Etiquette />}
-                    {wildON && <Wild />}
-                    {enecomON && <Enecom />}
-                    {appON && <ApplicationMobile />}
-                    {maisonON && <Maison />}
-                    {logicielON && <Logiciel />}
-                    {enigmaON && <Enigma />}
-                    {presentationON && <Presentation />}
-                </div>
+            <div className={!minimize ? 'Right' : 'Right_mini'}>
+                {etiquetteON && <Main
+                    etiquetteON={etiquetteON}
+                    setEtiquetteON={setEtiquetteON}
+                    wildON={wildON}
+                    setWildON={setWildON}
+                    enecomON={enecomON}
+                    setEnecomON={setEnecomON}
+                    appON={appON}
+                    setAppON={setAppON}
+                    maisonON={maisonON}
+                    setMaisonON={setMaisonON}
+                    logicielON={logicielON}
+                    setLogicielON={setLogicielON}
+                    enigmaON={enigmaON}
+                    setEnigmaON={setEnigmaON}
+                    presentationON={presentationON}
+                    setPresentationON={setPresentationON} />}
+                {wildON && <Wild
+                    etiquetteON={etiquetteON}
+                    setEtiquetteON={setEtiquetteON}
+                    wildON={wildON}
+                    setWildON={setWildON}
+                    enecomON={enecomON}
+                    setEnecomON={setEnecomON}
+                    appON={appON}
+                    setAppON={setAppON}
+                    maisonON={maisonON}
+                    setMaisonON={setMaisonON}
+                    logicielON={logicielON}
+                    setLogicielON={setLogicielON}
+                    enigmaON={enigmaON}
+                    setEnigmaON={setEnigmaON}
+                    presentationON={presentationON}
+                    setPresentationON={setPresentationON} />}
+                {enecomON && <Enecom
+                    etiquetteON={etiquetteON}
+                    setEtiquetteON={setEtiquetteON}
+                    wildON={wildON}
+                    setWildON={setWildON}
+                    enecomON={enecomON}
+                    setEnecomON={setEnecomON}
+                    appON={appON}
+                    setAppON={setAppON}
+                    maisonON={maisonON}
+                    setMaisonON={setMaisonON}
+                    logicielON={logicielON}
+                    setLogicielON={setLogicielON}
+                    enigmaON={enigmaON}
+                    setEnigmaON={setEnigmaON}
+                    presentationON={presentationON}
+                    setPresentationON={setPresentationON} />}
+                {appON && <Dating
+                    etiquetteON={etiquetteON}
+                    setEtiquetteON={setEtiquetteON}
+                    wildON={wildON}
+                    setWildON={setWildON}
+                    enecomON={enecomON}
+                    setEnecomON={setEnecomON}
+                    appON={appON}
+                    setAppON={setAppON}
+                    maisonON={maisonON}
+                    setMaisonON={setMaisonON}
+                    logicielON={logicielON}
+                    setLogicielON={setLogicielON}
+                    enigmaON={enigmaON}
+                    setEnigmaON={setEnigmaON}
+                    presentationON={presentationON}
+                    setPresentationON={setPresentationON} />}
+                {maisonON && <Maison
+                    etiquetteON={etiquetteON}
+                    setEtiquetteON={setEtiquetteON}
+                    wildON={wildON}
+                    setWildON={setWildON}
+                    enecomON={enecomON}
+                    setEnecomON={setEnecomON}
+                    appON={appON}
+                    setAppON={setAppON}
+                    maisonON={maisonON}
+                    setMaisonON={setMaisonON}
+                    logicielON={logicielON}
+                    setLogicielON={setLogicielON}
+                    enigmaON={enigmaON}
+                    setEnigmaON={setEnigmaON}
+                    presentationON={presentationON}
+                    setPresentationON={setPresentationON} />}
+                {logicielON && <Software
+                    etiquetteON={etiquetteON}
+                    setEtiquetteON={setEtiquetteON}
+                    wildON={wildON}
+                    setWildON={setWildON}
+                    enecomON={enecomON}
+                    setEnecomON={setEnecomON}
+                    appON={appON}
+                    setAppON={setAppON}
+                    maisonON={maisonON}
+                    setMaisonON={setMaisonON}
+                    logicielON={logicielON}
+                    setLogicielON={setLogicielON}
+                    enigmaON={enigmaON}
+                    setEnigmaON={setEnigmaON}
+                    presentationON={presentationON}
+                    setPresentationON={setPresentationON} />}
+                {enigmaON && <Enigma
+                    etiquetteON={etiquetteON}
+                    setEtiquetteON={setEtiquetteON}
+                    wildON={wildON}
+                    setWildON={setWildON}
+                    enecomON={enecomON}
+                    setEnecomON={setEnecomON}
+                    appON={appON}
+                    setAppON={setAppON}
+                    maisonON={maisonON}
+                    setMaisonON={setMaisonON}
+                    logicielON={logicielON}
+                    setLogicielON={setLogicielON}
+                    enigmaON={enigmaON}
+                    setEnigmaON={setEnigmaON}
+                    presentationON={presentationON}
+                    setPresentationON={setPresentationON} />}
+                {presentationON && <About
+                    etiquetteON={etiquetteON}
+                    setEtiquetteON={setEtiquetteON}
+                    wildON={wildON}
+                    setWildON={setWildON}
+                    enecomON={enecomON}
+                    setEnecomON={setEnecomON}
+                    appON={appON}
+                    setAppON={setAppON}
+                    maisonON={maisonON}
+                    setMaisonON={setMaisonON}
+                    logicielON={logicielON}
+                    setLogicielON={setLogicielON}
+                    enigmaON={enigmaON}
+                    setEnigmaON={setEnigmaON}
+                    presentationON={presentationON}
+                    setPresentationON={setPresentationON} />}
             </div>
         </div>
     );

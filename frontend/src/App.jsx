@@ -10,8 +10,8 @@ import Sign from './pages/Sign';
 import Quit from './pages/Quit';
 import Dev from './pages/Dev';
 import Database from './pages/Database';
-import ApplicationMobile from "@pages/ApplicationMobile";
-import Presentation from "@pages/Presentation";
+import ApplicationMobile from "@pages/Dating";
+import Presentation from "@pages/About";
 import ScrollButton from "@components/ScrollButton";
 
 function App() {

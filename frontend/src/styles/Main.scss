@@ -1,0 +1,97 @@
+h1 {
+    color: var(--text);
+}
+
+p {
+    color: var(--text);
+}
+
+.icone {
+    width: 100%;
+}
+
+.Main {
+    // background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    &_container {
+        // background-color: red;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 60px;
+
+        .dark {
+            background-image:
+                linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 50%),
+                url("../assets/Image/pexels-anni-roenkae-3109807.jpg");
+        }
+
+        &_card {
+            background-image:
+                linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 50%),
+                url("../assets/Image/pexels-dids-3527786.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 500px;
+            // height: 660px;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            margin: 60px 0px 60px 0px;
+
+
+
+            .Card_image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                // height: 300px;
+                margin: 20px 0px 20px 0px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                }
+            }
+
+            .Card_techno {
+                // background-color: green;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 80%;
+                gap: 40px;
+                margin: 10px 0px 20px 0px;
+
+                &_icone {
+                    display: flex;
+                    flex-direction: row;
+                    width: 80px;
+                    height: 78px;
+                }
+
+                &_text {
+                    // background-color: yellow;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 90%;
+                    height: 100px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
