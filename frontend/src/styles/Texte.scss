@@ -5,9 +5,13 @@
     transition: none;
 }
 
-.txt-rotate {
-    letter-spacing: 0.2rem;
+.wrap {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 64px;
+    letter-spacing: -4px;
 }
+
+.txt-rotate {}
 
 @keyframes clignoter {
     0% {

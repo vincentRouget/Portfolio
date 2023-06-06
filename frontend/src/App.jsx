@@ -12,6 +12,7 @@ import Dev from './pages/Dev';
 import Database from './pages/Database';
 import ApplicationMobile from "@pages/Dating";
 import Presentation from "@pages/About";
+import CV from "@components/CV";
 import ScrollButton from "@components/ScrollButton";
 
 function App() {
@@ -107,6 +108,11 @@ function App() {
           <Route path="/Application" element={
             <Wrapper>
               <ApplicationMobile />
+            </Wrapper>
+          } />
+          <Route path="/Cv" element={
+            <Wrapper>
+              <CV />
             </Wrapper>
           } />
         </Routes>

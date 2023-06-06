@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from "react-router-dom";
 import UserContext from "../context/UserContext";
 import Topbar from "@components/Topbar";
+import Space from "@components/Space";
 
 const Software = () => {
     const { user, theme, dataImage } = useContext(UserContext);
@@ -20,8 +21,13 @@ const Software = () => {
 
     return (
         <div className="Software">
-            {/* <Topbar /> */}
+            {user &&
+                <>
+                    <Topbar />
+                    <Space />
+                </>}
             <h1>Programmation Logicielle</h1>
+            <p>En cours de construction</p>
         </div>
     );
 };

@@ -67,7 +67,7 @@ const Texte = () => {
                 <span
                     className="txt-rotate"
                     data-period="1000"
-                    data-rotate='[ "Front-end", "Back-end", "Full Stack", "Mobile", "# Passionate"]'>
+                    data-rotate='[ "Front-end", "Back-end", "Mobile", "# Passionate"]'>
                 </span>
                 <span className='cursor'>&#10072;</span>
             </p>

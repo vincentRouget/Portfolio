@@ -3,6 +3,7 @@ import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom'
 import axios from 'axios';
 import UserContext from "../context/UserContext";
 import Topbar from "@components/Topbar";
+import Space from "@components/Space";
 import HTML from "../assets/Icon/html.png";
 import CSS from "../assets/Icon/css.png";
 import SCSS from "../assets/Icon/scss.png";
@@ -50,7 +51,11 @@ const Main = ({
 
     return (
         <div className='Main'>
-            {/* <Topbar /> */}
+            {user &&
+                <>
+                    <Topbar />
+                    <Space />
+                </>}
             <div className="Main_container">
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card dark"}
                     onClick={() => {

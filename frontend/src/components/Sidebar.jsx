@@ -44,6 +44,11 @@ const Sidebar = ({
     const { user, theme, refresh, setRefresh, minimize, setMinimize } = useContext(UserContext);
     const navigate = useNavigate();
 
+    const handleDownload = () => {
+        console.log('handle');
+        const fileUrl = "http://localhost:3000/src/assets/Image/CV.png";
+        window.open(fileUrl, '_blank');
+    };
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -426,13 +431,14 @@ const Sidebar = ({
                             <button
                                 className="button"
                                 onClick={() => {
-                                    console.log("Download")
+                                    handleDownload();
+                                    // console.log("Download")
                                 }}>
                                 {theme == 'light' ?
                                     <img src={Back} alt='' className="icon_down"></img>
                                     :
                                     <img src={BackW} alt='' className="icon_down"></img>}
-                                <p className="ellipsis">Download CV</p>
+                                <p className="ellipsis">C.V.  (png)</p>
                             </button>
                         </div>
                         :
@@ -440,7 +446,8 @@ const Sidebar = ({
                             <button
                                 className="button mini"
                                 onClick={() => {
-                                    console.log("Download")
+                                    handleDownload();
+                                    // console.log("Download");
                                 }}>
                                 {theme == 'light' ?
                                     <img src={Back} alt='' className="icon_down"></img>

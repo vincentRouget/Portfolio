@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
 import UserContext from "../context/UserContext";
-import Logo from "../assets/Icon/Logo3.png"
+import Logo from "../assets/Icon/Logo-V1.png"
 import Theme from "@components/Theme";
 import Texte from "@components/Texte";
 import LinkedIn from "../assets/Icon/icons8-linkedin-94.png"
@@ -43,14 +43,14 @@ const Accueil = () => {
         <div className={theme == 'light' ? "Accueil" : "Accueil_dark"}>
             <div className="Accueil_topbar">
                 <div className="Accueil_topbar_left">
-                    <a href="https://www.linkedin.com/in/vincent-rouget-22996118a/" target="_blank">
+                    <div className="Accueil_topbar_left_logo">
                         <img src={Logo} alt=" " className="Logo"></img>
-                    </a>
+                    </div>
                     <div className='Texte_first'>
                         <div className='Texte_two'>
-                            <span className='Texte_two_span Texte_police'>&nbsp;&lt;h1&gt;&nbsp;WELCOME&nbsp;&lt;/h1&gt;</span>
+                            <span className='Texte_two_span Texte1'>WELCOME</span>
                             <br></br>
-                            <span className='Texte_two_span Texte_police'>&nbsp;&lt;p&gt;&nbsp;I'm Vincent Rouget&nbsp;&lt;/p&gt;</span>
+                            <span className='Texte_two_span Texte2'>I'm Vincent Rouget</span>
                         </div>
                     </div>
                 </div>
