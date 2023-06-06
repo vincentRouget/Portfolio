@@ -6,11 +6,7 @@
     min-height: 100vh;
     background:
         linear-gradient(0deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-        // linear-gradient(90deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
         linear-gradient(180deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-        // linear-gradient(270deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 30%),
-        // linear-gradient(90deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-        // radial-gradient(circle, rgba(var(--color-r), var(--color-g), var(--color-b), 0.6) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0.3) 20%),
         url("https://images.pexels.com/photos/1568607/pexels-photo-1568607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,11 +19,7 @@
         min-height: 100vh;
         background:
             linear-gradient(0deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-            // linear-gradient(90deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
             linear-gradient(180deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-            // linear-gradient(270deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 30%),
-            // linear-gradient(90deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-            // radial-gradient(circle, rgba(var(--color-r), var(--color-g), var(--color-b), 0.6) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0.3) 20%),
             url("https://images.pexels.com/photos/3109807/pexels-photo-3109807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
         background-repeat: no-repeat;
         background-size: cover;
@@ -46,15 +38,11 @@
             align-items: flex-start;
             width: 800px;
 
-            // .Texte_first {
-            //     display: none;
-            //     margin-left: -100px;
-            // }
             .Texte_first {
                 display: inline-block;
                 overflow: hidden;
                 white-space: nowrap;
-                margin-top: 40px;
+                margin-top: 30px;
                 margin-left: -100px;
                 animation: showup 14s infinite;
             }
@@ -151,16 +139,17 @@
                 }
             }
 
-            &_text {
-                background-color: blue;
-                display: flex;
-                flex-direction: column;
-                font-size: 32px;
-                color: var(--text)
-            }
+            // &_text {
+            //     background-color: blue;
+            //     display: flex;
+            //     flex-direction: column;
+            //     font-size: 32px;
+            //     color: var(--text)
+            // }
         }
 
         &_middle {
+            // background-color: red;
             display: flex;
             flex-direction: row;
         }
@@ -171,28 +160,38 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            width: 600px;
+            width: 700px;
             margin: 60px 40px auto auto;
 
-            a {
+            .theme {}
+
+            &_link {
                 // background-color: blue;
                 display: flex;
-                height: 40px;
-                font-size: 32px;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
                 color: var(--link);
+                letter-spacing: -2px;
                 text-decoration: none;
+                padding-bottom: 4px;
+
+                &:hover {
+                    color: var(--title);
+                    text-decoration: underline;
+                }
             }
 
             .Linkedin {
                 // background-color: blue;
                 display: flex;
-                width: 40px;
+                width: 60px;
             }
 
             .Github {
                 // background-color: blue;
                 display: flex;
-                width: 40px;
+                width: 60px;
             }
         }
     }

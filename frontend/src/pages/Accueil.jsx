@@ -57,16 +57,18 @@ const Accueil = () => {
                 <div className="Accueil_topbar_middle">
                 </div>
                 <div className="Accueil_topbar_right">
-                    <Theme />
+                    <div className='theme'>
+                        <Theme />
+                    </div>
                     <a href="https://www.linkedin.com/in/vincent-rouget-22996118a/" target="_blank" className="Linkedin">
                         <img src={LinkedIn} alt=" " className="Linkedin"></img></a>
                     <a href="https://github.com/vincentRouget" target="_blank" className="Github">
                         <img src={GitHub} alt=" " className="Github"></img></a>
+                    <a href={`mailto:vincent.rouget86@gmail.com`} className='Accueil_topbar_right_link'>Contact me</a>
                     {user ?
-                        <NavLink to='/quit' onClick={scrollToTop}>Out</NavLink>
+                        <NavLink to='/quit' onClick={scrollToTop} className='Accueil_topbar_right_link'>Out</NavLink>
                         :
-                        <NavLink to='/login' onClick={scrollToTop}>In</NavLink>}
-                    <a href={`mailto:vincent.rouget86@gmail.com`}>Contact me</a>
+                        <NavLink to='/login' onClick={scrollToTop} className='Accueil_topbar_right_link'>In</NavLink>}
                 </div>
             </div>
             <div className='Accueil_page'>

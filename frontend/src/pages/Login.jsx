@@ -102,7 +102,7 @@ const Login = () => {
         <div className={theme == "light" ? 'Login' : 'Login_dark'}>
             <div className='Login_form'>
                 <div className='Login_theme'>
-                    <button className="PrimaryButton Arrow" onClick={() => {
+                    <button className="Login_theme_Arrow" onClick={() => {
                         navigate("/")
                     }}>
                         {theme == 'light' ?
