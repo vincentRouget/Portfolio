@@ -7,63 +7,49 @@
     min-height: 100vh;
     background:
         linear-gradient(0deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-        // linear-gradient(90deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
         linear-gradient(180deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-        // linear-gradient(270deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 30%),
-        // linear-gradient(90deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-        // radial-gradient(circle, rgba(var(--color-r), var(--color-g), var(--color-b), 0.6) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0.3) 20%),
         url('https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
     background-repeat: no-repeat;
     background-size: cover;
 
-    &_dark {
-        // background-color: orange;
+    .Sidebar {
+        position: fixed;
         display: flex;
-        flex-direction: row;
+        top: 1vh;
+        left: 20px;
+        width: 380px;
+        height: 98vh;
+    }
+
+    .Sidebar_mini {
+        position: fixed;
+        display: flex;
+        top: 1vh;
+        left: 20px;
+        width: 120px;
+        height: 98vh;
+    }
+
+    .Right {
+        // background-color: aqua;
+        display: flex;
         width: 100%;
-        height: 100%;
-        min-height: 100vh;
-        background:
-            linear-gradient(0deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-            // linear-gradient(90deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-            linear-gradient(180deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-            // linear-gradient(270deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 30%),
-            // linear-gradient(90deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-            // radial-gradient(circle, rgba(var(--color-r), var(--color-g), var(--color-b), 0.6) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0.3) 20%),
-            url("https://cdn.pixabay.com/photo/2017/06/13/13/55/marble-2398956_1280.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+        margin-left: 420px;
+    }
+
+    .Right_mini {
+        // background-color: aquamarine;
+        display: flex;
+        width: 100%;
+        margin-left: 160px;
     }
 }
 
-.Sidebar {
-    position: fixed;
-    display: flex;
-    top: 1vh;
-    left: 20px;
-    width: 380px;
-    height: 98vh;
-}
-
-.Sidebar_mini {
-    position: fixed;
-    display: flex;
-    top: 1vh;
-    left: 20px;
-    width: 120px;
-    height: 98vh;
-}
-
-.Right {
-    // background-color: aqua;
-    display: flex;
-    width: 100%;
-    margin-left: 420px;
-}
-
-.Right_mini {
-    // background-color: aquamarine;
-    display: flex;
-    width: 100%;
-    margin-left: 160px;
+.PortfolioDark {
+    background:
+        linear-gradient(0deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
+        linear-gradient(180deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
+        url("../assets/Image/pexels-anni-roenkae-3435249.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

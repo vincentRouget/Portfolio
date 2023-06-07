@@ -12,7 +12,7 @@ import Enigma from "./Enigma";
 import Software from "./Software";
 
 const Portfolio = () => {
-    const { user, theme, refresh, setRefresh, minimize, setMinimize } = useContext(UserContext);
+    const { theme, refresh, setRefresh, minimize, setMinimize } = useContext(UserContext);
     const navigate = useNavigate();
     const [etiquetteON, setEtiquetteON] = useState(true)
     const [wildON, setWildON] = useState(false)
@@ -35,7 +35,7 @@ const Portfolio = () => {
     }, []);
 
     return (
-        <div className={theme == 'light' ? 'Portfolio' : 'Portfolio_dark'}>
+        <div className={theme == 'light' ? 'Portfolio' : 'Portfolio PortfolioDark'}>
             <div className={!minimize ? 'Sidebar' : 'Sidebar_mini'}>
                 <Sidebar
                     etiquetteON={etiquetteON}

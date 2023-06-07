@@ -4,7 +4,7 @@ import UserContext from "../context/UserContext";
 import ImageCV from "../assets/Image/CV.png";
 
 const CV = () => {
-    const { user, theme, refresh, setRefresh } = useContext(UserContext);
+    const { theme, refresh, setRefresh } = useContext(UserContext);
     const pdfPath = 'C:\Users\human\quests\shell\Projets\Portfolio\frontend\src\assets\data\Curriculum vitae.pdf';
 
 

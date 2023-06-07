@@ -1,11 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from "react-router-dom";
 import UserContext from "../context/UserContext";
-import Topbar from "@components/Topbar";
-import Space from "@components/Space";
 
 const Enigma = () => {
-    const { user, theme, dataImage } = useContext(UserContext);
+    const { theme } = useContext(UserContext);
     const navigate = useNavigate();
 
     const scrollToTop = () => {
@@ -21,11 +19,6 @@ const Enigma = () => {
 
     return (
         <div className="Enigma">
-            {user &&
-                <>
-                    <Topbar />
-                    <Space />
-                </>}
             <div className="un">
                 <p className="style_p">1</p>
                 <div className="deux">

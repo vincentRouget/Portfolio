@@ -11,8 +11,15 @@ import BlackArrow from "../assets/Icon/icons8-right-arrow-96.png"
 // import LegendaryCursor from "legendary-cursor";
 
 const Accueil = () => {
-    const { user, theme } = useContext(UserContext);
+    const { theme } = useContext(UserContext);
     const navigate = useNavigate();
+    const [handleAbout, setHandleAbout] = useState(false);
+
+    const handleDownload = () => {
+        console.log('handle');
+        const fileUrl = "http://localhost:3000/src/assets/Image/CV.png";
+        window.open(fileUrl, '_blank');
+    };
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -40,7 +47,7 @@ const Accueil = () => {
     }, []);
 
     return (
-        <div className={theme == 'light' ? "Accueil" : "Accueil_dark"}>
+        <div className={theme == 'light' ? "Accueil" : "Accueil dark"}>
             <div className="Accueil_topbar">
                 <div className="Accueil_topbar_left">
                     <div className="Accueil_topbar_left_logo">
@@ -57,21 +64,30 @@ const Accueil = () => {
                 <div className="Accueil_topbar_middle">
                 </div>
                 <div className="Accueil_topbar_right">
-                    <div className='theme'>
-                        <Theme />
-                    </div>
                     <a href="https://www.linkedin.com/in/vincent-rouget-22996118a/" target="_blank" className="Linkedin">
                         <img src={LinkedIn} alt=" " className="Linkedin"></img></a>
                     <a href="https://github.com/vincentRouget" target="_blank" className="Github">
                         <img src={GitHub} alt=" " className="Github"></img></a>
-                    <a href={`mailto:vincent.rouget86@gmail.com`} className='Accueil_topbar_right_link'>Contact me</a>
-                    {user ?
-                        <NavLink to='/quit' onClick={scrollToTop} className='Accueil_topbar_right_link'>Out</NavLink>
+                    {!handleAbout ?
+                        <button
+                            className='ButtonAbout'
+                            onClick={() => {
+                                setHandleAbout(!handleAbout);
+                            }}>About</button>
                         :
-                        <NavLink to='/login' onClick={scrollToTop} className='Accueil_topbar_right_link'>In</NavLink>}
+                        <button
+                            className='ButtonAbout'
+                            onClick={() => {
+                                setHandleAbout(!handleAbout);
+                            }}>Home</button>}
+                    <a href={`mailto:vincent.rouget86@gmail.com`} className='Accueil_topbar_right_link'>Contact</a>
+                    <a href="http://localhost:3000/src/assets/Image/CV.png" target='_blank' className='Accueil_topbar_right_link'>CV</a>
+                    <div className='theme'>
+                        <Theme />
+                    </div>
                 </div>
             </div>
-            <div className='Accueil_page'>
+            <div className={!handleAbout ? 'Accueil_page' : 'Accueil_page aboutTITLE'}>
                 <h1>WEB & MOBILE DEVELOPER</h1>
                 <Texte />
                 <NavLink to='/Portfolio' onClick={scrollToTop} className="Link">
@@ -81,6 +97,12 @@ const Accueil = () => {
                         <img src={WhiteArrow} alt=" " className="Arrow"></img>}
                     See my projects
                 </NavLink>
+            </div>
+            <div className={!handleAbout ? "Page" : "Page aboutTEXT"}>
+                <h1>ABOUT</h1>
+                <h1>ABOUT</h1>
+                <h1>ABOUT</h1>
+                <h1>ABOUT</h1>
             </div>
         </div>
     );

@@ -1,10 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import UserContext from "../context/UserContext";
 
 const Infos = () => {
-    const { user, setUser, theme, setTheme, dataImage, setDataImage, refresh, setRefresh, minimize, setMinimize } = useContext(UserContext);
+    const { theme, setTheme, refresh, setRefresh, minimize, setMinimize } = useContext(UserContext);
     const navigate = useNavigate();
 
     return (

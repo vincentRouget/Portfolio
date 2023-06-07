@@ -9,8 +9,8 @@ import App from "../assets/Icon/Sidebar/icons8-smartphone-100.png"
 import Maison from "../assets/Icon/Sidebar/icons8-web-64.png"
 import Enigma from "../assets/Icon/Sidebar/icons8-lock-90.png"
 import Logiciel from "../assets/Icon/Sidebar/icons8-python-100.png"
-import Developer from "../assets/Icon/Sidebar/icons8-developer-64.png"
 import Back from "../assets/Icon/Sidebar/icons8-left-64.png"
+import BackW from "../assets/Icon/Sidebar/icons8-left-64W.png"
 import MainW from "../assets/Icon/Sidebar/icons8-home-page-90W.png"
 import WildW from "../assets/Icon/Sidebar/icons8-movie-90W.png"
 import EnecomW from "../assets/Icon/Sidebar/icons8-battery-90W.png"
@@ -18,8 +18,6 @@ import AppW from "../assets/Icon/Sidebar/icons8-smartphone-100W.png"
 import MaisonW from "../assets/Icon/Sidebar/icons8-web-64W.png"
 import EnigmaW from "../assets/Icon/Sidebar/icons8-lock-90W.png"
 import LogicielW from "../assets/Icon/Sidebar/icons8-python-100W.png"
-import DeveloperW from "../assets/Icon/Sidebar/icons8-developer-64W.png"
-import BackW from "../assets/Icon/Sidebar/icons8-left-64W.png"
 import Mini from "../assets/Icon/Sidebar/icons8-triangle-64.png";
 import MiniW from "../assets/Icon/Sidebar/icons8-triangle-64W.png";
 
@@ -41,14 +39,10 @@ const Sidebar = ({
     logicielON,
     setLogicielON
 }) => {
-    const { user, theme, refresh, setRefresh, minimize, setMinimize } = useContext(UserContext);
+    const { theme, refresh, setRefresh, minimize, setMinimize } = useContext(UserContext);
     const navigate = useNavigate();
 
-    const handleDownload = () => {
-        console.log('handle');
-        const fileUrl = "http://localhost:3000/src/assets/Image/CV.png";
-        window.open(fileUrl, '_blank');
-    };
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -385,7 +379,7 @@ const Sidebar = ({
                                     <img src={EnigmaW} alt='' className="icon"></img>}
                             </button>
                         </div>}
-                    {!minimize ?
+                    {/* {!minimize ?
                         <div className={theme == 'light' ? "Sidebar_container_middle_div" : "Sidebar_container_middle_div_dark"}>
                             <button
                                 className={(presentationON) ? "button_selected" : "button"}
@@ -425,8 +419,8 @@ const Sidebar = ({
                                     :
                                     <img src={DeveloperW} alt='' className="icon"></img>}
                             </button>
-                        </div>}
-                    {!minimize ?
+                        </div>} */}
+                    {/* {!minimize ?
                         <div className={theme == 'light' ? "Sidebar_container_middle_download" : "Sidebar_container_middle_download_dark"}>
                             <button
                                 className="button"
@@ -454,7 +448,7 @@ const Sidebar = ({
                                     :
                                     <img src={BackW} alt='' className="icon_down"></img>}
                             </button>
-                        </div>}
+                        </div>} */}
                 </div>
                 <div className={!minimize ? "Sidebar_container_mini_20" : "Sidebar_container_mini_6"}>
                     <button
