@@ -70,18 +70,18 @@ const Accueil = () => {
                         <img src={GitHub} alt=" " className="Github"></img></a>
                     {!handleAbout ?
                         <button
-                            className='ButtonAbout'
+                            className='Accueil_topbar_right_link'
                             onClick={() => {
                                 setHandleAbout(!handleAbout);
                             }}>About</button>
                         :
                         <button
-                            className='ButtonAbout'
+                            className='Accueil_topbar_right_link'
                             onClick={() => {
                                 setHandleAbout(!handleAbout);
                             }}>Home</button>}
-                    <a href={`mailto:vincent.rouget86@gmail.com`} className='Accueil_topbar_right_link'>Contact</a>
-                    <a href="http://localhost:3000/src/assets/Image/CV.png" target='_blank' className='Accueil_topbar_right_link'>CV</a>
+                    <a href={`mailto:vincent.rouget86@gmail.com`} className='Accueil_topbar_right_link contact'>Contact</a>
+                    <a href="http://localhost:3000/src/assets/Image/CV.png" target='_blank' className='Accueil_topbar_right_link cv'>CV</a>
                     <div className='theme'>
                         <Theme />
                     </div>
@@ -99,12 +99,33 @@ const Accueil = () => {
                 </NavLink>
             </div>
             <div className={!handleAbout ? "Page" : "Page aboutTEXT"}>
-                <h1>ABOUT</h1>
-                <h1>ABOUT</h1>
-                <h1>ABOUT</h1>
-                <h1>ABOUT</h1>
+                <div className="TitleAbout_container">
+                    <h4 className="Paragraphe">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="TitleAbout">Hi !</span>&nbsp;&nbsp;</h4>
+                    <h4 className="Paragraphe">
+                        I am a passionate <span className="accent">Full Stack developer.</span>
+                    </h4>
+                </div>
+                <div className="Section">
+                    <h4 className="Paragraphe">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I started like many as an autodidact, then I
+                        quickly increase my skills thanks to training in<span className="accent"> web and mobile development</span> at the “Wild Code
+                        School” in Nantes (44).
+                    </h4>
+                    <h4 className="Paragraphe">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Following this intensive
+                        training based on practice, I did an internship in
+                        a software development company in Poitiers
+                        (86) where I was able to consolidate and extend
+                        my knowledge in IT development.
+                    </h4>
+                    <h4 className="Paragraphe">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I particularly like the web and mobile, but I have
+                        also carried out a some projects <span className="accent">in the industrial
+                            sector, in research and defence.</span>
+                    </h4>
+                </div>
             </div>
-        </div>
+        </div >
     );
 };
 

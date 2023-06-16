@@ -19,8 +19,15 @@ const Wild = () => {
 
     return (
         <div className="Wild">
-            <h1>Wild Movies</h1>
-            <p>En cours de construction</p>
+            <div className="Wild_entete">
+                <h1>Wild Movies</h1>
+            </div>
+            <div className="Wild_description">
+                <p>En cours de construction</p>
+            </div>
+            <div className="Wild_screenshot">
+
+            </div>
         </div>
     );
 };
