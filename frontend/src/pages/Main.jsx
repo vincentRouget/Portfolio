@@ -105,10 +105,10 @@ const Main = ({
                             <img src={REACTJS} alt='React.js' className="icone"></img>
                         </div>
                         <div className="Main_container_card_techno_icone">
-                            <img src={SCSS} alt='React.js' className="icone"></img>
+                            <img src={NODE} alt='React.js' className="icone"></img>
                         </div>
                         <div className="Main_container_card_techno_icone">
-                            <img src={NODE} alt='React.js' className="icone"></img>
+                            <img src={SCSS} alt='React.js' className="icone"></img>
                         </div>
                         <div className="Main_container_card_techno_icone">
                             <img src={EXPRESS} alt='React.js' className="icone"></img>
@@ -177,10 +177,10 @@ const Main = ({
                             <img src={REACTJS} alt='React.js' className="icone"></img>
                         </div>
                         <div className="Main_container_card_techno_icone">
-                            <img src={SCSS} alt='React.js' className="icone"></img>
+                            <img src={NODE} alt='React.js' className="icone"></img>
                         </div>
                         <div className="Main_container_card_techno_icone">
-                            <img src={NODE} alt='React.js' className="icone"></img>
+                            <img src={SCSS} alt='React.js' className="icone"></img>
                         </div>
                     </div>
                     <div className="Main_container_card_text">

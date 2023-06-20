@@ -36,25 +36,27 @@ const Portfolio = () => {
 
     return (
         <div className={theme == 'light' ? 'Portfolio' : 'Portfolio PortfolioDark'}>
-            <div className={!minimize ? 'Sidebar' : 'Sidebar_mini'}>
-                <Sidebar
-                    etiquetteON={etiquetteON}
-                    setEtiquetteON={setEtiquetteON}
-                    wildON={wildON}
-                    setWildON={setWildON}
-                    enecomON={enecomON}
-                    setEnecomON={setEnecomON}
-                    appON={appON}
-                    setAppON={setAppON}
-                    maisonON={maisonON}
-                    setMaisonON={setMaisonON}
-                    logicielON={logicielON}
-                    setLogicielON={setLogicielON}
-                    enigmaON={enigmaON}
-                    setEnigmaON={setEnigmaON}
-                    presentationON={presentationON}
-                    setPresentationON={setPresentationON}
-                />
+            <div className={!minimize ? "Portfolio_left" : "Portfolio_left version_mini"}>
+                <div className={!minimize ? 'Sidebar' : 'Sidebar_mini'}>
+                    <Sidebar
+                        etiquetteON={etiquetteON}
+                        setEtiquetteON={setEtiquetteON}
+                        wildON={wildON}
+                        setWildON={setWildON}
+                        enecomON={enecomON}
+                        setEnecomON={setEnecomON}
+                        appON={appON}
+                        setAppON={setAppON}
+                        maisonON={maisonON}
+                        setMaisonON={setMaisonON}
+                        logicielON={logicielON}
+                        setLogicielON={setLogicielON}
+                        enigmaON={enigmaON}
+                        setEnigmaON={setEnigmaON}
+                        presentationON={presentationON}
+                        setPresentationON={setPresentationON}
+                    />
+                </div>
             </div>
             <div className={!minimize ? 'Right' : 'Right_mini'}>
                 {etiquetteON && <Main
