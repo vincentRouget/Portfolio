@@ -4,10 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-    &::-webkit-scrollbar {
-        // display: none;
-    }
 }
 
 body {
@@ -47,6 +43,7 @@ body {
     --link: #D5D8DC;
     --button: #858585;
     --hover: #EAEAEA;
+    --wild: #eb4b52;
 }
 
 .light {
@@ -72,6 +69,7 @@ body {
     --link: #402a73;
     --button: #575a91;
     --hover: #402a73;
+    --wild: #eb4b52;
     // BLEU :
     // --background-color: #EBF2FB;
     // --color-r: 235;
@@ -132,6 +130,7 @@ $shadow-card: 4px 4px 20px rgba(20, 35, 220, 0.2);
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Finlandica&display=swap");
 //------------------------------------------------------------------- //
 // $font-family: 'EB Garamond', serif;
 // $font-family: 'League Spartan', sans-serif;
@@ -143,11 +142,13 @@ $shadow-card: 4px 4px 20px rgba(20, 35, 220, 0.2);
 // $font-family: 'Public Sans', sans-serif;
 // $font-family: 'Roboto', sans-serif;
 // $font-family: 'Sorts Mill Goudy', serif;
+// $font-family: 'Finlandica', sans-serif;
 //------------------------------------------------------------------- //
 $font-family: 'League Spartan', sans-serif;
 $font-family-2: 'Libre Baskerville', serif;
 $font-family-3: 'Montserrat', sans-serif;
 $font-family-4: 'PT Sans', sans-serif;
+$font-family-5: 'Finlandica', sans-serif;
 
 h1 {
     font-family: $font-family;
@@ -288,6 +289,7 @@ label {
 
 // Components styles imports
 @import "./Infos.scss";
+@import "./ScrollDown.scss";
 @import "./Sidebar.scss";
 @import "./Space.scss";
 @import "./Texte.scss";

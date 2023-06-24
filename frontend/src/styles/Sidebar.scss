@@ -20,7 +20,6 @@
 }
 
 .button {
-    // background-color: orange;
     display: flex;
     align-items: center;
     width: 100%;
@@ -120,10 +119,10 @@
                         color: var(--hover);
                     }
                 }
+            }
 
-                .Sidebar_theme {
-                    padding: 6px 0px 0px 0px;
-                }
+            .Sidebar_theme {
+                padding: 14px 0px 0px 0px;
             }
 
             &_back_dark {
@@ -144,13 +143,13 @@
                     }
                 }
 
-                .Sidebar_theme {
-                    margin: 0px 0px 10px 0px;
-                }
+            }
+
+            .Sidebar_theme {
+                margin: 0px 0px 10px 0px;
             }
 
             &_div {
-                // background-color: yellow;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -160,13 +159,16 @@
             }
 
             &_div_dark {
-                // background-color: yellow;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 80%;
                 height: 100%;
                 border-bottom: 1px solid rgba(255, 255, 255, 1);
+            }
+
+            .less_border {
+                border-bottom: none;
             }
 
             &_download_dark {

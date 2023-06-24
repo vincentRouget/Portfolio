@@ -14,6 +14,7 @@ import NATIVE from "../assets/Icon/native.png";
 import EXPO from "../assets/Icon/expo.png";
 import ANDROID from "../assets/Icon/android.png";
 import PYTHON from "../assets/Icon/python.png";
+import Pascal from "../assets/Icon/pascal.png";
 import CPP from "../assets/Icon/cpp.png";
 import Wild1 from "../assets/Image/Wild/wild1.png";
 import Enecom1 from "../assets/Image/Enecom/enecom1.png";
@@ -208,6 +209,9 @@ const Main = ({
                         </div>
                         <div className="Main_container_card_techno_icone">
                             <img src={CPP} alt='React.js' className="icone"></img>
+                        </div>
+                        <div className="Main_container_card_techno_icone">
+                            <img src={Pascal} alt='React.js' className="icone"></img>
                         </div>
                     </div>
                     <div className="Main_container_card_text">

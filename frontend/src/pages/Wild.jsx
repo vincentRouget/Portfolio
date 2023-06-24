@@ -1,6 +1,9 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState, useRef } from "react";
 import { Routes, Route, NavLink, Navigate, useNavigate } from "react-router-dom";
 import UserContext from "../context/UserContext";
+import Logo1 from "../assets/Icon/logo_wildmovies.svg";
+import Logo2 from "../assets/Icon/logo2_wildmovies.svg";
+import ScrollDown from "../components/ScrollDown";
 import HTML from "../assets/Icon/html.png";
 import CSS from "../assets/Icon/css.png";
 import SCSS from "../assets/Icon/scss.png";
@@ -25,6 +28,11 @@ import Enigma1 from "../assets/Image/Enigma/enigma1.png";
 const Wild = () => {
     const { theme } = useContext(UserContext);
     const navigate = useNavigate();
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+    const handleScroll = () => {
+        setScrollPosition(window.scrollY); // => scroll position
+    };
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -35,6 +43,11 @@ const Wild = () => {
 
     useEffect(() => {
         scrollToTop();
+        handleScroll();
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
     }, []);
 
     return (
@@ -42,7 +55,7 @@ const Wild = () => {
             <div className="Wild_entete">
                 <h1>Wild Movies</h1>
             </div>
-            <div className="Wild_icones">
+            <div className="Wild_icones" >
                 <div className="Wild_icones_icone">
                     <img src={REACTJS} alt='React.js' className="icone"></img>
                 </div>
@@ -57,6 +70,15 @@ const Wild = () => {
                 </div>
                 <div className="Wild_icones_icone">
                     <img src={MYSQL} alt='React.js' className="icone"></img>
+                </div>
+            </div>
+            <ScrollDown />
+            <div className="Page_title">
+                <div className="Logo1">
+                    <img src={Logo1} id="Logo1" alt="Logo Wild Movies"></img>
+                </div>
+                <div className="Logo2">
+                    <img src={Logo2} id="Logo2" alt="Logo Wild Movies"></img>
                 </div>
             </div>
             <div className="Wild_description">
@@ -82,42 +104,77 @@ const Wild = () => {
                 </div>
                 <div className="Wild_description_middle">
                     <div className="Categorie">
-                        <p>Développement Web</p>
+                        <p className="TextP">Web development</p>
                     </div>
                     <div className="Annee">
-                        <p>2022</p>
+                        <p className="TextP">2022</p>
                     </div>
                     <div className="Client">
-                        <p>Wild Code School</p>
+                        <p className="TextP">Wild Code School</p>
                     </div>
                     <div className="Front">
-                        <p>React.js / Node.js</p>
+                        <p className="TextP">React.js / Node.js</p>
                     </div>
                     <div className="Back">
-                        <p>API Rest / Express.js</p>
+                        <p className="TextP">API Rest / Express.js</p>
                     </div>
                     <div className="Sgbd">
-                        <p>MySql</p>
+                        <p className="TextP">MySql</p>
                     </div>
                 </div>
                 <div className="Wild_description_right">
-                    <h4>Description :</h4>
-                    <p>Le projet Wild Movies est un site internet qui présente une bibliothèque de tous les films et séries présentes dans l’api publique très connue TMDB :</p>
-                    <a href="https://wild-movies.netlify.app/" target="_blank">https://wild-movies.netlify.app/</a>
-                    <p>Ce service API public est destiné à ceux qui souhaitent utiliser leurs images et leurs données dans une application. Cette API recoupe dynamiquement, toutes les données relatives aux films, aux séries, mais aussi celles qui concernent le casting.</p>
-                    <p>Elle nous permet de pouvoir mettre à jour en temps réel toutes les informations pertinentes que l’on peut retransmettre à travers notre site.</p>
+                    <div className="Wild_description_right_description">
+                        <h4 className="Saut">Description :</h4>
+                        <p className="TextP">The Wild Movies project is a website that offers a library of all the movies and series present in the very popular public api TMDB.</p>
+                        <p className="TextP">This API is intended for those who wish to use their very complete database in a web application.</p>
+                        <p className="TextP">It allows you to dynamically retrieve all the data relating to films, series, but also those relating to casting.</p>
+                        <p className="TextP">In addition, it also provides information on which streaming platform(s) the viewing is available.</p>
+                    </div>
+                    <p className="TextP">Lien vers le site : <a href="https://wild-movies.netlify.app/" target="_blank">https://wild-movies.netlify.app/</a></p>
                 </div>
             </div>
             <div className="Wild_screenshot">
-                <h2>Captures d'écran</h2>
+                <h4>Screenshots</h4>
                 <div className="Wild_screenshot_image">
-                    <img src="https://images3.alphacoders.com/237/23765.jpg" alt="Screen"></img>
+                    {(scrollPosition >= 1200 && scrollPosition <= 2600) ?
+                        <a href="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp" target="_blank" className="Wild_screenshot_image">
+                            <img src="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp"></img>
+                        </a>
+                        :
+                        <a href="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp" target="_blank" className="Wild_screenshot_image totalHide">
+                            <img src="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp"></img>
+                        </a>}
+                </div>
+
+                <div className="Wild_screenshot_image">
+                    {(scrollPosition >= 2100 && scrollPosition <= 3500) ?
+                        <a href="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp" target="_blank" className="Wild_screenshot_image">
+                            <img src="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp"></img>
+                        </a>
+                        :
+                        <a href="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp" target="_blank" className="Wild_screenshot_image totalHide">
+                            <img src="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp"></img>
+                        </a>}
                 </div>
                 <div className="Wild_screenshot_image">
-                    <img src="https://images3.alphacoders.com/237/23765.jpg" alt="Screen"></img>
+                    {(scrollPosition >= 3000 && scrollPosition <= 4400) ?
+                        <a href="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp" target="_blank" className="Wild_screenshot_image">
+                            <img src="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp"></img>
+                        </a>
+                        :
+                        <a href="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp" target="_blank" className="Wild_screenshot_image totalHide">
+                            <img src="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp"></img>
+                        </a>}
                 </div>
                 <div className="Wild_screenshot_image">
-                    <img src="https://images3.alphacoders.com/237/23765.jpg" alt="Screen"></img>
+                    {(scrollPosition >= 3900 && scrollPosition <= 5300) ?
+                        <a href="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp" target="_blank" className="Wild_screenshot_image">
+                            <img src="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp"></img>
+                        </a>
+                        :
+                        <a href="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp" target="_blank" className="Wild_screenshot_image totalHide">
+                            <img src="https://ericheymans.com/wp-content/uploads/2012/08/dawn-field-grass-164025.webp"></img>
+                        </a>}
                 </div>
             </div>
         </div>

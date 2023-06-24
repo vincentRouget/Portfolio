@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Routes, Route, NavLink, Navigate, useNavigate } from "react-router-dom";
+import React, { useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import UserContext from "../context/UserContext";
 import Theme from "./Theme";
 import Main from "../assets/Icon/Sidebar/icons8-home-page-90.png"
@@ -24,7 +24,6 @@ import MiniW from "../assets/Icon/Sidebar/icons8-triangle-64W.png";
 const Sidebar = ({
     etiquetteON,
     setEtiquetteON,
-    presentationON,
     setPresentationON,
     wildON,
     setWildON,
@@ -41,7 +40,6 @@ const Sidebar = ({
 }) => {
     const { theme, refresh, setRefresh, minimize, setMinimize } = useContext(UserContext);
     const navigate = useNavigate();
-
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -339,7 +337,7 @@ const Sidebar = ({
                             </button>
                         </div>}
                     {!minimize ?
-                        <div className={theme == 'light' ? "Sidebar_container_middle_div" : "Sidebar_container_middle_div_dark"}>
+                        <div className={theme == 'light' ? "Sidebar_container_middle_div less_border" : "Sidebar_container_middle_div_dark less_border"}>
                             <button
                                 className={(enigmaON) ? "button_selected" : "button"}
                                 onClick={() => {
@@ -360,7 +358,7 @@ const Sidebar = ({
                             </button>
                         </div>
                         :
-                        <div className={theme == 'light' ? "Sidebar_container_middle_div" : "Sidebar_container_middle_div_dark"}>
+                        <div className={theme == 'light' ? "Sidebar_container_middle_div less_border" : "Sidebar_container_middle_div_dark less_border"}>
                             <button
                                 className={(enigmaON) ? "button_selected mini" : "button mini"}
                                 onClick={() => {
@@ -379,76 +377,6 @@ const Sidebar = ({
                                     <img src={EnigmaW} alt='' className="icon"></img>}
                             </button>
                         </div>}
-                    {/* {!minimize ?
-                        <div className={theme == 'light' ? "Sidebar_container_middle_div" : "Sidebar_container_middle_div_dark"}>
-                            <button
-                                className={(presentationON) ? "button_selected" : "button"}
-                                onClick={() => {
-                                    setEtiquetteON(false)
-                                    setWildON(false)
-                                    setEnecomON(false)
-                                    setAppON(false)
-                                    setMaisonON(false)
-                                    setLogicielON(false)
-                                    setEnigmaON(false)
-                                    setPresentationON(true)
-                                }}>
-                                {theme == 'light' ?
-                                    <img src={Developer} alt='' className="icon"></img>
-                                    :
-                                    <img src={DeveloperW} alt='' className="icon"></img>}
-                                <p className="ellipsis">About me</p>
-                            </button>
-                        </div>
-                        :
-                        <div className={theme == 'light' ? "Sidebar_container_middle_div" : "Sidebar_container_middle_div_dark"}>
-                            <button
-                                className={(presentationON) ? "button_selected mini" : "button mini"}
-                                onClick={() => {
-                                    setEtiquetteON(false)
-                                    setWildON(false)
-                                    setEnecomON(false)
-                                    setAppON(false)
-                                    setMaisonON(false)
-                                    setLogicielON(false)
-                                    setEnigmaON(false)
-                                    setPresentationON(true)
-                                }}>
-                                {theme == 'light' ?
-                                    <img src={Developer} alt='' className="icon"></img>
-                                    :
-                                    <img src={DeveloperW} alt='' className="icon"></img>}
-                            </button>
-                        </div>} */}
-                    {/* {!minimize ?
-                        <div className={theme == 'light' ? "Sidebar_container_middle_download" : "Sidebar_container_middle_download_dark"}>
-                            <button
-                                className="button"
-                                onClick={() => {
-                                    handleDownload();
-                                    // console.log("Download")
-                                }}>
-                                {theme == 'light' ?
-                                    <img src={Back} alt='' className="icon_down"></img>
-                                    :
-                                    <img src={BackW} alt='' className="icon_down"></img>}
-                                <p className="ellipsis">C.V.  (png)</p>
-                            </button>
-                        </div>
-                        :
-                        <div className={theme == 'light' ? "Sidebar_container_middle_download" : "Sidebar_container_middle_download_dark"}>
-                            <button
-                                className="button mini"
-                                onClick={() => {
-                                    handleDownload();
-                                    // console.log("Download");
-                                }}>
-                                {theme == 'light' ?
-                                    <img src={Back} alt='' className="icon_down"></img>
-                                    :
-                                    <img src={BackW} alt='' className="icon_down"></img>}
-                            </button>
-                        </div>} */}
                 </div>
                 <div className={!minimize ? "Sidebar_container_mini_20" : "Sidebar_container_mini_6"}>
                     <button
