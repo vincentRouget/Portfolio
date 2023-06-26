@@ -34,6 +34,22 @@
     }
 }
 
+.buttonBack {
+    // background-color: yellow;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 60px;
+    font-size: 20px;
+    color: var(--text);
+    padding: 20px;
+    gap: 20px;
+
+    &:hover {
+        color: var(--hover);
+    }
+}
+
 .button_selected {
     background-color: var(--opacity);
     display: flex;
@@ -122,6 +138,10 @@
             }
 
             .Sidebar_theme {
+                // background-color: red;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
                 padding: 14px 0px 0px 0px;
             }
 
@@ -146,6 +166,11 @@
             }
 
             .Sidebar_theme {
+                // background-color: red;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 50%;
                 margin: 0px 0px 10px 0px;
             }
 

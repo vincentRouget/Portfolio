@@ -18,7 +18,7 @@ import Pascal from "../assets/Icon/pascal.png";
 import CPP from "../assets/Icon/cpp.png";
 import Wild1 from "../assets/Image/Wild/wild1.png";
 import Enecom1 from "../assets/Image/Enecom/enecom1.png";
-import App1 from "../assets/Image/App/app1.png";
+import App1 from "../assets/Image/Hobbi/app1.png";
 import Maison1 from "../assets/Image/Maison/maison1.png";
 import Soft1 from "../assets/Image/Soft/soft1.png";
 import Enigma1 from "../assets/Image/Enigma/enigma1.png";
@@ -136,7 +136,7 @@ const Main = ({
                     <div className='Main_container_card_image'>
                         <img src={App1} alt="Dating App"></img>
                     </div>
-                    <h1>DATING APP</h1>
+                    <h1>HOBBI</h1>
                     <div className="Main_container_card_techno">
                         <div className="Main_container_card_techno_icone">
                             <img src={NATIVE} alt='React.js' className="icone"></img>

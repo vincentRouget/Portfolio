@@ -60,7 +60,7 @@ const Sidebar = ({
                         {!minimize ?
                             <>
                                 <button
-                                    className="button"
+                                    className="buttonBack"
                                     onClick={() => {
                                         scrollToTop();
                                         setRefresh(true);
