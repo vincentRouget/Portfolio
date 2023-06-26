@@ -122,7 +122,7 @@
             // background-color: aqua;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 20%;
             height: 100%;
             padding-left: 10px;
@@ -132,7 +132,7 @@
             // background-color: pink;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 30%;
             height: 100%;
 
@@ -230,7 +230,6 @@
                 overflow: hidden;
                 border: none;
                 border-radius: 10px;
-                transition: 1000ms;
             }
         }
     }

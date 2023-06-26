@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
+import React, { useContext, useEffect } from "react";
 import UserContext from "../context/UserContext";
 import HTML from "../assets/Icon/html.png";
 import CSS from "../assets/Icon/css.png";
@@ -19,30 +18,21 @@ import CPP from "../assets/Icon/cpp.png";
 import Wild1 from "../assets/Image/Wild/wild1.png";
 import Enecom1 from "../assets/Image/Enecom/enecom1.png";
 import App1 from "../assets/Image/Hobbi/app1.png";
-import Maison1 from "../assets/Image/Maison/maison1.png";
+import Maison1 from "../assets/Image/House/house1.png";
 import Soft1 from "../assets/Image/Soft/soft1.png";
-import Enigma1 from "../assets/Image/Enigma/enigma1.png";
+import Enigma1 from "../assets/Image/Enigma/enigma1.jpg";
 
 const Main = ({
-    etiquetteON,
     setEtiquetteON,
-    presentationON,
     setPresentationON,
-    wildON,
     setWildON,
-    enecomON,
     setEnecomON,
-    appON,
     setAppON,
-    maisonON,
     setMaisonON,
-    enigmaON,
     setEnigmaON,
-    logicielON,
     setLogicielON
 }) => {
     const { theme } = useContext(UserContext);
-    const navigate = useNavigate();
 
     useEffect(() => {
     }, []);
@@ -119,7 +109,7 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Interface web pour le partage de plans de communication en interne</p>
+                        <p>Interface intranet pour le partage de plans de communication</p>
                     </div>
                 </button>
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card MainDark"}
@@ -155,7 +145,7 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Création d'une application mobile de rencontre grâce à des centres d'intérêts</p>
+                        <p>Création d'une application mobile de rencontre</p>
                     </div>
                 </button>
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card MainDark"}
@@ -185,7 +175,7 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Création d'un site catalogue pour des chambres d'hôtes</p>
+                        <p>Création d'un site internet pour des chambres d'hôtes</p>
                     </div>
                 </button>
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card MainDark"}
@@ -245,10 +235,9 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Création d'une interface fonctionnelle pour le cryptage de texte</p>
+                        <p>Création d'une interface web pour le cryptage de texte</p>
                     </div>
                 </button>
-
             </div>
         </div>
     );

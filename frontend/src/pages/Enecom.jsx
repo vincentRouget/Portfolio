@@ -115,7 +115,7 @@ const Enecom = () => {
                         <p className="TextP">The employee can also consult the communication plans of other users in order to be able to discuss everyone's ideas.</p>
                         <p className="TextP">Finally, an administrator status gives access to more possibilities, such as archiving a communication plan, deleting it, or even creating a new user.</p>
                     </div>
-                    <p className="TextP">Lien vers le site : <a href="http://vps-d5babf40.vps.ovh.net:5007/" target="_blank">http://vps-d5babf40.vps.ovh.net:5007/</a></p>
+                    <p className="TextP">Link to website : <a href="http://vps-d5babf40.vps.ovh.net:5007/" target="_blank">http://vps-d5babf40.vps.ovh.net:5007/</a></p>
                 </div>
             </div>
             <h4 className="Enecom_h4">Screenshots</h4>

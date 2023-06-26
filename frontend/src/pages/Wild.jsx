@@ -96,7 +96,7 @@ const Wild = () => {
                 </div>
                 <div className="Wild_description_middle">
                     <div className="Categorie">
-                        <p className="TextP">Web development</p>
+                        <p className="TextP">Website development</p>
                     </div>
                     <div className="Annee">
                         <p className="TextP">2022</p>
@@ -122,7 +122,7 @@ const Wild = () => {
                         <p className="TextP">It allows you to dynamically retrieve all the data relating to films, series, but also those relating to casting.</p>
                         <p className="TextP">In addition, it also provides information on which streaming platform(s) the viewing is available.</p>
                     </div>
-                    <p className="TextP">Lien vers le site : <a href="https://wild-movies.netlify.app/" target="_blank">https://wild-movies.netlify.app/</a></p>
+                    <p className="TextP">Link to website : <a href="https://wild-movies.netlify.app/" target="_blank">https://wild-movies.netlify.app/</a></p>
                 </div>
             </div>
             <h4 className="Wild_h4">Screenshots</h4>

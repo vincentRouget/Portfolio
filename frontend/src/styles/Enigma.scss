@@ -1,121 +1,254 @@
+.icone {
+    width: 100%;
+}
+
+.TextP {
+    font-size: 24px;
+    font-family: $font-family-5;
+}
+
 .Enigma {
     // background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
-}
+    min-height: 100vh;
 
-.style_h1 {
-    font-size: 80px;
-    color: var(--text);
-}
-
-.style_h4 {
-    font-size: 30px;
-    letter-spacing: 0.5rem;
-    color: var(--text);
-}
-
-.style_h6 {
-    font-size: 20px;
-    color: var(--text);
-}
-
-.style_p {
-    font-size: 16px;
-    color: var(--text);
-}
-
-.style_button {
-    background-color: var(--background);
-    padding: 5px;
-    border: 2px solid var(--title);
-    border-radius: 10px;
-    color: var(--button);
-
-    &:hover {
-        color: var(--hover);
-    }
-}
-
-.style_input {
-    all: unset;
-    background-color: var(--background);
-    font-family: $font-family-3;
-    width: 20em;
-    height: 2em;
-    border: 1px solid var(--secondary);
-    font-size: 2rem;
-    line-height: 1.625rem;
-    padding-left: 0.5rem;
-    border-radius: 0.6rem;
-    transition: 0.3s ease-in-out;
-    color: var(--title);
-
-    &:hover {
-        border: 1px solid var(--title);
+    .Enigma_h4 {
+        color: var(--enigma);
+        font-family: $font-family-5;
+        font-size: 32px;
+        letter-spacing: -2px;
     }
 
-    &::placeholder {
-        color: var(--secondary);
+    &_entete {
+        background-color: var(--enigma);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 50vh;
+        font-size: 48px;
+        border: none;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+
+        h1 {
+            color: white;
+            letter-spacing: -2px;
+        }
     }
 
-    &:focus-within {
-        outline: 1px solid var(--title);
+    &_icones {
+        // background-color: gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        gap: 140px;
+        margin-top: 8%;
+        margin-bottom: 6%;
+
+        &_icone {
+            width: 100px;
+        }
     }
-}
 
-.style_a {
-    color: var(--link);
-}
+    .Enigma_title {
+        // background-color: yellow;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        width: 90%;
+        border-bottom: 2px solid var(--enigma);
+        margin-top: 140px;
+        margin-bottom: 80px;
+        padding-bottom: 30px;
 
-.Enigma {
-    background-color: var(--background);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+        .EnigmaLogo {
+            background-color: #EEEEEE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 160px;
+            height: 160px;
+            border: 1px solid gray;
+            border-radius: 80px;
 
-    .un {
-        background-color: var(--container1);
+            #LogoEnigma {
+                width: 100%;
+
+            }
+        }
+
+        .TitleEnigma {
+            // background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-family;
+            font-size: 120px;
+            font-weight: bolder;
+            letter-spacing: -2px;
+            white-space: nowrap;
+            color: var(--enigma);
+            padding-top: 20px;
+        }
+    }
+
+    &_description {
+        // background-color: orange;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 50vh;
+
+        .Enigma_h4 {
+            color: var(--enigma);
+            font-family: $font-family-5;
+            font-size: 32px;
+            letter-spacing: -2px;
+        }
+
+        &_left {
+            // background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 16%;
+            height: 100%;
+            padding-left: 10px;
+        }
+
+        &_middle {
+            // background-color: pink;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 24%;
+            height: 100%;
+
+            .Categorie {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            .Annee {
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+            }
+
+            .Client {
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+            }
+
+            .Front {
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+            }
+
+            .Back {
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+            }
+
+            .Sgbd {
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+            }
+        }
+
+        &_right {
+            // background-color: blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            gap: 50px;
+
+            a {
+                color: var(--link);
+            }
+
+            &_description {
+                // background-color: aquamarine;
+                background-color: rgba(var(--color-r), var(--color-g), var(--color-b), 0.8);
+                display: flex;
+                flex-direction: column;
+                line-height: 2.25em;
+                border: 1px solid var(--enigma);
+                border-radius: 10px;
+                padding: 20px;
+                color: var(--text);
+
+                .Saut {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .Enigma_padding {
+        width: 90%;
+        text-align: center;
+        border-top: 2px solid var(--enigma);
+        margin-top: 100px;
+        padding-top: 140px;
+    }
+
+    &_screenshot {
+        // background-color: green;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 1000px;
-        height: 400px;
-        gap: 20px;
+        gap: 200px;
+        width: 86%;
+        margin-top: 80px;
+        margin-bottom: 100px;
 
-        .deux {
-            background-color: var(--container2);
-            width: 800px;
-            padding-bottom: 20px;
+        &_image {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
         }
-    }
 
-    .trois {
-        background-color: var(--container3);
-        width: 1000px;
-        height: 100px;
-    }
+        a {
+            // background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
 
-    .quatre {
-        background-color: var(--container4);
-        width: 1000px;
-        height: 100px;
-    }
-
-    .cinq {
-        background-color: var(--container5);
-        width: 1000px;
-        height: 80px;
-    }
-
-    .six {
-        background-color: var(--container6);
-        width: 1000px;
-        height: 80px;
+            img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                overflow: hidden;
+                border: none;
+                border-radius: 10px;
+                border: 1px solid gray;
+            }
+        }
     }
 }

@@ -110,7 +110,7 @@
             // background-color: aqua;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 16%;
             height: 100%;
             padding-left: 10px;
@@ -120,7 +120,7 @@
             // background-color: pink;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 24%;
             height: 100%;
 
@@ -218,7 +218,6 @@
                 overflow: hidden;
                 border: 1px solid gray;
                 border-radius: 10px;
-                transition: 1000ms;
             }
 
             .lessBorder {

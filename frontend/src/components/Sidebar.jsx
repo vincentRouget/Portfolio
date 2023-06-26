@@ -108,7 +108,7 @@ const Sidebar = ({
                                     <img src={Main} alt='' className="icon"></img>
                                     :
                                     <img src={MainW} alt='' className="icon"></img>}
-                                <p className="ellipsis">Main</p>
+                                <p className="ellipsis">Menu</p>
                             </button>
                         </div>
                         :
