@@ -110,10 +110,10 @@ const Enecom = () => {
                 <div className="Enecom_description_right">
                     <div className="Enecom_description_right_description">
                         <h4 className="Enecom_h4 Saut">Description :</h4>
-                        <p className="TextP">The Enecom project aims to integrate an internal platform for sharing ideas for employees of the Enedis company.</p>
-                        <p className="TextP">This web interface therefore allows employees to create their own communication plans and to be able to manage them on a relational database. These communication plans can be very detailed thanks to several types of categories, and illustrated with images or additional files.</p>
-                        <p className="TextP">The employee can also consult the communication plans of other users in order to be able to discuss everyone's ideas.</p>
-                        <p className="TextP">Finally, an administrator status gives access to more possibilities, such as archiving a communication plan, deleting it, or even creating a new user.</p>
+                        <p className="TextPi">The Enecom project aims to integrate an internal platform for sharing ideas for employees of the Enedis company.</p>
+                        <p className="TextPi">This web interface therefore allows employees to create their own communication plans and to be able to manage them on a relational database. These communication plans can be very detailed thanks to several types of categories, and illustrated with images or additional files.</p>
+                        <p className="TextPi">The employee can also consult the communication plans of other users in order to be able to discuss everyone's ideas.</p>
+                        <p className="TextPi">Finally, an administrator status gives access to more possibilities, such as archiving a communication plan, deleting it, or even creating a new user.</p>
                     </div>
                     <p className="TextP">Link to website : <a href="http://vps-d5babf40.vps.ovh.net:5007/" target="_blank">http://vps-d5babf40.vps.ovh.net:5007/</a></p>
                 </div>

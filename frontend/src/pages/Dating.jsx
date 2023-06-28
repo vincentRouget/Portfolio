@@ -123,10 +123,10 @@ const Dating = () => {
                 <div className="Hobbi_description_right">
                     <div className="Hobbi_description_right_description">
                         <h4 className="Hobbi_h4 Saut">Description :</h4>
-                        <p className="TextP">The Hobbi project is a mobile dating application for users through two axes of selection.</p>
-                        <p className="TextP">The first axis filters users according to a criterion under non-disclosure agreement. It executed in the back end allows filtering a very large number of users on the server side.</p>
-                        <p className="TextP">The second axis groups together, at the front end this time, users with the same hobbies or interests.</p>
-                        <p className="TextP">This application therefore makes it possible to carry out global matchmaking which offers the user a panel of people corresponding to the desired criteria, to manage his contacts, and to interact via instant messaging.</p>
+                        <p className="TextPi">The Hobbi project is a mobile dating application for users through two axes of selection.</p>
+                        <p className="TextPi">The first axis filters users according to a criterion under non-disclosure agreement. It executed in the back end allows filtering a very large number of users on the server side.</p>
+                        <p className="TextPi">The second axis groups together, at the front end this time, users with the same hobbies or interests.</p>
+                        <p className="TextPi">This application therefore makes it possible to carry out global matchmaking which offers the user a panel of people corresponding to the desired criteria, to manage his contacts, and to interact via instant messaging.</p>
                     </div>
                 </div>
             </div>

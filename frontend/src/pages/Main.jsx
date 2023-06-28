@@ -5,6 +5,7 @@ import CSS from "../assets/Icon/css.png";
 import SCSS from "../assets/Icon/scss.png";
 import JS from "../assets/Icon/js.png";
 import REACTJS from "../assets/Icon/react.png";
+import PREACT from "../assets/Icon/preact.png";
 import NODE from "../assets/Icon/node.png";
 import EXPRESS from "../assets/Icon/express.png";
 import MYSQL from "../assets/Icon/mysql.png";
@@ -15,6 +16,9 @@ import ANDROID from "../assets/Icon/android.png";
 import PYTHON from "../assets/Icon/python.png";
 import Pascal from "../assets/Icon/pascal.png";
 import CPP from "../assets/Icon/cpp.png";
+import VSC from "../assets/Icon/vsc.png";
+import VS from "../assets/Icon/vs.png";
+import IO from "../assets/Icon/io.png";
 import Wild1 from "../assets/Image/Wild/wild1.png";
 import Enecom1 from "../assets/Image/Enecom/enecom1.png";
 import App1 from "../assets/Image/Hobbi/app1.png";
@@ -201,7 +205,16 @@ const Main = ({
                             <img src={CPP} alt='React.js' className="icone"></img>
                         </div>
                         <div className="Main_container_card_techno_icone">
+                            <img src={PREACT} alt='Preact' className="icone"></img>
+                        </div>
+                        <div className="Main_container_card_techno_icone">
                             <img src={Pascal} alt='React.js' className="icone"></img>
+                        </div>
+                        <div className="Main_container_card_techno_icone">
+                            <img src={VS} alt='Visual Studio Community' className="icone"></img>
+                        </div>
+                        <div className="Main_container_card_techno_icone">
+                            <img src={IO} alt='Visual I/O' className="icone"></img>
                         </div>
                     </div>
                     <div className="Main_container_card_text">

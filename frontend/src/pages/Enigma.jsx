@@ -88,10 +88,10 @@ const Enigma = () => {
                 <div className="Enigma_description_right">
                     <div className="Enigma_description_right_description">
                         <h4 className="Enigma_h4 Saut">Description :</h4>
-                        <p className="TextP">This algorithmic project is an html interface that allows a lot of interactions around text encryption.</p>
-                        <p className="TextP">Simply choose a key, which is a string of characters that will act as the password necessary for encryption and decryption, then enter the text to be encrypted.</p>
-                        <p className="TextP">It is then possible to encrypt the message, copy it to the clipboard, or send it by email, with or without comments, in order to give the recipient a clue about the key used to decrypt the message.</p>
-                        <p className="TextP">There is of course a button that allows you to decrypt an incoming message provided you use the right key.</p>
+                        <p className="TextPi">This algorithmic project is an html interface that allows a lot of interactions around text encryption.</p>
+                        <p className="TextPi">Simply choose a key, which is a string of characters that will act as the password necessary for encryption and decryption, then enter the text to be encrypted.</p>
+                        <p className="TextPi">It is then possible to encrypt the message, copy it to the clipboard, or send it by email, with or without comments, in order to give the recipient a clue about the key used to decrypt the message.</p>
+                        <p className="TextPi">There is of course a button that allows you to decrypt an incoming message provided you use the right key.</p>
                     </div>
                 </div>
             </div>

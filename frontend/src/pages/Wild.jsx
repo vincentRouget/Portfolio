@@ -117,10 +117,10 @@ const Wild = () => {
                 <div className="Wild_description_right">
                     <div className="Wild_description_right_description">
                         <h4 className="Wild_h4 Saut">Description :</h4>
-                        <p className="TextP">The Wild Movies project is a website that offers a library of all the movies and series present in the very popular public api TMDB.</p>
-                        <p className="TextP">This API is intended for those who wish to use their very complete database in a web application.</p>
-                        <p className="TextP">It allows you to dynamically retrieve all the data relating to films, series, but also those relating to casting.</p>
-                        <p className="TextP">In addition, it also provides information on which streaming platform(s) the viewing is available.</p>
+                        <p className="TextPi">The Wild Movies project is a website that offers a library of all the movies and series present in the very popular public api TMDB.</p>
+                        <p className="TextPi">This API is intended for those who wish to use their very complete database in a web application.</p>
+                        <p className="TextPi">It allows you to dynamically retrieve all the data relating to films, series, but also those relating to casting.</p>
+                        <p className="TextPi">In addition, it also provides information on which streaming platform(s) the viewing is available.</p>
                     </div>
                     <p className="TextP">Link to website : <a href="https://wild-movies.netlify.app/" target="_blank">https://wild-movies.netlify.app/</a></p>
                 </div>

@@ -1,8 +1,262 @@
+.icone {
+    width: 100%;
+}
+
+.TextP {
+    font-size: 32px;
+    font-family: $font-family-5;
+}
+
+.TextPi {
+    font-size: 24px;
+    font-family: $font-family-5;
+}
+
+.python {
+    color: var(--python);
+}
+
+.cpp {
+    color: var(--cpp);
+}
+
+.preact {
+    color: var(--preact);
+}
+
+.pascal {
+    color: var(--pascal);
+}
+
+.pythonBorder {
+    border-bottom: 2px solid var(--python);
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.cppBorder {
+    border-bottom: 2px solid var(--cpp);
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.preactBorder {
+    border-bottom: 2px solid var(--preact);
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.pascalBorder {
+    border-bottom: 2px solid var(--pascal);
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.pythonDescription {
+    border: 1px solid var(--python);
+}
+
+.cppDescription {
+    border: 1px solid var(--cpp);
+}
+
+.preactDescription {
+    border: 1px solid var(--preact);
+}
+
+.pascalDescription {
+    border: 1px solid var(--pascal);
+}
+
 .Software {
     // background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
+    min-height: 100vh;
+    padding-bottom: 100px;
+
+    .Software_h4 {
+        font-family: $font-family-5;
+        font-size: 32px;
+        letter-spacing: -2px;
+    }
+
+    &_entete {
+        background-color: var(--preact);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 50vh;
+        font-size: 48px;
+        border: none;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+
+        h1 {
+            color: white;
+            letter-spacing: -2px;
+        }
+    }
+
+    &_icones {
+        // background-color: gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        gap: 140px;
+        margin-top: 8%;
+        margin-bottom: 6%;
+
+        &_icone {
+            width: 100px;
+        }
+    }
+
+    .Software_title {
+        // background-color: yellow;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 80px;
+        width: 90%;
+        margin-top: 200px;
+        padding-bottom: 20px;
+
+        .SoftwareLogo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 160px;
+
+            #LogoSoftware {
+                width: 100%;
+                border: 1px solid gray;
+                border-radius: 50%;
+            }
+        }
+
+        .TitleSoftware {
+            // background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-family;
+            font-size: 120px;
+            font-weight: bolder;
+            letter-spacing: -2px;
+            white-space: nowrap;
+            padding-top: 20px;
+        }
+    }
+
+    &_description {
+        // background-color: orange;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 72vh;
+
+        .Software_h4 {
+            font-family: $font-family-5;
+            font-size: 32px;
+            letter-spacing: -2px;
+        }
+
+        &_left {
+            // background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 12vh;
+            width: 25%;
+            height: 100%;
+            padding-left: 10px;
+        }
+
+        &_middle {
+            // background-color: pink;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 12vh;
+            width: 20%;
+            height: 100%;
+
+            .Categorie {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            .Annee {
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+            }
+
+            .Client {
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+            }
+
+            .Front {
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+            }
+
+            .Back {
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+            }
+
+            .Sgbd {
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+            }
+        }
+
+        &_right {
+            // background-color: blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 55%;
+            gap: 50px;
+
+            a {
+                color: var(--link);
+            }
+
+            &_description {
+                // background-color: aquamarine;
+                background-color: rgba(var(--color-r), var(--color-g), var(--color-b), 0.8);
+                display: flex;
+                flex-direction: column;
+                line-height: 2.25em;
+                border-radius: 10px;
+                padding: 20px;
+                color: var(--text);
+
+                .Saut {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
 }
