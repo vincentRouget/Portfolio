@@ -94,11 +94,9 @@ const Software = () => {
                 <div className="Software_description_right">
                     <div className="Software_description_right_description pythonDescription">
                         <h4 className="Software_h4 Saut python">Description :</h4>
-                        <p className="TextPi">Development of a pilot and test program for an automated tamping machine.</p>
-                        <p className="TextPi">The program makes it possible, according to several input parameters, to generate machine cycles in a loop, to analyze and optimize machine performance.</p>
-                        <p className="TextPi">It also offers the different possible formulas with a description of each of them, as well as the rates and optional services.</p>
-                        <p className="TextPi">It also allows you to manage step-by-step progress for each separate step within a single cycle, identify all possible causes of machine error, and generate a CSV file with the history of all parameters concerned.</p>
-                        <p className="TextPi">The program thus helps to mechanically design future optimization hardware developments.</p>
+                        <p className="TextP">Development of a pilot and test program for an automated tamping machine.</p>
+                        <p className="TextP">The program makes it possible, depending on several input parameters, to generate machine cycles in a loop, to advance step by step, to optimize performance, and to identify all possible causes of error.</p>
+                        <p className="TextP">The program thus helps to mechanically design future optimization hardware developments.</p>
                     </div>
                 </div>
             </div>
@@ -134,7 +132,7 @@ const Software = () => {
                         <p className="TextP">Yes</p>
                     </div>
                     <div className="Client">
-                        <p className="TextP">Visual Studio Community</p>
+                        <p className="TextP">VS Community 2022</p>
                     </div>
                     <div className="Front">
                         <p className="TextP">C++</p>
@@ -143,11 +141,9 @@ const Software = () => {
                 <div className="Software_description_right">
                     <div className="Software_description_right_description cppDescription">
                         <h4 className="Software_h4 Saut cpp">Description :</h4>
-                        <p className="TextPi">This site created in React.js aims to present the services and rental rates for accommodation in the establishment "La Maison du Lac", located near Limoges in the department of Haute-Vienne (87), France.</p>
-                        <p className="TextPi">On the home page, it presents a description of the establishment and the different accommodations, with some images to illustrate the places.</p>
-                        <p className="TextPi">It also offers the different possible formulas with a description of each of them, as well as the rates and optional services.</p>
-                        <p className="TextPi">A Contact page with a Google Maps allows you to locate the precise location, find the best route, or even send an email to the owner of the establishment.</p>
-                        <p className="TextPi">At the bottom of the page, we find the various links to all external web pages, such as Facebook, Booking.com or even AirBnB.com.</p>
+                        <p className="TextP">Adaptability of video surveillance management software by means of a network of cameras, to modern operating systems.</p>
+                        <p className="TextP">Addition of functionalities and availability of new foreign languages in the software through dll files.</p>
+                        <p className="TextP">Increased security protocols and implementation of a USB Dongle.</p>
                     </div>
                 </div>
             </div>
@@ -192,11 +188,9 @@ const Software = () => {
                 <div className="Software_description_right">
                     <div className="Software_description_right_description preactDescription">
                         <h4 className="Software_h4 Saut">Description :</h4>
-                        <p className="TextPi">This site created in React.js aims to present the services and rental rates for accommodation in the establishment "La Maison du Lac", located near Limoges in the department of Haute-Vienne (87), France.</p>
-                        <p className="TextPi">On the home page, it presents a description of the establishment and the different accommodations, with some images to illustrate the places.</p>
-                        <p className="TextPi">It also offers the different possible formulas with a description of each of them, as well as the rates and optional services.</p>
-                        <p className="TextPi">A Contact page with a Google Maps allows you to locate the precise location, find the best route, or even send an email to the owner of the establishment.</p>
-                        <p className="TextPi">At the bottom of the page, we find the various links to all external web pages, such as Facebook, Booking.com or even AirBnB.com.</p>
+                        <p className="TextP">Complete overhaul of a program used to control the lights on board SNCF network trains.</p>
+                        <p className="TextP">This project aimed to fully migrate all old features to a new modern interface.</p>
+                        <p className="TextP">The program being embedded on various computer media, the development was done in the Preact language, for low resource consumption needs.</p>
                     </div>
                 </div>
             </div>
@@ -241,11 +235,9 @@ const Software = () => {
                 <div className="Software_description_right">
                     <div className="Software_description_right_description pascalDescription">
                         <h4 className="Software_h4 Saut">Description :</h4>
-                        <p className="TextPi">This site created in React.js aims to present the services and rental rates for accommodation in the establishment "La Maison du Lac", located near Limoges in the department of Haute-Vienne (87), France.</p>
-                        <p className="TextPi">On the home page, it presents a description of the establishment and the different accommodations, with some images to illustrate the places.</p>
-                        <p className="TextPi">It also offers the different possible formulas with a description of each of them, as well as the rates and optional services.</p>
-                        <p className="TextPi">A Contact page with a Google Maps allows you to locate the precise location, find the best route, or even send an email to the owner of the establishment.</p>
-                        <p className="TextPi">At the bottom of the page, we find the various links to all external web pages, such as Facebook, Booking.com or even AirBnB.com.</p>
+                        <p className="TextP">Maintenance and optimization of a control program for an electromagnetic system for the creep of polymeric materials.</p>
+                        <p className="TextP">Programming under Visual I/O, in expert mode to modify and add functionalities to the mimic diagrams of the software's graphic interface.</p>
+                        <p className="TextP">Programming under Visual I/O, in Pascal language to develop all the additions, corrections and changes with regard to the logic of the software.</p>
                     </div>
                 </div>
             </div>
