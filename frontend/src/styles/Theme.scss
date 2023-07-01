@@ -1,5 +1,4 @@
 .Theme {
-    // background-color: blue;
     width: 48px;
     height: 100%;
 
@@ -14,5 +13,16 @@
             height: 100%;
             padding-bottom: 4px;
         }
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .Theme {
+        width: 32px;
+    }
+}
+@media screen and (min-width: 2200px) {
+    .Theme {
+        width: 72px;
     }
 }

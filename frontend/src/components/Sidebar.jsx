@@ -18,8 +18,10 @@ import AppW from "../assets/Icon/Sidebar/icons8-smartphone-100W.png"
 import MaisonW from "../assets/Icon/Sidebar/icons8-web-64W.png"
 import EnigmaW from "../assets/Icon/Sidebar/icons8-lock-90W.png"
 import LogicielW from "../assets/Icon/Sidebar/icons8-python-100W.png"
-import Mini from "../assets/Icon/Sidebar/icons8-triangle-64.png";
-import MiniW from "../assets/Icon/Sidebar/icons8-triangle-64W.png";
+import TriangleLeftBlack from "../assets/Icon/Sidebar/triangleLeftBlack.png";
+import TriangleLeftWhite from "../assets/Icon/Sidebar/triangleLeftWhite.png";
+import TriangleRightBlack from "../assets/Icon/Sidebar/triangleRightBlack.png";
+import TriangleRightWhite from "../assets/Icon/Sidebar/triangleRightWhite.png";
 
 const Sidebar = ({
     etiquetteON,
@@ -38,7 +40,7 @@ const Sidebar = ({
     logicielON,
     setLogicielON
 }) => {
-    const { theme, refresh, setRefresh, minimize, setMinimize } = useContext(UserContext);
+    const { theme, setRefresh, minimize, setMinimize } = useContext(UserContext);
     const navigate = useNavigate();
 
     const scrollToTop = () => {
@@ -378,18 +380,30 @@ const Sidebar = ({
                             </button>
                         </div>}
                 </div>
-                <div className={!minimize ? "Sidebar_container_mini_20" : "Sidebar_container_mini_6"}>
+                {!minimize && <div className="Sidebar_window_mini_20">
                     <button
                         onClick={() => {
                             setMinimize(!minimize)
                         }}>
                         {theme == 'light' ?
-                            <img src={Mini} alt='' className={!minimize ? "icon_mini" : "icon_mini2"}></img>
+                            <img src={TriangleLeftBlack} alt='' className="icon_mini2"></img>
                             :
-                            <img src={MiniW} alt='' className={!minimize ? "icon_mini" : "icon_mini2"}></img>}
+                            <img src={TriangleLeftWhite} alt='' className="icon_mini2"></img>}
                     </button>
-                </div>
+                </div>}
             </div >
+            {minimize &&
+                <div className="Sidebar_window_mini_8">
+                    <button
+                        onClick={() => {
+                            setMinimize(!minimize)
+                        }}>
+                        {theme == 'light' ?
+                            <img src={TriangleRightBlack} alt='' className="icon_mini2"></img>
+                            :
+                            <img src={TriangleRightWhite} alt='' className="icon_mini2"></img>}
+                    </button>
+                </div>}
         </div>
     );
 };

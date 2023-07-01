@@ -35,10 +35,9 @@
 }
 
 .buttonBack {
-    // background-color: yellow;
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 60%;
     height: 60px;
     font-size: 20px;
     color: var(--text);
@@ -74,9 +73,11 @@
 
 .Sidebar_window {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
 
     .Sidebar_container {
         display: flex;
@@ -95,7 +96,7 @@
 
         &_dark {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             width: 100%;
             background:
@@ -138,7 +139,6 @@
             }
 
             .Sidebar_theme {
-                // background-color: red;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
@@ -162,11 +162,9 @@
                         color: var(--hover);
                     }
                 }
-
             }
 
             .Sidebar_theme {
-                // background-color: red;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
@@ -213,38 +211,54 @@
                     }
                 }
             }
+        }
+    }
 
-            &_download {
-                display: flex;
-                align-items: center;
-                width: 80%;
-                height: 100%;
+    &_mini_20 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-                .Download {
-                    display: flex;
-                    align-items: center;
-                    font-size: 20px;
-                    color: var(--text);
-
-                    &:hover {
-                        color: var(--hover);
-                    }
-                }
-            }
+        .icon_mini {
+            width: 100%;
         }
 
-        &_mini_20 {
-            position: fixed;
-            left: 355px;
-            transform: rotate(90deg);
-            scale: 0.8;
+        .icon_mini2 {
+            width: 100%;
+        }
+    }
+
+    &_mini_8 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon_mini {
+            width: 100%;
         }
 
-        &_mini_6 {
-            position: fixed;
-            left: 120px;
-            transform: rotate(270deg);
-            scale: 0.8;
+        .icon_mini2 {
+            width: 100%;
         }
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .icon {
+        width: 20px;
+    }
+
+    .ellipsis {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .icon {
+        width: 40px;
+    }
+
+    .ellipsis {
+        font-size: 30px;
     }
 }

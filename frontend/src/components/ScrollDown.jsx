@@ -8,7 +8,7 @@ const ScrollDown = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
-        setScrollPosition(window.scrollY); // => scroll position
+        setScrollPosition(window.scrollY);
     };
 
     useEffect(() => {

@@ -31,26 +31,26 @@
 
 .pythonBorder {
     border-bottom: 2px solid var(--python);
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .cppBorder {
     border-bottom: 2px solid var(--cpp);
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .preactBorder {
     border-bottom: 2px solid var(--preact);
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .pascalBorder {
     border-bottom: 2px solid var(--pascal);
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .pythonDescription {
@@ -70,7 +70,6 @@
 }
 
 .Software {
-    // background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +104,6 @@
     }
 
     &_icones {
-        // background-color: gray;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -121,8 +119,7 @@
         }
     }
 
-    .Software_title {
-        // background-color: yellow;
+    &_title {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -146,7 +143,6 @@
         }
 
         .TitleSoftware {
-            // background-color: pink;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -160,13 +156,11 @@
     }
 
     &_description {
-        // background-color: orange;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 90%;
-        height: 72vh;
 
         .Software_h4 {
             font-family: $font-family-5;
@@ -175,64 +169,53 @@
         }
 
         &_left {
-            // background-color: aqua;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            gap: 12vh;
+            justify-content: space-around;
             width: 25%;
             height: 100%;
             padding-left: 10px;
         }
 
         &_middle {
-            // background-color: pink;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            gap: 12vh;
+            justify-content: space-around;
             width: 25%;
             height: 100%;
 
             .Categorie {
                 display: flex;
-                flex-direction: column;
-                justify-content: space-around;
+                flex-direction: row;
             }
 
             .Annee {
                 display: flex;
                 flex-direction: row;
-                gap: 100px;
             }
 
             .Client {
                 display: flex;
                 flex-direction: row;
-                gap: 100px;
             }
 
             .Front {
                 display: flex;
                 flex-direction: row;
-                gap: 100px;
             }
 
             .Back {
                 display: flex;
                 flex-direction: row;
-                gap: 100px;
             }
 
             .Sgbd {
                 display: flex;
                 flex-direction: row;
-                gap: 100px;
             }
         }
 
         &_right {
-            // background-color: blue;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -245,7 +228,6 @@
             }
 
             &_description {
-                // background-color: aquamarine;
                 background-color: rgba(var(--color-r), var(--color-g), var(--color-b), 0.8);
                 display: flex;
                 flex-direction: column;
@@ -258,6 +240,37 @@
                     margin-bottom: 10px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .TextP {
+        font-size: 20px;
+    }
+
+    .TextPi {
+        font-size: 16px;
+    }
+
+    .Software {
+        &_description {
+            &_left {
+
+                .resolution {
+                    font-size: 24px;
+                }
+            }
+
+            &_right {
+                .resolution {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .resolution {
+            font-size: 24px;
         }
     }
 }

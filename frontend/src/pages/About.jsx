@@ -1,10 +1,6 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Routes, Route, NavLink, Navigate, useNavigate } from "react-router-dom";
-import UserContext from "../context/UserContext";
+import React, { useEffect } from "react";
 
 const About = () => {
-    const { theme } = useContext(UserContext);
-    const navigate = useNavigate();
 
     const scrollToTop = () => {
         window.scrollTo({

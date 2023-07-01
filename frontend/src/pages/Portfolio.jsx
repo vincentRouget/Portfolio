@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
 import UserContext from "../context/UserContext";
 import Sidebar from '../components/Sidebar';
 import About from "./About";
@@ -12,8 +11,7 @@ import Enigma from "./Enigma";
 import Software from "./Software";
 
 const Portfolio = () => {
-    const { theme, refresh, setRefresh, minimize, setMinimize } = useContext(UserContext);
-    const navigate = useNavigate();
+    const { theme, minimize } = useContext(UserContext);
     const [etiquetteON, setEtiquetteON] = useState(true)
     const [wildON, setWildON] = useState(false)
     const [enecomON, setEnecomON] = useState(false)

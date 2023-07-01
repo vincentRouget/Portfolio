@@ -16,7 +16,6 @@ import ANDROID from "../assets/Icon/android.png";
 import PYTHON from "../assets/Icon/python.png";
 import Pascal from "../assets/Icon/pascal.png";
 import CPP from "../assets/Icon/cpp.png";
-import VSC from "../assets/Icon/vsc.png";
 import VS from "../assets/Icon/vs.png";
 import IO from "../assets/Icon/io.png";
 import Wild1 from "../assets/Image/Wild/wild1.png";
@@ -77,7 +76,7 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Création d'un site pour la recherche de films et de séries à l'aide d'une API publique</p>
+                        <p>Library site for searching movies and series using a public API</p>
                     </div>
                 </button>
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card MainDark"}
@@ -113,7 +112,7 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Interface intranet pour le partage de plans de communication</p>
+                        <p>Intranet interface for sharing communication plans</p>
                     </div>
                 </button>
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card MainDark"}
@@ -149,7 +148,7 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Création d'une application mobile de rencontre</p>
+                        <p>Mobile dating app</p>
                     </div>
                 </button>
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card MainDark"}
@@ -179,7 +178,7 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Création d'un site internet pour des chambres d'hôtes</p>
+                        <p>Website for bed and breakfast</p>
                     </div>
                 </button>
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card MainDark"}
@@ -196,7 +195,7 @@ const Main = ({
                     <div className='Main_container_card_image'>
                         <img src={Soft1} alt="Software"></img>
                     </div>
-                    <h1>SOFTWARES</h1>
+                    <h1>SOFTWARE</h1>
                     <div className="Main_container_card_techno">
                         <div className="Main_container_card_techno_icone">
                             <img src={PYTHON} alt='React.js' className="icone"></img>
@@ -218,7 +217,7 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Conception, maintenance et optimisation d'algorithme logicielle</p>
+                        <p>Software design, maintenance and optimization</p>
                     </div>
                 </button>
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card MainDark"}
@@ -248,7 +247,7 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Création d'une interface web pour le cryptage de texte</p>
+                        <p>Algorithm web interface for text encryption</p>
                     </div>
                 </button>
             </div>

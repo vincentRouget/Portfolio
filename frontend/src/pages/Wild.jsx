@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, useRef } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/UserContext";
 import Logo1 from "../assets/Icon/logo_wildmovies.svg";
 import Logo2 from "../assets/Icon/logo2_wildmovies.svg";
@@ -23,9 +23,8 @@ const Wild = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
-        setScrollPosition(window.scrollY); // => scroll position
+        setScrollPosition(window.scrollY);
     };
-
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -76,22 +75,22 @@ const Wild = () => {
             <div className="Wild_description">
                 <div className="Wild_description_left">
                     <div className="Categorie">
-                        <h4 className="Wild_h4">Catégorie</h4>
+                        <h4 className="Wild_h4 resolution">Catégorie</h4>
                     </div>
                     <div className="Annee">
-                        <h4 className="Wild_h4">Année</h4>
+                        <h4 className="Wild_h4 resolution">Année</h4>
                     </div>
                     <div className="Client">
-                        <h4 className="Wild_h4">Client</h4>
+                        <h4 className="Wild_h4 resolution">Client</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Wild_h4">Front end</h4>
+                        <h4 className="Wild_h4 resolution">Front end</h4>
                     </div>
                     <div className="Back">
-                        <h4 className="Wild_h4">Back end</h4>
+                        <h4 className="Wild_h4 resolution">Back end</h4>
                     </div>
                     <div className="Sgbd">
-                        <h4 className="Wild_h4">SGBD</h4>
+                        <h4 className="Wild_h4 resolution">SGBD</h4>
                     </div>
                 </div>
                 <div className="Wild_description_middle">
@@ -116,7 +115,7 @@ const Wild = () => {
                 </div>
                 <div className="Wild_description_right">
                     <div className="Wild_description_right_description">
-                        <h4 className="Wild_h4 Saut">Description :</h4>
+                        <h4 className="Wild_h4 Saut resolution">Description :</h4>
                         <p className="TextPi">The Wild Movies project is a website that offers a library of all the movies and series present in the very popular public api TMDB.</p>
                         <p className="TextPi">This API is intended for those who wish to use their very complete database in a web application.</p>
                         <p className="TextPi">It allows you to dynamically retrieve all the data relating to films, series, but also those relating to casting.</p>
@@ -125,97 +124,52 @@ const Wild = () => {
                     <p className="TextP">Link to website : <a href="https://wild-movies.netlify.app/" target="_blank">https://wild-movies.netlify.app/</a></p>
                 </div>
             </div>
-            <h4 className="Wild_h4">Screenshots</h4>
+            <h4 className="Wild_h4 resolution">Screenshots</h4>
             <div className="Wild_screenshot">
                 <div className="Wild_screenshot_image">
-                    {/* {(scrollPosition >= 1200 && scrollPosition <= 2400) ? */}
                     <a href={Wild2} target="_blank">
                         <img src={Wild2} className="Wild_screenshot_image"></img>
                     </a>
-                    {/* :
-                        <a href={Wild2} target="_blank">
-                            <img src={Wild2} className="Wild_screenshot_image totalHide"></img>
-                        </a>} */}
                 </div>
                 <div className="Wild_screenshot_image">
-                    {/* {(scrollPosition >= 2100 && scrollPosition <= 3200) ? */}
                     <a href={Wild3} target="_blank">
                         <img src={Wild3} className="Wild_screenshot_image"></img>
                     </a>
-                    {/* :
-                        <a href={Wild3} target="_blank">
-                            <img src={Wild3} className="Wild_screenshot_image totalHide"></img>
-                        </a>} */}
                 </div>
                 <div className="Wild_screenshot_image">
-                    {/* {(scrollPosition >= 2900 && scrollPosition <= 4100) ? */}
                     <a href={Wild4} target="_blank">
                         <img src={Wild4} className="Wild_screenshot_image"></img>
                     </a>
-                    {/* :
-                        <a href={Wild4} target="_blank">
-                            <img src={Wild4} className="Wild_screenshot_image totalHide"></img>
-                        </a>} */}
                 </div>
                 <div className="Wild_screenshot_image">
-                    {/* {(scrollPosition >= 3800 && scrollPosition <= 5000) ? */}
                     <a href={Wild5} target="_blank">
                         <img src={Wild5} className="Wild_screenshot_image"></img>
                     </a>
-                    {/* :
-                        <a href={Wild5} target="_blank">
-                            <img src={Wild5} className="Wild_screenshot_image totalHide"></img>
-                        </a>} */}
                 </div>
                 <div className="Wild_screenshot_image">
-                    {/* {(scrollPosition >= 4700 && scrollPosition <= 5800) ? */}
                     <a href={Wild8} target="_blank">
                         <img src={Wild8} className="Wild_screenshot_image"></img>
                     </a>
-                    {/* :
-                        <a href={Wild8} target="_blank">
-                            <img src={Wild8} className="Wild_screenshot_image totalHide"></img>
-                        </a>} */}
                 </div>
                 <div className="Wild_screenshot_image">
-                    {/* {(scrollPosition >= 5500 && scrollPosition <= 6600) ? */}
                     <a href={Wild6} target="_blank">
                         <img src={Wild6} className="Wild_screenshot_image"></img>
                     </a>
-                    {/* :
-                        <a href={Wild6} target="_blank">
-                            <img src={Wild6} className="Wild_screenshot_image totalHide"></img>
-                        </a>} */}
                 </div>
                 <div className="Wild_screenshot_image">
-                    {/* {(scrollPosition >= 6300 && scrollPosition <= 7500) ? */}
                     <a href={Wild7} target="_blank">
                         <img src={Wild7} className="Wild_screenshot_image"></img>
                     </a>
-                    {/* :
-                        <a href={Wild7} target="_blank">
-                            <img src={Wild7} className="Wild_screenshot_image totalHide"></img>
-                        </a>} */}
                 </div>
                 <div className="Wild_screenshot_image">
-                    {/* {(scrollPosition >= 7200 && scrollPosition <= 8500) ? */}
                     <a href={Wild10} target="_blank">
                         <img src={Wild10} className="Wild_screenshot_image lessBorder"></img>
                     </a>
-                    {/* :
-                        <a href={Wild10} target="_blank">
-                            <img src={Wild10} class="Wild_screenshot_image totalHide lessBorder"></img>
-                        </a>} */}
                 </div>
                 <div className="Wild_screenshot_image">
-                    {/* {(scrollPosition >= 8200 && scrollPosition <= 9900) ? */}
                     <a href={Wild9} target="_blank">
                         <img src={Wild9} class="Wild_screenshot_image lessBorder"></img>
                     </a>
-                    {/* :
-                        <a href={Wild9} target="_blank">
-                            <img src={Wild9} class="Wild_screenshot_image totalHide lessBorder"></img>
-                        </a>} */}
                 </div>
             </div>
         </div>

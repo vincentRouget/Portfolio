@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, useRef } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/UserContext";
 import ScrollDown from "../components/ScrollDown";
 import PREACT from "../assets/Icon/preact.png";
@@ -14,9 +14,8 @@ const Software = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
-        setScrollPosition(window.scrollY); // => scroll position
+        setScrollPosition(window.scrollY);
     };
-
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -65,16 +64,16 @@ const Software = () => {
             <div className="Software_description pythonBorder">
                 <div className="Software_description_left">
                     <div className="Annee">
-                        <h4 className="Software_h4 python">Année</h4>
+                        <h4 className="Software_h4 python resolution">Année</h4>
                     </div>
                     <div className="Categorie">
-                        <h4 className="Software_h4 python">Non-disclosure clause</h4>
+                        <h4 className="Software_h4 python resolution">Non-disclosure clause</h4>
                     </div>
                     <div className="Client">
-                        <h4 className="Software_h4 python">I.D.E.</h4>
+                        <h4 className="Software_h4 python resolution">I.D.E.</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Software_h4 python">Technologies</h4>
+                        <h4 className="Software_h4 python resolution">Technologies</h4>
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -93,7 +92,7 @@ const Software = () => {
                 </div>
                 <div className="Software_description_right">
                     <div className="Software_description_right_description pythonDescription">
-                        <h4 className="Software_h4 Saut python">Description :</h4>
+                        <h4 className="Software_h4 Saut python resolution">Description :</h4>
                         <p className="TextP">Development of a pilot and test program for an automated tamping machine.</p>
                         <p className="TextP">The program makes it possible, depending on several input parameters, to generate machine cycles in a loop, to advance step by step, to optimize performance, and to identify all possible causes of error.</p>
                         <p className="TextP">The program thus helps to mechanically design future optimization hardware developments.</p>
@@ -112,16 +111,16 @@ const Software = () => {
             <div className="Software_description cppBorder">
                 <div className="Software_description_left">
                     <div className="Annee">
-                        <h4 className="Software_h4 cpp">Année</h4>
+                        <h4 className="Software_h4 cpp resolution">Année</h4>
                     </div>
                     <div className="Categorie">
-                        <h4 className="Software_h4 cpp">Non-disclosure clause</h4>
+                        <h4 className="Software_h4 cpp resolution">Non-disclosure clause</h4>
                     </div>
                     <div className="Client">
-                        <h4 className="Software_h4 cpp">I.D.E.</h4>
+                        <h4 className="Software_h4 cpp resolution">I.D.E.</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Software_h4 cpp">Technologies</h4>
+                        <h4 className="Software_h4 cpp resolution">Technologies</h4>
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -140,7 +139,7 @@ const Software = () => {
                 </div>
                 <div className="Software_description_right">
                     <div className="Software_description_right_description cppDescription">
-                        <h4 className="Software_h4 Saut cpp">Description :</h4>
+                        <h4 className="Software_h4 Saut cpp resolution">Description :</h4>
                         <p className="TextP">Adaptability of video surveillance management software by means of a network of cameras, to modern operating systems.</p>
                         <p className="TextP">Addition of functionalities and availability of new foreign languages in the software through dll files.</p>
                         <p className="TextP">Increased security protocols and implementation of a USB Dongle.</p>
@@ -159,16 +158,16 @@ const Software = () => {
             <div className="Software_description preactBorder">
                 <div className="Software_description_left">
                     <div className="Annee">
-                        <h4 className="Software_h4 preact">Année</h4>
+                        <h4 className="Software_h4 preact resolution">Année</h4>
                     </div>
                     <div className="Categorie">
-                        <h4 className="Software_h4 preact">Non-disclosure clause</h4>
+                        <h4 className="Software_h4 preact resolution">Non-disclosure clause</h4>
                     </div>
                     <div className="Client">
-                        <h4 className="Software_h4 preact">I.D.E.</h4>
+                        <h4 className="Software_h4 preact resolution">I.D.E.</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Software_h4 preact">Technologies</h4>
+                        <h4 className="Software_h4 preact resolution">Technologies</h4>
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -187,7 +186,7 @@ const Software = () => {
                 </div>
                 <div className="Software_description_right">
                     <div className="Software_description_right_description preactDescription">
-                        <h4 className="Software_h4 Saut">Description :</h4>
+                        <h4 className="Software_h4 Saut preact resolution">Description :</h4>
                         <p className="TextP">Complete overhaul of a program used to control the lights on board SNCF network trains.</p>
                         <p className="TextP">This project aimed to fully migrate all old features to a new modern interface.</p>
                         <p className="TextP">The program being embedded on various computer media, the development was done in the Preact language, for low resource consumption needs.</p>
@@ -206,16 +205,16 @@ const Software = () => {
             <div className="Software_description pascalBorder">
                 <div className="Software_description_left">
                     <div className="Annee">
-                        <h4 className="Software_h4 pascal">Année</h4>
+                        <h4 className="Software_h4 pascal resolution">Année</h4>
                     </div>
                     <div className="Categorie">
-                        <h4 className="Software_h4 pascal">Non-disclosure clause</h4>
+                        <h4 className="Software_h4 pascal resolution">Non-disclosure clause</h4>
                     </div>
                     <div className="Client">
-                        <h4 className="Software_h4 pascal">I.D.E.</h4>
+                        <h4 className="Software_h4 pascal resolution">I.D.E.</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Software_h4 pascal">Technologies</h4>
+                        <h4 className="Software_h4 pascal resolution">Technologies</h4>
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -234,7 +233,7 @@ const Software = () => {
                 </div>
                 <div className="Software_description_right">
                     <div className="Software_description_right_description pascalDescription">
-                        <h4 className="Software_h4 Saut">Description :</h4>
+                        <h4 className="Software_h4 Saut pascal resolution">Description :</h4>
                         <p className="TextP">Maintenance and optimization of a control program for an electromagnetic system for the creep of polymeric materials.</p>
                         <p className="TextP">Programming under Visual I/O, in expert mode to modify and add functionalities to the mimic diagrams of the software's graphic interface.</p>
                         <p className="TextP">Programming under Visual I/O, in Pascal language to develop all the additions, corrections and changes with regard to the logic of the software.</p>

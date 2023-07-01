@@ -5,9 +5,9 @@
     height: 100%;
     min-height: 100vh;
     background:
-        linear-gradient(0deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-        linear-gradient(180deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-        url("https://images.pexels.com/photos/1568607/pexels-photo-1568607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        linear-gradient(0deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 30%),
+        linear-gradient(180deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 30%),
+        url("../assets/Image/pexels-zaksheuskaya-1568607.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -15,21 +15,20 @@
     &_topbar {
         display: flex;
         flex-direction: row;
+        align-items: center;
         width: 100%;
 
         &_left {
-            // background-color: yellow;
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
-            align-items: flex-start;
-            width: 800px;
+            align-items: center;
+            width: 100%;
 
             .Texte_first {
                 display: inline-block;
                 overflow: hidden;
                 white-space: nowrap;
-                margin-top: 30px;
                 margin-left: -100px;
                 animation: showup 8s infinite;
             }
@@ -114,7 +113,6 @@
 
 
             &_logo {
-                // background-color: red;
                 width: 200px;
                 height: 200px;
                 margin: 10px 0px 0px 10px;
@@ -128,21 +126,18 @@
         }
 
         &_middle {
-            // background-color: red;
             display: flex;
             flex-direction: row;
+            width: 20%;
         }
 
         &_right {
-            // background-color: pink;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            width: 800px;
-            margin: 60px 40px auto auto;
-
-            .theme {}
+            width: 100%;
+            margin: auto 40px auto auto;
 
             &_link {
                 display: flex;
@@ -151,7 +146,7 @@
                 font-family: $font-family-3;
                 font-size: 40px;
                 color: var(--link);
-                // letter-spacing: -2px;
+                letter-spacing: -2px;
                 text-decoration: none;
                 text-align: center;
                 background: linear-gradient(to top,
@@ -166,7 +161,6 @@
                 cursor: pointer;
 
                 &:hover {
-                    // color: var(--secondary);
                     background-position: 50%;
                     transition: all 200ms ease-in;
                     background-size: 90% 100%;
@@ -174,31 +168,16 @@
             }
 
             .ButtonAbout {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-family: $font-family-3;
-                font-size: 40px;
-                color: var(--link);
-                letter-spacing: -2px;
-                text-decoration: none;
-                padding-bottom: 4px;
-
-                &:hover {
-                    color: var(--title);
-                    text-decoration: underline;
-                }
+                width: 120px;
             }
 
             .Linkedin {
-                // background-color: blue;
                 display: flex;
                 width: 60px;
                 padding-bottom: 4px;
             }
 
             .Github {
-                // background-color: blue;
                 display: flex;
                 width: 60px;
                 padding-bottom: 4px;
@@ -207,7 +186,6 @@
     }
 
     &_page {
-        // background-color: blue;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -230,7 +208,6 @@
         }
 
         a {
-            // background-color: yellow;
             display: flex;
             align-items: center;
             text-decoration: none;
@@ -262,23 +239,19 @@
     }
 
     .Page {
-        // background-color: red;
         position: fixed;
         top: 100%;
         left: 8%;
         width: 88%;
-        height: 60%;
         opacity: 0;
         transition: 500ms ease-in;
 
         .TitleAbout_container {
-            // background-color: red;
             display: flex;
             flex-direction: row;
             align-items: center;
 
             .TitleAbout {
-                // background-color: green;
                 font-family: $font-family;
                 color: #f0c75f;
                 font-size: 80px;
@@ -304,7 +277,6 @@
         }
 
         .Section {
-            // background-color: green;
 
             .Paragraphe {
                 font-family: $font-family;
@@ -325,9 +297,12 @@
     }
 
     .aboutTEXT {
-        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         top: 28%;
         left: 8%;
+        height: 64%;
         opacity: 1;
         transition: 600ms ease-in-out 0.2s;
     }
@@ -342,7 +317,186 @@
     background:
         linear-gradient(0deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
         linear-gradient(180deg, rgba(var(--color-r), var(--color-g), var(--color-b), 1) 0%, rgba(var(--color-r), var(--color-g), var(--color-b), 0) 20%),
-        url("https://cdn.pixabay.com/photo/2017/06/13/13/55/marble-2398956_1280.jpg");
+        url("../assets/Image/pexels-scott-webb-2117938.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media screen and (max-width: 1900px) {
+    .Accueil {
+
+        &_topbar {
+
+            &_left {
+
+                .Texte1 {
+                    font-size: 44px;
+                    letter-spacing: -2px;
+                }
+
+                .Texte2 {
+                    font-size: 44px;
+                    letter-spacing: -2px;
+                }
+
+                &_logo {
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+
+            &_right {
+                margin: auto 20px auto auto;
+
+                &_link {
+                    font-size: 30px;
+                }
+
+                .ButtonAbout {
+                    width: 90px;
+                }
+            }
+        }
+
+        &_page {
+
+            h1 {
+                font-size: 80px;
+                letter-spacing: -4px;
+            }
+
+            p {
+                font-size: 56px;
+            }
+        }
+
+        .Page {
+
+            .TitleAbout_container {
+
+                .TitleAbout {
+                    font-size: 48px;
+                }
+
+                .Paragraphe {
+                    font-size: 32px;
+
+                    .accent {
+                        font-size: 48px;
+                    }
+                }
+            }
+
+            .Section {
+
+                .Paragraphe {
+                    font-size: 32px;
+
+                    .accent {
+                        font-size: 48px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .Accueil {
+
+        &_topbar {
+
+            &_left {
+
+                .Texte1 {
+                    font-size: 88px;
+                    letter-spacing: -2px;
+                }
+
+                .Texte2 {
+                    font-size: 88px;
+                    letter-spacing: -2px;
+                }
+
+                &_logo {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+
+            &_right {
+                margin: auto 60px auto auto;
+
+                &_link {
+                    font-size: 56px;
+                }
+
+                .ButtonAbout {
+                    width: 170px;
+                }
+
+                .Linkedin {
+                    width: 100px;
+                }
+
+                .Github {
+                    width: 100px;
+                }
+            }
+        }
+
+        &_page {
+            h1 {
+                font-size: 128px;
+            }
+
+            p {
+                font-size: 88px;
+            }
+
+            a {
+                height: 140px;
+                font-size: 64px;
+                padding-right: 40px;
+            }
+
+            .Arrow {
+                scale: 0.8;
+                margin: auto 20px auto 20px;
+            }
+        }
+
+        .Animation {
+            scale: 1.5;
+        }
+
+        .Page {
+
+            .TitleAbout_container {
+
+                .TitleAbout {
+                    font-size: 88px;
+                }
+
+                .Paragraphe {
+                    font-size: 72px;
+
+                    .accent {
+                        font-size: 88px;
+                    }
+                }
+            }
+
+            .Section {
+
+                .Paragraphe {
+                    font-size: 72px;
+
+                    .accent {
+                        font-size: 88px;
+                    }
+                }
+            }
+        }
+    }
 }

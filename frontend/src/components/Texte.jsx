@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import UserContext from "../context/UserContext";
 
 const Texte = () => {
-    const { theme, refresh, setRefresh } = useContext(UserContext);
+    const { refresh, setRefresh } = useContext(UserContext);
 
     var TxtRotate = function (el, toRotate, period) {
         this.toRotate = toRotate;

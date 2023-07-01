@@ -1,11 +1,9 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Routes, Route, NavLink, Navigate, useNavigate } from 'react-router-dom';
+import React, { useContext, useEffect } from "react";
 import UserContext from "../context/UserContext";
 import Dark from "../assets/Icon/icons8-dark-96ter.png"
 
 const Theme = () => {
     const { theme, setTheme } = useContext(UserContext);
-    const navigate = useNavigate();
 
     const toggleTheme = () => {
         if (theme === 'light') {

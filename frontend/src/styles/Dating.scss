@@ -13,7 +13,6 @@
 }
 
 .Hobbi {
-    // background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +46,6 @@
     }
 
     &_icones {
-        // background-color: gray;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -64,7 +62,6 @@
     }
 
     .Hobbi_title {
-        // background-color: yellow;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -90,7 +87,6 @@
         }
 
         .TitleHobbi {
-            // background-color: pink;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -105,13 +101,11 @@
     }
 
     &_description {
-        // background-color: yellow;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 90%;
-        height: 60vh;
         padding-bottom: 100px;
         margin-bottom: 140px;
         border-bottom: 2px solid var(--hobbi);
@@ -124,75 +118,65 @@
         }
 
         &_left {
-            // background-color: aqua;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            width: 16%;
+            justify-content: space-around;
+            width: 25%;
             height: 100%;
             padding-left: 10px;
         }
 
         &_middle {
-            // background-color: pink;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            width: 34%;
+            justify-content: space-around;
+            width: 25%;
             height: 100%;
 
             .Categorie {
                 display: flex;
-                flex-direction: column;
-                justify-content: space-around;
+                flex-direction: row;
             }
 
             .Annee {
                 display: flex;
                 flex-direction: row;
-                gap: 100px;
             }
 
             .Client {
                 display: flex;
                 flex-direction: row;
-                gap: 100px;
             }
 
             .Front {
                 display: flex;
                 flex-direction: row;
-                gap: 100px;
             }
 
             .Back {
                 display: flex;
                 flex-direction: row;
-                gap: 100px;
             }
 
             .Sgbd {
                 display: flex;
                 flex-direction: row;
-                gap: 100px;
             }
         }
 
         &_right {
-            // background-color: yellow;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 50%;
-            gap: 100px;
+            gap: 50px;
 
             a {
                 color: var(--link);
             }
 
             &_description {
-                // background-color: aquamarine;
                 background-color: rgba(var(--color-r), var(--color-g), var(--color-b), 0.8);
                 display: flex;
                 flex-direction: column;
@@ -210,7 +194,6 @@
     }
 
     &_screenshot {
-        // background-color: green;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -221,7 +204,6 @@
         margin-bottom: 100px;
 
         a {
-            // background-color: blue;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -236,6 +218,37 @@
                 border: none;
                 border-radius: 10px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .TextP {
+        font-size: 20px;
+    }
+
+    .TextPi {
+        font-size: 16px;
+    }
+
+    .Hobbi {
+        &_description {
+            &_left {
+
+                .resolution {
+                    font-size: 24px;
+                }
+            }
+
+            &_right {
+                .resolution {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .resolution {
+            font-size: 24px;
         }
     }
 }

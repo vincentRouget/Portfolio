@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, useRef } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/UserContext";
 import ScrollDown from "../components/ScrollDown";
 import ImageLogoMaison from '../assets/Icon/LogoMaison.jpg';
@@ -13,17 +13,14 @@ import House9 from "../assets/Image/House/house9.png";
 import SCSS from "../assets/Icon/scss.png";
 import REACTJS from "../assets/Icon/react.png";
 import NODE from "../assets/Icon/node.png";
-import EXPRESS from "../assets/Icon/express.png";
-import MYSQL from "../assets/Icon/mysql.png";
 
 const Maison = () => {
     const { theme } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
-        setScrollPosition(window.scrollY); // => scroll position
+        setScrollPosition(window.scrollY);
     };
-
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -66,16 +63,16 @@ const Maison = () => {
             <div className="House_description">
                 <div className="House_description_left">
                     <div className="Categorie">
-                        <h4 className="House_h4">Catégorie</h4>
+                        <h4 className="House_h4 resolution">Catégorie</h4>
                     </div>
                     <div className="Annee">
-                        <h4 className="House_h4">Année</h4>
+                        <h4 className="House_h4 resolution">Année</h4>
                     </div>
                     <div className="Client">
-                        <h4 className="House_h4">Client</h4>
+                        <h4 className="House_h4 resolution">Client</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="House_h4">Front end</h4>
+                        <h4 className="House_h4 resolution">Front end</h4>
                     </div>
                 </div>
                 <div className="House_description_middle">
@@ -94,7 +91,7 @@ const Maison = () => {
                 </div>
                 <div className="House_description_right">
                     <div className="House_description_right_description">
-                        <h4 className="House_h4 Saut">Description :</h4>
+                        <h4 className="House_h4 Saut resolution">Description :</h4>
                         <p className="TextPi">This site created in React.js aims to present the services and rental rates for accommodation in the establishment "La Maison du Lac", located near Limoges in the department of Haute-Vienne (87), France.</p>
                         <p className="TextPi">On the home page, it presents a description of the establishment and the different accommodations, with some images to illustrate the places.</p>
                         <p className="TextPi">It also offers the different possible formulas with a description of each of them, as well as the rates and optional services.</p>
@@ -104,7 +101,7 @@ const Maison = () => {
                     <p className="TextP">Link to website : <a href="https://lamaisondulac87.fr/" target="_blank">https://lamaisondulac87.fr/</a></p>
                 </div>
             </div>
-            <h4 className="House_h4 House_padding">Screenshots</h4>
+            <h4 className="House_h4 House_padding resolution">Screenshots</h4>
             <div className="House_screenshot">
                 <div className="House_screenshot_image">
                     <a href={House2} target="_blank">

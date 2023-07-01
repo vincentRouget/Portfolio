@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, useRef } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/UserContext";
 import ScrollDown from "../components/ScrollDown";
 import EnecomLogo from "../assets/Icon/enecom.svg";
@@ -19,9 +19,8 @@ const Enecom = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
-        setScrollPosition(window.scrollY); // => scroll position
+        setScrollPosition(window.scrollY);
     };
-
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -69,22 +68,22 @@ const Enecom = () => {
             <div className="Enecom_description">
                 <div className="Enecom_description_left">
                     <div className="Categorie">
-                        <h4 className="Enecom_h4">Catégorie</h4>
+                        <h4 className="Enecom_h4 resolution">Catégorie</h4>
                     </div>
                     <div className="Annee">
-                        <h4 className="Enecom_h4">Année</h4>
+                        <h4 className="Enecom_h4 resolution">Année</h4>
                     </div>
                     <div className="Client">
-                        <h4 className="Enecom_h4">Client</h4>
+                        <h4 className="Enecom_h4 resolution">Client</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Enecom_h4">Front end</h4>
+                        <h4 className="Enecom_h4 resolution">Front end</h4>
                     </div>
                     <div className="Back">
-                        <h4 className="Enecom_h4">Back end</h4>
+                        <h4 className="Enecom_h4 resolution">Back end</h4>
                     </div>
                     <div className="Sgbd">
-                        <h4 className="Enecom_h4">SGBD</h4>
+                        <h4 className="Enecom_h4 resolution">SGBD</h4>
                     </div>
                 </div>
                 <div className="Enecom_description_middle">
@@ -109,16 +108,16 @@ const Enecom = () => {
                 </div>
                 <div className="Enecom_description_right">
                     <div className="Enecom_description_right_description">
-                        <h4 className="Enecom_h4 Saut">Description :</h4>
+                        <h4 className="Enecom_h4 Saut resolution">Description :</h4>
                         <p className="TextPi">The Enecom project aims to integrate an internal platform for sharing ideas for employees of the Enedis company.</p>
                         <p className="TextPi">This web interface therefore allows employees to create their own communication plans and to be able to manage them on a relational database. These communication plans can be very detailed thanks to several types of categories, and illustrated with images or additional files.</p>
                         <p className="TextPi">The employee can also consult the communication plans of other users in order to be able to discuss everyone's ideas.</p>
                         <p className="TextPi">Finally, an administrator status gives access to more possibilities, such as archiving a communication plan, deleting it, or even creating a new user.</p>
                     </div>
-                    <p className="TextP">Link to website : <a href="http://vps-d5babf40.vps.ovh.net:5007/" target="_blank">http://vps-d5babf40.vps.ovh.net:5007/</a></p>
+                    <p className="TextP">Link to website : <a href="http://vps-d5babf40.vps.ovh.net:5007/" target="_blank" className="moreSmall">http://vps-d5babf40.vps.ovh.net:5007/</a></p>
                 </div>
             </div>
-            <h4 className="Enecom_h4">Screenshots</h4>
+            <h4 className="Enecom_h4 resolution">Screenshots</h4>
             <div className="Enecom_screenshot">
                 <div className="Enecom_screenshot_image">
                     <a href={Enecom1} target="_blank">

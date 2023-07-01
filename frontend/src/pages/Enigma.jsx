@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, useRef } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/UserContext";
 import ScrollDown from "../components/ScrollDown";
 import LogoEnigma from '../assets/Image/Enigma/LogoEnigma.png';
@@ -14,9 +14,8 @@ const Enigma = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
-        setScrollPosition(window.scrollY); // => scroll position
+        setScrollPosition(window.scrollY);
     };
-
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -59,16 +58,16 @@ const Enigma = () => {
             <div className="Enigma_description">
                 <div className="Enigma_description_left">
                     <div className="Categorie">
-                        <h4 className="Enigma_h4">Catégorie</h4>
+                        <h4 className="Enigma_h4 resolution">Catégorie</h4>
                     </div>
                     <div className="Annee">
-                        <h4 className="Enigma_h4">Année</h4>
+                        <h4 className="Enigma_h4 resolution">Année</h4>
                     </div>
                     <div className="Client">
-                        <h4 className="Enigma_h4">Client</h4>
+                        <h4 className="Enigma_h4 resolution">Client</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Enigma_h4">Front end</h4>
+                        <h4 className="Enigma_h4 resolution">Front end</h4>
                     </div>
                 </div>
                 <div className="Enigma_description_middle">
@@ -87,7 +86,7 @@ const Enigma = () => {
                 </div>
                 <div className="Enigma_description_right">
                     <div className="Enigma_description_right_description">
-                        <h4 className="Enigma_h4 Saut">Description :</h4>
+                        <h4 className="Enigma_h4 Saut resolution">Description :</h4>
                         <p className="TextPi">This algorithmic project is an html interface that allows a lot of interactions around text encryption.</p>
                         <p className="TextPi">Simply choose a key, which is a string of characters that will act as the password necessary for encryption and decryption, then enter the text to be encrypted.</p>
                         <p className="TextPi">It is then possible to encrypt the message, copy it to the clipboard, or send it by email, with or without comments, in order to give the recipient a clue about the key used to decrypt the message.</p>
@@ -97,19 +96,19 @@ const Enigma = () => {
             </div>
             <div className="Enigma_screenshot Enigma_padding">
                 <div className="Enigma_screenshot_image">
-                    <h4 className="Enigma_h4">Interface</h4>
+                    <h4 className="Enigma_h4 resolution">Interface</h4>
                     <a href={Enigma1} target="_blank">
                         <img src={Enigma1} className="Enigma_screenshot_image"></img>
                     </a>
                 </div>
                 <div className="Enigma_screenshot_image">
-                    <h4 className="Enigma_h4">Encryption</h4>
+                    <h4 className="Enigma_h4 resolution">Encryption</h4>
                     <a href={Enigma2} target="_blank">
                         <img src={Enigma2} className="Enigma_screenshot_image"></img>
                     </a>
                 </div>
                 <div className="Enigma_screenshot_image">
-                    <h4 className="Enigma_h4">Decryption</h4>
+                    <h4 className="Enigma_h4 resolution">Decryption</h4>
                     <a href={Enigma3} target="_blank">
                         <img src={Enigma3} className="Enigma_screenshot_image"></img>
                     </a>
