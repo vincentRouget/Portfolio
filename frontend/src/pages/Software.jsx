@@ -24,7 +24,7 @@ const Software = () => {
     };
 
     useEffect(() => {
-        // scrollToTop();
+        scrollToTop();
         handleScroll();
         window.addEventListener("scroll", handleScroll);
         return () => {
