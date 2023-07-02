@@ -54,18 +54,39 @@
 }
 
 .pythonDescription {
-    border: 1px solid var(--python);
+    padding-left: 4%;
+    border-left: 1px solid var(--python);
 }
 
 .cppDescription {
-    border: 1px solid var(--cpp);
+    padding-left: 4%;
+    border-left: 1px solid var(--cpp);
 }
 
 .preactDescription {
-    border: 1px solid var(--preact);
+    padding-left: 4%;
+    border-left: 1px solid var(--preact);
 }
 
 .pascalDescription {
+    padding-left: 4%;
+    border-left: 1px solid var(--pascal);
+}
+
+.pythonContour {
+    border: 1px solid var(--python);
+
+}
+
+.cppContour {
+    border: 1px solid var(--cpp);
+}
+
+.preactContour {
+    border: 1px solid var(--preact);
+}
+
+.pascalContour {
     border: 1px solid var(--pascal);
 }
 
@@ -155,12 +176,18 @@
         }
     }
 
+
     &_description {
+        background-color: rgba(var(--color-r), var(--color-g), var(--color-b), 0.7);
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 90%;
+        height: 80vh;
+        padding: 5% 1% 5% 1%;
+        margin: 6% auto 8% auto;
+        border-radius: 20px;
 
         .Software_h4 {
             font-family: $font-family-5;
@@ -171,47 +198,52 @@
         &_left {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
-            width: 25%;
+            justify-content: space-between;
+            width: 30%;
             height: 100%;
-            padding-left: 10px;
         }
 
         &_middle {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
-            width: 25%;
+            justify-content: space-between;
+            width: 30%;
             height: 100%;
 
             .Categorie {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
+                justify-content: space-around;
             }
 
             .Annee {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
 
             .Client {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
 
             .Front {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
 
             .Back {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
 
             .Sgbd {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
         }
 
@@ -219,21 +251,18 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             width: 50%;
-            gap: 50px;
+            height: 70vh;
 
             a {
                 color: var(--link);
             }
 
             &_description {
-                background-color: rgba(var(--color-r), var(--color-g), var(--color-b), 0.8);
                 display: flex;
                 flex-direction: column;
                 line-height: 3em;
-                border-radius: 10px;
-                padding: 20px;
                 color: var(--text);
 
                 .Saut {
@@ -251,10 +280,29 @@
 
     .TextPi {
         font-size: 16px;
+        line-height: 1.5em;
     }
 
     .Software {
+        .Software_title {
+            .P_title {
+                font-size: 80px;
+            }
+        }
+
+        &_icones {
+            &_icone {
+                width: 100px;
+            }
+        }
+
+        &_entete {
+            font-size: 32px;
+        }
+
         &_description {
+            height: 90vh;
+
             &_left {
 
                 .resolution {
@@ -263,6 +311,9 @@
             }
 
             &_right {
+                height: 80vh;
+                gap: 20px;
+
                 .resolution {
                     font-size: 24px;
                 }
@@ -271,6 +322,95 @@
 
         .resolution {
             font-size: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .TextP {
+        font-size: 32px;
+    }
+
+    .TextPi {
+        font-size: 32px;
+    }
+
+    .Software {
+        .Software_title {
+            .P_title {
+                font-size: 122px;
+            }
+        }
+
+        &_entete {
+            font-size: 64px;
+        }
+
+        &_description {
+            &_left {
+                .resolution {
+                    font-size: 24px;
+                }
+            }
+
+            &_right {
+                &_description {
+                    line-height: 5em;
+                }
+
+                .resolution {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        .resolution {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .TextP {
+        font-size: 48px;
+    }
+
+    .TextPi {
+        font-size: 48px;
+        line-height: 2em;
+    }
+
+    .Software {
+        .Software_title {
+            .P_title {
+                font-size: 168px;
+            }
+        }
+
+        &_entete {
+            font-size: 88px;
+        }
+
+        &_description {
+            &_left {
+                .resolution {
+                    font-size: 24px;
+                }
+            }
+
+            &_right {
+                &_description {
+                    line-height: 7em;
+                }
+
+                .resolution {
+                    font-size: 48px;
+                }
+            }
+        }
+
+        .resolution {
+            font-size: 56px;
         }
     }
 }

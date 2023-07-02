@@ -24,7 +24,7 @@ const Software = () => {
     };
 
     useEffect(() => {
-        scrollToTop();
+        // scrollToTop();
         handleScroll();
         window.addEventListener("scroll", handleScroll);
         return () => {
@@ -61,7 +61,7 @@ const Software = () => {
                     <img src={VSC} alt='Visual Studio Code' className="icone"></img>
                 </div>
             </div>
-            <div className="Software_description pythonBorder">
+            <div className="Software_description pythonContour">
                 <div className="Software_description_left">
                     <div className="Annee">
                         <h4 className="Software_h4 python resolution">Année</h4>
@@ -90,8 +90,8 @@ const Software = () => {
                         <p className="TextP">Python</p>
                     </div>
                 </div>
-                <div className="Software_description_right">
-                    <div className="Software_description_right_description pythonDescription">
+                <div className="Software_description_right pythonDescription">
+                    <div className="Software_description_right_description">
                         <h4 className="Software_h4 Saut python resolution">Description :</h4>
                         <p className="TextP">Development of a pilot and test program for an automated tamping machine.</p>
                         <p className="TextP">The program makes it possible, depending on several input parameters, to generate machine cycles in a loop, to advance step by step, to optimize performance, and to identify all possible causes of error.</p>
@@ -108,7 +108,7 @@ const Software = () => {
                     <img src={VS} alt='Visual Studio Community' className="icone"></img>
                 </div>
             </div>
-            <div className="Software_description cppBorder">
+            <div className="Software_description cppContour">
                 <div className="Software_description_left">
                     <div className="Annee">
                         <h4 className="Software_h4 cpp resolution">Année</h4>
@@ -137,8 +137,8 @@ const Software = () => {
                         <p className="TextP">C++</p>
                     </div>
                 </div>
-                <div className="Software_description_right">
-                    <div className="Software_description_right_description cppDescription">
+                <div className="Software_description_right cppDescription">
+                    <div className="Software_description_right_description">
                         <h4 className="Software_h4 Saut cpp resolution">Description :</h4>
                         <p className="TextP">Adaptability of video surveillance management software by means of a network of cameras, to modern operating systems.</p>
                         <p className="TextP">Addition of functionalities and availability of new foreign languages in the software through dll files.</p>
@@ -155,7 +155,7 @@ const Software = () => {
                     <img src={VSC} alt='Visual Studio Code' className="icone"></img>
                 </div>
             </div>
-            <div className="Software_description preactBorder">
+            <div className="Software_description preactContour">
                 <div className="Software_description_left">
                     <div className="Annee">
                         <h4 className="Software_h4 preact resolution">Année</h4>
@@ -184,8 +184,8 @@ const Software = () => {
                         <p className="TextP">Preact</p>
                     </div>
                 </div>
-                <div className="Software_description_right">
-                    <div className="Software_description_right_description preactDescription">
+                <div className="Software_description_right preactDescription">
+                    <div className="Software_description_right_description">
                         <h4 className="Software_h4 Saut preact resolution">Description :</h4>
                         <p className="TextP">Complete overhaul of a program used to control the lights on board SNCF network trains.</p>
                         <p className="TextP">This project aimed to fully migrate all old features to a new modern interface.</p>
@@ -202,7 +202,7 @@ const Software = () => {
                     <img src={IO} alt='Visual I/O' className="icone"></img>
                 </div>
             </div>
-            <div className="Software_description pascalBorder">
+            <div className="Software_description pascalContour">
                 <div className="Software_description_left">
                     <div className="Annee">
                         <h4 className="Software_h4 pascal resolution">Année</h4>
@@ -231,8 +231,8 @@ const Software = () => {
                         <p className="TextP">Pascal</p>
                     </div>
                 </div>
-                <div className="Software_description_right">
-                    <div className="Software_description_right_description pascalDescription">
+                <div className="Software_description_right pascalDescription">
+                    <div className="Software_description_right_description">
                         <h4 className="Software_h4 Saut pascal resolution">Description :</h4>
                         <p className="TextP">Maintenance and optimization of a control program for an electromagnetic system for the creep of polymeric materials.</p>
                         <p className="TextP">Programming under Visual I/O, in expert mode to modify and add functionalities to the mimic diagrams of the software's graphic interface.</p>

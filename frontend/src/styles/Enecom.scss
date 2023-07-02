@@ -8,7 +8,7 @@
 }
 
 .TextPi {
-    font-size: 24px;
+    font-size: 28px;
     font-family: $font-family-5;
 }
 
@@ -28,7 +28,7 @@
     }
 
     &_entete {
-        background-color: #1423dc;
+        background-color: var(--enecom);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -52,12 +52,12 @@
         align-items: center;
         flex-wrap: wrap;
         width: 90%;
-        gap: 140px;
+        gap: 8%;
         margin-top: 8%;
         margin-bottom: 6%;
 
         &_icone {
-            width: 100px;
+            width: 10%;
         }
     }
 
@@ -69,16 +69,15 @@
         gap: 20px;
         width: 90%;
         border-bottom: 2px solid var(--enecom);
-        margin-top: 140px;
-        margin-bottom: 80px;
-        padding-bottom: 30px;
+        margin-top: 10%;
+        padding-bottom: 2%;
 
         .Logo1 {
-            width: 120px;
+            width: 11%;
         }
 
         .Logo2 {
-            width: 600px;
+            width: 60%;
         }
 
         .P_title {
@@ -86,19 +85,22 @@
             font-size: 56px;
             font-weight: bolder;
             letter-spacing: -2px;
-            color: var(--Enecom);
+            color: var(--enecom);
         }
     }
 
     &_description {
+        background-color: rgba(var(--color-r), var(--color-g), var(--color-b), 0.7);
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 90%;
-        padding-bottom: 100px;
-        margin-bottom: 140px;
-        border-bottom: 2px solid var(--enecom);
+        height: 74vh;
+        padding: 5% 1% 5% 1%;
+        margin: 6% auto 8% auto;
+        border: 2px solid var(--enecom);
+        border-radius: 20px;
 
         .Enecom_h4 {
             color: var(--enecom);
@@ -110,47 +112,52 @@
         &_left {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 16%;
             height: 100%;
-            padding-left: 10px;
         }
 
         &_middle {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
-            width: 30%;
+            justify-content: space-between;
+            width: 24%;
             height: 100%;
 
             .Categorie {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
+                justify-content: space-around;
             }
 
             .Annee {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
 
             .Client {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
 
             .Front {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
 
             .Back {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
 
             .Sgbd {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
         }
 
@@ -158,22 +165,22 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            width: 54%;
-            gap: 50px;
+            align-items: flex-start;
+            width: 60%;
+            height: 64vh;
+            gap: 8%;
+            padding-left: 4%;
+            border-left: 1px solid var(--enecom);
 
             a {
                 color: var(--link);
             }
 
             &_description {
-                background-color: rgba(var(--color-r), var(--color-g), var(--color-b), 0.8);
+
                 display: flex;
                 flex-direction: column;
-                line-height: 1.75em;
-                border: 1px solid var(--enecom);
-                border-radius: 10px;
-                padding: 20px;
+                line-height: 2em;
                 color: var(--text);
 
                 .Saut {
@@ -223,14 +230,20 @@
 
     .TextPi {
         font-size: 16px;
-    }
-
-    .moreSmall {
-        width: 100%;
-        font-size: 16px;
+        line-height: 1.5em;
     }
 
     .Enecom {
+        &_icones {
+            &_icone {
+                width: 100px;
+            }
+        }
+
+        &_entete {
+            font-size: 32px;
+        }
+
         &_description {
             &_left {
 
@@ -240,6 +253,8 @@
             }
 
             &_right {
+                gap: 20px;
+
                 .resolution {
                     font-size: 24px;
                 }
@@ -248,6 +263,76 @@
 
         .resolution {
             font-size: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .TextP {
+        font-size: 32px;
+    }
+
+    .TextPi {
+        font-size: 32px;
+        line-height: 2em;
+    }
+
+    .Enecom {
+        &_entete {
+            font-size: 64px;
+        }
+
+        &_description {
+            &_left {
+                .resolution {
+                    font-size: 24px;
+                }
+            }
+
+            &_right {
+                .resolution {
+                    font-size: 48px;
+                }
+            }
+        }
+
+        .resolution {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .TextP {
+        font-size: 48px;
+    }
+
+    .TextPi {
+        font-size: 48px;
+        line-height: 2em;
+    }
+
+    .Enecom {
+        &_entete {
+            font-size: 88px;
+        }
+
+        &_description {
+            &_left {
+                .resolution {
+                    font-size: 24px;
+                }
+            }
+
+            &_right {
+                .resolution {
+                    font-size: 48px;
+                }
+            }
+        }
+
+        .resolution {
+            font-size: 56px;
         }
     }
 }

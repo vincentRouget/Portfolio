@@ -34,3 +34,33 @@
           }
       }
   }
+
+  @media screen and (max-width: 1900px) {
+      .Scroll_container {
+          &_image {
+              &_icone {
+                  scale: 1.2;
+              }
+          }
+      }
+  }
+
+  @media screen and (min-width: 2200px) {
+      .Scroll_container {
+          &_image {
+              &_icone {
+                  scale: 2.2;
+              }
+          }
+      }
+  }
+
+  @media screen and (min-width: 3000px) {
+      .Scroll_container {
+          &_image {
+              &_icone {
+                  scale: 3.4;
+              }
+          }
+      }
+  }

@@ -51,9 +51,9 @@ const Enigma = () => {
             <ScrollDown />
             <div className="Enigma_title">
                 <div className="EnigmaLogo">
-                    <img src={LogoEnigma} id="LogoEnigma" alt="Logo Enigma"></img>
+                    <img src={LogoEnigma} className="LogoEnigma" alt="Logo Enigma"></img>
                 </div>
-                <p className="TitleEnigma">Enigma</p>
+                <p className="P_title">Enigma</p>
             </div>
             <div className="Enigma_description">
                 <div className="Enigma_description_left">

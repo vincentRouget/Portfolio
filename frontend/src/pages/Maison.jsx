@@ -56,9 +56,9 @@ const Maison = () => {
             <ScrollDown />
             <div className="House_title">
                 <div className="HouseLogo">
-                    <img src={ImageLogoMaison} id="LogoHouse" alt="Logo House"></img>
+                    <img src={ImageLogoMaison} className="Logo1" alt="Logo House"></img>
                 </div>
-                <p className="TitleHouse">La Maison du Lac</p>
+                <p className="P_title">La Maison du Lac</p>
             </div>
             <div className="House_description">
                 <div className="House_description_left">

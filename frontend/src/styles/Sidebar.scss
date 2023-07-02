@@ -244,21 +244,53 @@
 }
 
 @media screen and (max-width: 1900px) {
+    .buttonBack {
+        gap: 16px;
+    }
+
+    .icon_back {
+        width: 16px;
+    }
+
     .icon {
-        width: 20px;
+        width: 16px;
     }
 
     .ellipsis {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 
 @media screen and (min-width: 2200px) {
+    .buttonBack {
+        gap: 30px;
+    }
+    .icon_back {
+        width: 40px;
+    }
+
     .icon {
         width: 40px;
     }
 
     .ellipsis {
-        font-size: 30px;
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .buttonBack {
+        gap: 40px;
+    }
+    .icon_back {
+        width: 60px;
+    }
+
+    .icon {
+        width: 60px;
+    }
+
+    .ellipsis {
+        font-size: 48px;
     }
 }

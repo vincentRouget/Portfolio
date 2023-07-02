@@ -8,7 +8,7 @@
 }
 
 .TextPi {
-    font-size: 24px;
+    font-size: 28px;
     font-family: $font-family-5;
 }
 
@@ -16,7 +16,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100%;
     min-height: 100vh;
@@ -53,59 +52,60 @@
         align-items: center;
         flex-wrap: wrap;
         width: 90%;
-        gap: 140px;
+        gap: 8%;
         margin-top: 8%;
         margin-bottom: 6%;
 
         &_icone {
-            width: 100px;
+            width: 10%;
         }
     }
 
-    &_title {
+    .House_title {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: center;
-        gap: 30px;
+        align-items: flex-end;
+        gap: 4%;
         width: 90%;
         border-bottom: 2px solid var(--house);
-        margin-top: 140px;
-        padding-bottom: 30px;
+        margin-top: 10%;
+        padding-bottom: 2%;
 
         .HouseLogo {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 160px;
+            width: 12%;
 
-            #LogoHouse {
+            .Logo1 {
                 width: 100%;
                 border: 1px solid gray;
                 border-radius: 50%;
             }
         }
 
-        .TitleHouse {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .P_title {
             font-family: $font-family;
-            font-size: 120px;
+            font-size: 96px;
             font-weight: bolder;
             letter-spacing: -2px;
-            white-space: nowrap;
             color: var(--house);
-            padding-top: 20px;
         }
     }
 
     &_description {
+        background-color: rgba(var(--color-r), var(--color-g), var(--color-b), 0.7);
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 90%;
+        height: 84vh;
+        padding: 5% 1% 5% 1%;
+        margin: 6% auto 8% auto;
+        border: 2px solid var(--house);
+        border-radius: 20px;
 
         .House_h4 {
             color: var(--house);
@@ -117,47 +117,52 @@
         &_left {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 16%;
             height: 100%;
-            padding-left: 10px;
         }
 
         &_middle {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 30%;
             height: 100%;
 
             .Categorie {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
+                justify-content: space-around;
             }
 
             .Annee {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
 
             .Client {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
 
             .Front {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
 
             .Back {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
 
             .Sgbd {
                 display: flex;
                 flex-direction: row;
+                gap: 100px;
             }
         }
 
@@ -165,24 +170,22 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             width: 54%;
-            gap: 50px;
-            margin-top: 30px;
-            margin-bottom: 30px;
+            height: 74vh;
+            gap: 8%;
+            padding-left: 4%;
+            border-left: 1px solid var(--house);
 
             a {
                 color: var(--link);
             }
 
             &_description {
-                background-color: rgba(var(--color-r), var(--color-g), var(--color-b), 0.8);
+
                 display: flex;
                 flex-direction: column;
-                line-height: 2.25em;
-                border: 1px solid var(--house);
-                border-radius: 10px;
-                padding: 20px;
+                line-height: 2em;
                 color: var(--text);
 
                 .Saut {
@@ -190,13 +193,6 @@
                 }
             }
         }
-    }
-
-    .House_padding {
-        width: 90%;
-        text-align: center;
-        border-top: 2px solid var(--house);
-        padding-top: 140px;
     }
 
     &_screenshot {
@@ -221,9 +217,12 @@
                 align-items: center;
                 width: 100%;
                 overflow: hidden;
-                border: none;
-                border-radius: 10px;
                 border: 1px solid gray;
+                border-radius: 10px;
+            }
+
+            .lessBorder {
+                border: none;
             }
         }
     }
@@ -236,32 +235,36 @@
 
     .TextPi {
         font-size: 16px;
+        line-height: 1.5em;
     }
 
-
     .House {
-        &_title {
-
-            .TitleHouse {
-                font-size: 72px;
+        .House_title {
+            .P_title {
+                font-size: 80px;
             }
+        }
+
+        &_icones {
+            &_icone {
+                width: 100px;
+            }
+        }
+
+        &_entete {
+            font-size: 32px;
         }
 
         &_description {
             &_left {
-                width: 15%;
 
                 .resolution {
                     font-size: 24px;
                 }
             }
 
-            &_middle {
-                width: 25%;
-            }
-
             &_right {
-                width: 60%;
+                gap: 20px;
 
                 .resolution {
                     font-size: 24px;
@@ -271,6 +274,88 @@
 
         .resolution {
             font-size: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .TextP {
+        font-size: 32px;
+    }
+
+    .TextPi {
+        font-size: 32px;
+        line-height: 2em;
+    }
+
+    .House {
+        .House_title {
+            .P_title {
+                font-size: 122px;
+            }
+        }
+
+        &_entete {
+            font-size: 64px;
+        }
+
+        &_description {
+            &_left {
+                .resolution {
+                    font-size: 24px;
+                }
+            }
+
+            &_right {
+                .resolution {
+                    font-size: 48px;
+                }
+            }
+        }
+
+        .resolution {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .TextP {
+        font-size: 48px;
+    }
+
+    .TextPi {
+        font-size: 48px;
+        line-height: 2em;
+    }
+
+    .House {
+        .House_title {
+            .P_title {
+                font-size: 168px;
+            }
+        }
+
+        &_entete {
+            font-size: 88px;
+        }
+
+        &_description {
+            &_left {
+                .resolution {
+                    font-size: 24px;
+                }
+            }
+
+            &_right {
+                .resolution {
+                    font-size: 48px;
+                }
+            }
+        }
+
+        .resolution {
+            font-size: 56px;
         }
     }
 }
