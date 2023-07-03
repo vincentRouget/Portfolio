@@ -29,30 +29,6 @@
     color: var(--pascal);
 }
 
-.pythonBorder {
-    border-bottom: 2px solid var(--python);
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.cppBorder {
-    border-bottom: 2px solid var(--cpp);
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.preactBorder {
-    border-bottom: 2px solid var(--preact);
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.pascalBorder {
-    border-bottom: 2px solid var(--pascal);
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
 .pythonDescription {
     padding-left: 4%;
     border-left: 1px solid var(--python);
@@ -145,10 +121,9 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        gap: 80px;
-        width: 90%;
+        width: 88%;
+        gap: 5%;
         margin-top: 200px;
-        padding-bottom: 20px;
 
         .SoftwareLogo {
             display: flex;
@@ -173,6 +148,7 @@
             letter-spacing: -2px;
             white-space: nowrap;
             padding-top: 20px;
+            text-shadow: 0px 0px 4px var(--theme);
         }
     }
 
@@ -183,10 +159,10 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 88%;
         height: 80vh;
         padding: 5% 1% 5% 1%;
-        margin: 6% auto 8% auto;
+        margin: auto auto 8% auto;
         border-radius: 20px;
 
         .Software_h4 {

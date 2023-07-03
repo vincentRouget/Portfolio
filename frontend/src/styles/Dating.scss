@@ -1,5 +1,7 @@
-.icone {
+.iconeHobbi {
     width: 100%;
+    border-radius: 20%;
+    border: 1px solid var(--hobbi)
 }
 
 .TextP {
@@ -61,36 +63,34 @@
         }
     }
 
-    .Hobbi_title {
+    &_title {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: flex-end;
-        gap: 4%;
+        align-items: center;
         width: 88%;
-        border-bottom: 2px solid var(--hobbi);
-        margin-top: 10%;
-        padding-bottom: 2%;
+        gap: 5%;
+        margin: 14% auto 2% auto;
 
-        .HobbiLogo {
+        &_icone {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 12%;
-
-            .Logo1 {
-                width: 100%;
-                border: 2px solid gray;
-                border-radius: 20%;
-            }
         }
 
-        .P_title {
+        .TitleHobbi {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-family: $font-family;
-            font-size: 96px;
+            font-size: 120px;
             font-weight: bolder;
             letter-spacing: -2px;
+            white-space: nowrap;
+            padding-top: 20px;
             color: var(--hobbi);
+            text-shadow: 0px 0px 4px var(--theme);
         }
     }
 
@@ -103,7 +103,7 @@
         width: 88%;
         height: 84vh;
         padding: 5% 1% 5% 1%;
-        margin: 6% auto 8% auto;
+        margin: auto auto 8% auto;
         border: 2px solid var(--hobbi);
         border-radius: 20px;
 
@@ -201,6 +201,7 @@
         align-items: center;
         padding: 1% 2% 1% 2%;
         border-radius: 100px;
+        border: 1px solid var(--hobbi);
     }
 
     &_screenshot {

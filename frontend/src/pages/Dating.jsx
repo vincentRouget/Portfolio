@@ -63,10 +63,10 @@ const Dating = () => {
             </div>
             <ScrollDown />
             <div className="Hobbi_title">
-                <div className="HobbiLogo">
-                    <img src={HobbiLogo} className="Logo1" alt="Logo Hobbi"></img>
+                <div className="Hobbi_title_icone">
+                    <img src={HobbiLogo} alt='Hobbi' className="iconeHobbi"></img>
                 </div>
-                <p className="P_title">Hobbi</p>
+                <p className="TitleHobbi">Hobbi</p>
             </div>
             <div className="Hobbi_description">
                 <div className="Hobbi_description_left">

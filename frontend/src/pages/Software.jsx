@@ -52,7 +52,7 @@ const Software = () => {
                 </div>
             </div>
             <ScrollDown />
-            <div className="Software_title pythonBorder">
+            <div className="Software_title">
                 <p className="TitleSoftware python">Seva</p>
                 <div className="Software_icones_icone">
                     <img src={PYTHON} alt='Python' className="icone"></img>
@@ -99,7 +99,7 @@ const Software = () => {
                     </div>
                 </div>
             </div>
-            <div className="Software_title cppBorder">
+            <div className="Software_title">
                 <p className="TitleSoftware cpp">Ditalos</p>
                 <div className="Software_icones_icone">
                     <img src={CPP} alt='CPP' className="icone"></img>
@@ -146,7 +146,7 @@ const Software = () => {
                     </div>
                 </div>
             </div>
-            <div className="Software_title preactBorder">
+            <div className="Software_title">
                 <p className="TitleSoftware preact">Bharat</p>
                 <div className="Software_icones_icone">
                     <img src={PREACT} alt='Preact' className="icone"></img>
@@ -193,7 +193,7 @@ const Software = () => {
                     </div>
                 </div>
             </div>
-            <div className="Software_title pascalBorder">
+            <div className="Software_title">
                 <p className="TitleSoftware pascal">Flexis</p>
                 <div className="Software_icones_icone">
                     <img src={PASCAL} alt='Pascal' className="icone"></img>

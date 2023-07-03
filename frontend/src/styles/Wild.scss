@@ -69,7 +69,6 @@
         align-items: center;
         gap: 20px;
         width: 88%;
-        border-bottom: 2px solid var(--wild);
         margin-top: 10%;
         padding-bottom: 2%;
 
@@ -99,7 +98,7 @@
         width: 88%;
         height: 70vh;
         padding: 5% 1% 5% 1%;
-        margin: 6% auto 8% auto;
+        margin: auto auto 8% auto;
         border: 2px solid var(--wild);
         border-radius: 20px;
 
@@ -198,6 +197,7 @@
         align-items: center;
         padding: 1% 2% 1% 2%;
         border-radius: 100px;
+        border: 1px solid var(--wild);
     }
 
     &_screenshot {

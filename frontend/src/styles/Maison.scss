@@ -7,9 +7,10 @@
     font-family: $font-family-5;
 }
 
-.TextPi {
-    font-size: 28px;
+.TextPiMaison {
+    font-size: 24px;
     font-family: $font-family-5;
+        line-height: 1.5em;
 }
 
 .House {
@@ -34,7 +35,7 @@
         align-items: center;
         width: 80%;
         height: 50vh;
-        font-size: 48px;
+        font-size: 64px;
         border: none;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
@@ -68,7 +69,6 @@
         align-items: flex-end;
         gap: 4%;
         width: 88%;
-        border-bottom: 2px solid var(--house);
         margin-top: 10%;
         padding-bottom: 2%;
 
@@ -87,10 +87,11 @@
 
         .P_title {
             font-family: $font-family;
-            font-size: 96px;
+            font-size: 104px;
             font-weight: bolder;
             letter-spacing: -2px;
             color: var(--house);
+            text-shadow: 0px 0px 4px var(--theme);
         }
     }
 
@@ -103,7 +104,7 @@
         width: 88%;
         height: 90vh;
         padding: 5% 1% 5% 1%;
-        margin: 6% auto 8% auto;
+        margin: auto auto 8% auto;
         border: 2px solid var(--house);
         border-radius: 20px;
 
@@ -182,11 +183,12 @@
             }
 
             &_description {
-
                 display: flex;
                 flex-direction: column;
-                line-height: 1.75em;
+                line-height: 2em;
                 color: var(--text);
+
+
 
                 .Saut {
                     margin-bottom: 10px;
@@ -202,6 +204,7 @@
         align-items: center;
         padding: 1% 2% 1% 2%;
         border-radius: 100px;
+        border: 1px solid var(--house);
     }
 
     &_screenshot {
@@ -242,7 +245,7 @@
         font-size: 20px;
     }
 
-    .TextPi {
+    .TextPiMaison {
         font-size: 16px;
         line-height: 1.5em;
     }
@@ -292,7 +295,7 @@
         font-size: 32px;
     }
 
-    .TextPi {
+    .TextPiMaison {
         font-size: 32px;
         line-height: 2em;
     }
@@ -333,7 +336,7 @@
         font-size: 48px;
     }
 
-    .TextPi {
+    .TextPiMaison {
         font-size: 48px;
         line-height: 2em;
     }

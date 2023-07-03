@@ -92,11 +92,11 @@ const Maison = () => {
                 <div className="House_description_right">
                     <div className="House_description_right_description">
                         <h4 className="House_h4 Saut resolution">Description :</h4>
-                        <p className="TextPi">This site created in React.js aims to present the services and rental rates for accommodation in the establishment "La Maison du Lac", located near Limoges in the department of Haute-Vienne (87), France.</p>
-                        <p className="TextPi">On the home page, it presents a description of the establishment and the different accommodations, with some images to illustrate the places.</p>
-                        <p className="TextPi">It also offers the different possible formulas with a description of each of them, as well as the rates and optional services.</p>
-                        <p className="TextPi">A Contact page with a Google Maps allows you to locate the precise location, find the best route, or even send an email to the owner of the establishment.</p>
-                        <p className="TextPi">At the bottom of the page, we find the various links to all external web pages, such as Facebook, Booking.com or even AirBnB.com.</p>
+                        <p className="TextPiMaison">This site created in React.js aims to present the services and rental rates for accommodation in the establishment "La Maison du Lac", located near Limoges in the department of Haute-Vienne (87), France.</p>
+                        <p className="TextPiMaison">On the home page, it presents a description of the establishment and the different accommodations, with some images to illustrate the places.</p>
+                        <p className="TextPiMaison">It also offers the different possible formulas with a description of each of them, as well as the rates and optional services.</p>
+                        <p className="TextPiMaison">A Contact page with a Google Maps allows you to locate the precise location, find the best route, or even send an email to the owner of the establishment.</p>
+                        <p className="TextPiMaison">At the bottom of the page, we find the various links to all external web pages, such as Facebook, Booking.com or even AirBnB.com.</p>
                     </div>
                     <p className="TextP">Link to website : <a href="https://lamaisondulac87.fr/" target="_blank">https://lamaisondulac87.fr/</a></p>
                 </div>
