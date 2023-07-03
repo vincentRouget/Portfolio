@@ -15,11 +15,11 @@ export const Button = styled.div`
    width: 100%;
    left: 96%;
    bottom: 6%;
-   height: 20px;
-   font-size: 4rem;
+   height: 4%;
+   font-size: 5rem;
    cursor: pointer;
    color: var(--text);
-   transition : 0.3s ease-in;
+   transition : 0.1s ease-in;
    z-index: 2;
    // &:hover {
    //    position: fixed; 

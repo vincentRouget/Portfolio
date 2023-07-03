@@ -101,16 +101,11 @@ const Maison = () => {
                     <p className="TextP">Link to website : <a href="https://lamaisondulac87.fr/" target="_blank">https://lamaisondulac87.fr/</a></p>
                 </div>
             </div>
-            <h4 className="House_h4 House_padding resolution">Screenshots</h4>
+            <h4 className="House_h4 House_padding resolution picture">Screenshots</h4>
             <div className="House_screenshot">
                 <div className="House_screenshot_image">
                     <a href={House2} target="_blank">
                         <img src={House2} className="House_screenshot_image"></img>
-                    </a>
-                </div>
-                <div className="House_screenshot_image">
-                    <a href={House3} target="_blank">
-                        <img src={House3} className="House_screenshot_image"></img>
                     </a>
                 </div>
                 <div className="House_screenshot_image">

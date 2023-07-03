@@ -73,7 +73,7 @@ const Software = () => {
                         <h4 className="Software_h4 python resolution">I.D.E.</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Software_h4 python resolution">Technologies</h4>
+                        <h4 className="Software_h4 python resolution">Langage</h4>
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -120,7 +120,7 @@ const Software = () => {
                         <h4 className="Software_h4 cpp resolution">I.D.E.</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Software_h4 cpp resolution">Technologies</h4>
+                        <h4 className="Software_h4 cpp resolution">Langage</h4>
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -167,7 +167,7 @@ const Software = () => {
                         <h4 className="Software_h4 preact resolution">I.D.E.</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Software_h4 preact resolution">Technologies</h4>
+                        <h4 className="Software_h4 preact resolution">Langage</h4>
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -214,7 +214,7 @@ const Software = () => {
                         <h4 className="Software_h4 pascal resolution">I.D.E.</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Software_h4 pascal resolution">Technologies</h4>
+                        <h4 className="Software_h4 pascal resolution">Langage</h4>
                     </div>
                 </div>
                 <div className="Software_description_middle">

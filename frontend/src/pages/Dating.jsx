@@ -119,7 +119,7 @@ const Dating = () => {
                     </div>
                 </div>
             </div>
-            <h4 className="Hobbi_h4 resolution">Screenshots</h4>
+            <h4 className="Hobbi_h4 resolution picture">Screenshots</h4>
             <div className="Hobbi_screenshot">
                 <div className="Hobbi_screenshot_image">
                     <a href={Hobbi7} target="_blank">

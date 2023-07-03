@@ -31,7 +31,7 @@ const Accueil = () => {
     }, []);
 
     return (
-        <div className={theme == 'light' ? "Accueil" : "Accueil dark"}>
+        <div className={theme == 'light' ? "Accueil" : "Accueil theme_dark"}>
             <div className="Accueil_topbar">
                 <div className="Accueil_topbar_left">
                     <div className="Accueil_topbar_left_logo">

@@ -96,19 +96,19 @@ const Enigma = () => {
             </div>
             <div className="Enigma_screenshot Enigma_padding">
                 <div className="Enigma_screenshot_image">
-                    <h4 className="Enigma_h4 resolution">Interface</h4>
+                    <h4 className="Enigma_h4 resolution picture">Interface</h4>
                     <a href={Enigma1} target="_blank">
                         <img src={Enigma1} className="Enigma_screenshot_image"></img>
                     </a>
                 </div>
                 <div className="Enigma_screenshot_image">
-                    <h4 className="Enigma_h4 resolution">Encryption</h4>
+                    <h4 className="Enigma_h4 resolution picture">Encryption</h4>
                     <a href={Enigma2} target="_blank">
                         <img src={Enigma2} className="Enigma_screenshot_image"></img>
                     </a>
                 </div>
                 <div className="Enigma_screenshot_image">
-                    <h4 className="Enigma_h4 resolution">Decryption</h4>
+                    <h4 className="Enigma_h4 resolution picture">Decryption</h4>
                     <a href={Enigma3} target="_blank">
                         <img src={Enigma3} className="Enigma_screenshot_image"></img>
                     </a>

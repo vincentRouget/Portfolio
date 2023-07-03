@@ -117,7 +117,7 @@ const Enecom = () => {
                     <p className="TextP">Link to website : <a href="http://vps-d5babf40.vps.ovh.net:5007/" target="_blank" className="moreSmall">http://vps-d5babf40.vps.ovh.net:5007/</a></p>
                 </div>
             </div>
-            <h4 className="Enecom_h4 resolution">Screenshots</h4>
+            <h4 className="Enecom_h4 resolution picture">Screenshots</h4>
             <div className="Enecom_screenshot">
                 <div className="Enecom_screenshot_image">
                     <a href={Enecom1} target="_blank">

@@ -124,7 +124,7 @@ const Wild = () => {
                     <p className="TextP">Link to website : <a href="https://wild-movies.netlify.app/" target="_blank">https://wild-movies.netlify.app/</a></p>
                 </div>
             </div>
-            <h4 className="Wild_h4 resolution">Screenshots</h4>
+            <h4 className="Wild_h4 resolution picture">Screenshots</h4>
             <div className="Wild_screenshot">
                 <div className="Wild_screenshot_image">
                     <a href={Wild2} target="_blank">

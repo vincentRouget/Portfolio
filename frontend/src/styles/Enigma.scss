@@ -67,7 +67,7 @@
         justify-content: flex-start;
         align-items: flex-end;
         gap: 4%;
-        width: 90%;
+        width: 88%;
         border-bottom: 2px solid var(--enigma);
         margin-top: 10%;
         padding-bottom: 2%;
@@ -102,7 +102,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 88%;
         height: 70vh;
         padding: 5% 1% 5% 1%;
         margin: 6% auto 8% auto;
@@ -206,10 +206,27 @@
         margin-top: 80px;
         margin-bottom: 100px;
 
+        &_image {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .picture {
+                background-color: rgba(var(--color-r), var(--color-g), var(--color-b), 0.8);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1% 2% 1% 2%;
+                border-radius: 100px;
+            }
+        }
+
         a {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 2%;
             overflow: hidden;
 
             img {

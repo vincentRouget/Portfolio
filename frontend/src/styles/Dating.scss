@@ -67,7 +67,7 @@
         justify-content: flex-start;
         align-items: flex-end;
         gap: 4%;
-        width: 90%;
+        width: 88%;
         border-bottom: 2px solid var(--hobbi);
         margin-top: 10%;
         padding-bottom: 2%;
@@ -100,7 +100,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 88%;
         height: 84vh;
         padding: 5% 1% 5% 1%;
         margin: 6% auto 8% auto;
@@ -192,6 +192,15 @@
                 }
             }
         }
+    }
+
+    .picture {
+        background-color: rgba(var(--color-r), var(--color-g), var(--color-b), 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1% 2% 1% 2%;
+        border-radius: 100px;
     }
 
     &_screenshot {
