@@ -14,13 +14,14 @@ function App() {
   const [theme, setTheme] = useState('light');
   const [refresh, setRefresh] = useState(false);
   const [minimize, setMinimize] = useState(false);
+  const [french, setFrench] = useState(true);
 
   useEffect(() => {
   }, []);
 
   return (
     <div className={`App ${theme}`}>
-      <UserContext.Provider value={{ theme, setTheme, refresh, setRefresh, minimize, setMinimize }}>
+      <UserContext.Provider value={{ theme, setTheme, refresh, setRefresh, minimize, setMinimize, french, setFrench }}>
         <Routes>
           <Route path="/" element={
             <Wrapper>
@@ -40,6 +41,11 @@ function App() {
           <Route path="/Cv" element={
             <Wrapper>
               <CV />
+            </Wrapper>
+          } />
+          <Route path="/*" element={
+            <Wrapper>
+              <Accueil />
             </Wrapper>
           } />
         </Routes>

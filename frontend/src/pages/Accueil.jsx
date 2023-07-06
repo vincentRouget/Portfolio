@@ -5,6 +5,7 @@ import UserContext from "../context/UserContext";
 import CVpdf from "../assets/data/CV.pdf";
 import Logo from "../assets/Icon/Logo-V1.png";
 import Theme from "@components/Theme";
+import Lang from "@components/Lang";
 import Texte from "@components/Texte";
 import LinkedIn from "../assets/Icon/icons8-linkedin-94.png";
 import GitHub from "../assets/Icon/icons8-github-94.png";
@@ -12,7 +13,7 @@ import WhiteArrow from "../assets/Icon/icons8-right-arrow-96-white.png";
 import BlackArrow from "../assets/Icon/icons8-right-arrow-96.png";
 
 const Accueil = () => {
-    const { theme } = useContext(UserContext);
+    const { theme, french, setFrench } = useContext(UserContext);
     const [handleAbout, setHandleAbout] = useState(false);
 
     // const handleDownload = () => {
@@ -39,40 +40,62 @@ const Accueil = () => {
                     </div>
                     <div className='Texte_first'>
                         <div className='Texte_two'>
-                            <span className='Texte_two_span Texte1'>WELCOME</span>
-                            <br></br>
-                            <span className='Texte_two_span Texte2'>I'm Vincent Rouget</span>
+                            {french ?
+                                <span className='Texte_two_span Texte1'>BIENVENUE</span>
+                                :
+                                <span className='Texte_two_span Texte1'>WELCOME</span>}
+                            {/* <br></br>
+                            {french ?
+                                <span className='Texte_two_span Texte2'>Mon nom est Vincent Rouget</span>
+                                :
+                                <span className='Texte_two_span Texte2'>My name is Vincent Rouget</span>} */}
                         </div>
                     </div>
                 </div>
                 <div className="Accueil_topbar_middle">
                 </div>
                 <div className="Accueil_topbar_right">
+                    {!handleAbout ?
+                        <div className="Div_about">
+                            <button
+                                className='Accueil_topbar_right_link ButtonAbout'
+                                onClick={() => {
+                                    setHandleAbout(!handleAbout);
+                                }}>
+                                {french ? <>A propos</> : <>About</>}</button>
+                        </div>
+                        :
+                        <div className="Div_about">
+                            <button
+                                className='Accueil_topbar_right_link ButtonAbout'
+                                onClick={() => {
+                                    setHandleAbout(!handleAbout);
+                                }}>
+                                {french ? <>Accueil</> : <>Home</>}</button>
+                        </div>}
+                    <div className="Div_about">
+                        <a href={`mailto:vincent.rouget86@gmail.com`} className='Accueil_topbar_right_link contact'>Contact</a>
+                    </div>
+                    <div className="Div_cv">
+                        <a href={CVpdf} target='_blank' className='Accueil_topbar_right_link cv'>CV</a>
+                    </div>
                     <a href="https://www.linkedin.com/in/vincent-rouget-22996118a/" target="_blank" className="Linkedin">
                         <img src={LinkedIn} alt=" " className="Linkedin"></img></a>
                     <a href="https://github.com/vincentRouget" target="_blank" className="Github">
                         <img src={GitHub} alt=" " className="Github"></img></a>
-                    {!handleAbout ?
-                        <button
-                            className='Accueil_topbar_right_link ButtonAbout'
-                            onClick={() => {
-                                setHandleAbout(!handleAbout);
-                            }}>About</button>
-                        :
-                        <button
-                            className='Accueil_topbar_right_link ButtonAbout'
-                            onClick={() => {
-                                setHandleAbout(!handleAbout);
-                            }}>Home</button>}
-                    <a href={`mailto:vincent.rouget86@gmail.com`} className='Accueil_topbar_right_link contact'>Contact</a>
-                    <a href={CVpdf} target='_blank' className='Accueil_topbar_right_link cv'>CV</a>
                     <div className='theme'>
                         <Theme />
+                    </div>
+                    <div className='theme'>
+                        <Lang />
                     </div>
                 </div>
             </div>
             <div className={!handleAbout ? 'Accueil_page' : 'Accueil_page aboutTITLE'}>
-                <h1>WEB & MOBILE DEVELOPER</h1>
+                {french ?
+                    <h1>DEVELOPPEUR WEB & MOBILE</h1>
+                    :
+                    <h1>WEB & MOBILE DEVELOPER</h1>}
                 <div className="Animation">
                     <Texte />
                 </div>
@@ -81,34 +104,71 @@ const Accueil = () => {
                         <img src={BlackArrow} alt=" " className="Arrow"></img>
                         :
                         <img src={WhiteArrow} alt=" " className="Arrow"></img>}
-                    See my projects
+                    {french ?
+                        <p>Voir mes projets</p>
+                        :
+                        <p>See my projects</p>}
                 </NavLink>
             </div>
             <div className={!handleAbout ? "Page" : "Page aboutTEXT"}>
                 <div className="TitleAbout_container">
-                    <h4 className="Paragraphe">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="TitleAbout">Hi !</span>&nbsp;&nbsp;</h4>
-                    <h4 className="Paragraphe">
-                        I am a passionate <span className="accent">Full Stack developer.</span>
-                    </h4>
+                    {french ?
+                        <>
+                            <h4 className="Paragraphe">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="TitleAbout">Hi !</span>&nbsp;&nbsp;</h4>
+                            <h4 className="Paragraphe">
+                                I am a passionate <span className="accent">Full Stack developer.</span>
+                            </h4>
+                        </>
+                        :
+                        <>
+                            <h4 className="Paragraphe">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="TitleAbout">Hi !</span>&nbsp;&nbsp;</h4>
+                            <h4 className="Paragraphe">
+                                I am a passionate <span className="accent">Full Stack developer.</span>
+                            </h4>
+                        </>}
                 </div>
                 <div className="Section">
-                    <h4 className="Paragraphe">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I started like many as an autodidact, then I
-                        quickly increase my skills thanks to training in<span className="accent"> web and mobile development</span> at the “Wild Code
-                        School” in Nantes (44).
-                    </h4>
-                    <h4 className="Paragraphe">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Following this intensive
-                        training based on practice, I did an internship in
-                        a software development company in Poitiers
-                        (86) where I was able to consolidate and extend
-                        my knowledge in IT development.
-                    </h4>
-                    <h4 className="Paragraphe">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I particularly like the web and mobile, but I have
-                        also carried out a some projects <span className="accent">in the industrial
-                            sector, in research and defence.</span>
-                    </h4>
+                    {french ?
+                        <h4 className="Paragraphe">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J'ai commencé comme beaucoup en autodidacte, puis j'ai pu
+                            monter en compétences grâce à une formation en <span className="accent">développement web et mobile</span> à l'école « Wild Code
+                            School” de Nantes.
+                        </h4>
+                        :
+                        <h4 className="Paragraphe">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I started like many as an autodidact, then I
+                            quickly increase my skills thanks to training in<span className="accent"> web and mobile development</span> at the “Wild Code
+                            School” in Nantes.
+                        </h4>
+                    }
+                    {french ?
+                        <h4 className="Paragraphe">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suite à cette
+                            formation intensive basée sur la pratique, j'ai effectué un stage dans
+                            une société de développement logiciel à Poitiers,
+                            où j'ai pu consolider et étendre
+                            mes connaissances en développement informatique.
+                        </h4>
+                        :
+                        <h4 className="Paragraphe">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Following this intensive
+                            training based on practice, I did an internship in
+                            a software development company in Poitiers
+                            where I was able to consolidate and extend
+                            my knowledge in IT development.
+                        </h4>}
+                    {french ?
+                        <h4 className="Paragraphe">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J'aime particulièrement le web et le mobile, mais j'ai
+                            également réalisé quelques projets <span className="accent">dans le secteur industriel,
+                                dans la recherche et la défense.</span>
+                        </h4>
+                        :
+                        <h4 className="Paragraphe">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I particularly like the web and mobile, but I have
+                            also carried out a some projects <span className="accent">in the industrial
+                                sector, in research and defence.</span>
+                        </h4>}
                 </div>
             </div>
         </div >
