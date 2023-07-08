@@ -130,7 +130,7 @@ const Accueil = () => {
                 <div className="Section">
                     {french ?
                         <h4 className="Paragraphe">
-                            J'ai commencé comme beaucoup en autodidacte, avant de monter en compétences grâce à une formation en <span className="accent">développement web et mobile</span> à l'école « Wild Code School” de Nantes.
+                            J'ai commencé comme beaucoup en autodidacte, avant de monter en compétences grâce à une formation en <span className="accent">développement web et mobile,</span> à l'école « Wild Code School” de Nantes.
                         </h4>
                         :
                         <h4 className="Paragraphe">
@@ -146,11 +146,11 @@ const Accueil = () => {
                         </h4>}
                     {french ?
                         <h4 className="Paragraphe">
-                            J'aime particulièrement le web et le mobile, mais j'ai également réalisé quelques projets <span className="accent">dans le secteur industriel, dans la recherche et la défense.</span>
+                            J'aime particulièrement le développement web et mobile, mais j'ai également réalisé quelques projets <span className="accent">dans le secteur industriel, dans la recherche et la défense.</span>
                         </h4>
                         :
                         <h4 className="Paragraphe">
-                            I particularly like the web and mobile, but I also did some projects <span className="accent">in the industrial sector, in research and defence.</span>
+                            I particularly like the web development and mobile, but I also did some projects <span className="accent">in the industrial sector, in research and defence.</span>
                         </h4>}
                 </div>
             </div>
