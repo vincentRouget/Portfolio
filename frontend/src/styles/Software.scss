@@ -174,7 +174,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 30%;
+            width: 35%;
             height: 100%;
             padding-left: 1%;
         }
@@ -183,44 +183,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 30%;
+            width: 25%;
             height: 100%;
-
-            .Categorie {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-            }
-
-            .Annee {
-                display: flex;
-                flex-direction: row;
-                gap: 100px;
-            }
-
-            .Client {
-                display: flex;
-                flex-direction: row;
-                gap: 100px;
-            }
-
-            .Front {
-                display: flex;
-                flex-direction: row;
-                gap: 100px;
-            }
-
-            .Back {
-                display: flex;
-                flex-direction: row;
-                gap: 100px;
-            }
-
-            .Sgbd {
-                display: flex;
-                flex-direction: row;
-                gap: 100px;
-            }
         }
 
         &_right {
@@ -228,6 +192,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            padding-right: 2%;
             width: 50%;
 
             a {

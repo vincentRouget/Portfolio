@@ -84,21 +84,21 @@ const Maison = () => {
                 <div className="House_description_middle">
                     <div className="Categorie">
                         {french ?
-                            <p className="TextP">Site web</p>
+                            <p className="TextPi">Site web</p>
                             :
-                            <p className="TextP">Website</p>}
+                            <p className="TextPi">Website</p>}
                     </div>
                     <div className="Annee">
-                        <p className="TextP">2023</p>
+                        <p className="TextPi">2023</p>
                     </div>
                     <div className="Client">
                         {french ?
-                            <p className="TextP">Propriétaire</p>
+                            <p className="TextPi">Propriétaire</p>
                             :
-                            <p className="TextP">Owner</p>}
+                            <p className="TextPi">Owner</p>}
                     </div>
                     <div className="Front">
-                        <p className="TextP">React.js / Node.js / Scss</p>
+                        <p className="TextPi">React.js / Node.js / Scss</p>
                     </div>
                 </div>
                 <div className="House_description_right">

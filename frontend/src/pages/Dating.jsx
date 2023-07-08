@@ -98,24 +98,24 @@ const Dating = () => {
                 <div className="Hobbi_description_middle">
                     <div className="Categorie">
                         {french ?
-                            <p className="TextP">Application mobile</p>
+                            <p className="TextPi">Application mobile</p>
                             :
-                            <p className="TextP">Mobile app</p>}
+                            <p className="TextPi">Mobile app</p>}
                     </div>
                     <div className="Annee">
-                        <p className="TextP">2023</p>
+                        <p className="TextPi">2023</p>
                     </div>
                     <div className="Client">
-                        <p className="TextP">Start-up DotPoint</p>
+                        <p className="TextPi">Start-up DotPoint</p>
                     </div>
                     <div className="Front">
-                        <p className="TextP">React Native / Android Studio</p>
+                        <p className="TextPi">React Native / Android Studio</p>
                     </div>
                     <div className="Back">
-                        <p className="TextP">Express.js</p>
+                        <p className="TextPi">Express.js</p>
                     </div>
                     <div className="Sgbd">
-                        <p className="TextP">MySql</p>
+                        <p className="TextPi">MySql</p>
                     </div>
                 </div>
                 <div className="Hobbi_description_right">

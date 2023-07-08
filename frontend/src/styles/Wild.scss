@@ -5,7 +5,6 @@
 .TextP {
     font-size: 28px;
     font-family: $font-family-5;
-    margin-top: 3%;
 }
 
 .TextPi {
@@ -25,7 +24,7 @@
     .Wild_h4 {
         color: var(--wild);
         font-family: $font-family-5;
-        font-size: 32px;
+        font-size: 28px;
         letter-spacing: -2px;
     }
 
@@ -124,42 +123,6 @@
             justify-content: space-between;
             width: 24%;
             height: 100%;
-
-            .Categorie {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-            }
-
-            .Annee {
-                display: flex;
-                flex-direction: row;
-                gap: 100px;
-            }
-
-            .Client {
-                display: flex;
-                flex-direction: row;
-                gap: 100px;
-            }
-
-            .Front {
-                display: flex;
-                flex-direction: row;
-                gap: 100px;
-            }
-
-            .Back {
-                display: flex;
-                flex-direction: row;
-                gap: 100px;
-            }
-
-            .Sgbd {
-                display: flex;
-                flex-direction: row;
-                gap: 100px;
-            }
         }
 
         &_right {
@@ -169,6 +132,7 @@
             align-items: flex-start;
             width: 60%;
             gap: 8%;
+            padding-right: 3%;
             padding-left: 4%;
             border-left: 1px solid var(--wild);
 

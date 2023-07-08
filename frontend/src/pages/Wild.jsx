@@ -102,24 +102,24 @@ const Wild = () => {
                 <div className="Wild_description_middle">
                     <div className="Categorie">
                         {french ?
-                            <p className="TextP">Site web</p>
+                            <p className="TextPi">Site web</p>
                             :
-                            <p className="TextP">Website</p>}
+                            <p className="TextPi">Website</p>}
                     </div>
                     <div className="Annee">
-                        <p className="TextP">2022</p>
+                        <p className="TextPi">2022</p>
                     </div>
                     <div className="Client">
-                        <p className="TextP">Wild Code School</p>
+                        <p className="TextPi">Wild Code School</p>
                     </div>
                     <div className="Front">
-                        <p className="TextP">React.js / Node.js</p>
+                        <p className="TextPi">React.js / Node.js</p>
                     </div>
                     <div className="Back">
-                        <p className="TextP">API Rest / Express.js</p>
+                        <p className="TextPi">API Rest / Express.js</p>
                     </div>
                     <div className="Sgbd">
-                        <p className="TextP">MySql</p>
+                        <p className="TextPi">MySql</p>
                     </div>
                 </div>
                 <div className="Wild_description_right">

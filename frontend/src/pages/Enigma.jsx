@@ -79,21 +79,21 @@ const Enigma = () => {
                 <div className="Enigma_description_middle">
                     <div className="Categorie">
                         {french ?
-                            <p className="TextP">Algorithme</p>
+                            <p className="TextPi">Algorithme</p>
                             :
-                            <p className="TextP">Algorithm</p>}
+                            <p className="TextPi">Algorithm</p>}
                     </div>
                     <div className="Annee">
-                        <p className="TextP">2021</p>
+                        <p className="TextPi">2021</p>
                     </div>
                     <div className="Client">
                         {french ?
-                            <p className="TextP">Autodidacte</p>
+                            <p className="TextPi">Autodidacte</p>
                             :
-                            <p className="TextP">Self-taught</p>}
+                            <p className="TextPi">Self-taught</p>}
                     </div>
                     <div className="Front">
-                        <p className="TextP">HTML / CSS / Javascript</p>
+                        <p className="TextPi">HTML / CSS / Javascript</p>
                     </div>
                 </div>
                 <div className="Enigma_description_right">

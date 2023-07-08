@@ -94,22 +94,22 @@ const Enecom = () => {
                 </div>
                 <div className="Enecom_description_middle">
                     <div className="Categorie">
-                        <p className="TextP">Intranet</p>
+                        <p className="TextPi">Intranet</p>
                     </div>
                     <div className="Annee">
-                        <p className="TextP">2023</p>
+                        <p className="TextPi">2023</p>
                     </div>
                     <div className="Client">
-                        <p className="TextP">Enedis</p>
+                        <p className="TextPi">Enedis</p>
                     </div>
                     <div className="Front">
-                        <p className="TextP">React.js / Node.js</p>
+                        <p className="TextPi">React.js / Node.js</p>
                     </div>
                     <div className="Back">
-                        <p className="TextP">Express.js</p>
+                        <p className="TextPi">Express.js</p>
                     </div>
                     <div className="Sgbd">
-                        <p className="TextP">MySql</p>
+                        <p className="TextPi">MySql</p>
                     </div>
                 </div>
                 <div className="Enecom_description_right">
