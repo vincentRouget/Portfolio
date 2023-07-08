@@ -49,6 +49,7 @@
         display: flex;
         width: 92%;
     }
+
 }
 
 .PortfolioDark {
@@ -58,4 +59,17 @@
         url("https://images.unsplash.com/photo-1542885421-3fb3de1f9f0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1972&q=80");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.goutte {
+    // background-color: red;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    top: 3%;
+    left: 97%;
+    gap: 20px;
 }

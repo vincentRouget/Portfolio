@@ -10,7 +10,7 @@ import VS from "../assets/Icon/vs.png";
 import IO from "../assets/Icon/io.png";
 
 const Software = () => {
-    const { theme } = useContext(UserContext);
+    const { theme, french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
@@ -64,16 +64,25 @@ const Software = () => {
             <div className="Software_description pythonContour">
                 <div className="Software_description_left">
                     <div className="Annee">
-                        <h4 className="Software_h4 python resolution">Année</h4>
+                        {french ?
+                            <h4 className="Software_h4 python resolution">Année</h4>
+                            :
+                            <h4 className="Software_h4 python resolution">Year</h4>}
                     </div>
                     <div className="Categorie">
-                        <h4 className="Software_h4 python resolution">Non-disclosure clause</h4>
+                        {french ?
+                            <h4 className="Software_h4 python resolution">Clause de non-divulgation</h4>
+                            :
+                            <h4 className="Software_h4 python resolution">Non-disclosure clause</h4>}
                     </div>
                     <div className="Client">
                         <h4 className="Software_h4 python resolution">I.D.E.</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Software_h4 python resolution">Langage</h4>
+                        {french ?
+                            <h4 className="Software_h4 python resolution">Language</h4>
+                            :
+                            <h4 className="Software_h4 python resolution">Langage</h4>}
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -81,7 +90,10 @@ const Software = () => {
                         <p className="TextP">2023</p>
                     </div>
                     <div className="Annee">
-                        <p className="TextP">Yes</p>
+                        {french ?
+                            <p className="TextP">Oui</p>
+                            :
+                            <p className="TextP">Yes</p>}
                     </div>
                     <div className="Client">
                         <p className="TextP">Visual Studio Code</p>
@@ -93,9 +105,18 @@ const Software = () => {
                 <div className="Software_description_right pythonDescription">
                     <div className="Software_description_right_description">
                         <h4 className="Software_h4 Saut python resolution">Description :</h4>
-                        <p className="TextP">Development of a pilot and test program for an automated tamping machine.</p>
-                        <p className="TextP">The program makes it possible, depending on several input parameters, to generate machine cycles in a loop, to advance step by step, to optimize performance, and to identify all possible causes of error.</p>
-                        <p className="TextP">The program thus helps to mechanically design future optimization hardware developments.</p>
+                        {french ?
+                            <div>
+                                <p className="TextP">Développement d’un programme pour piloter et effectuer des essais pour une machine de tassage automatisée.</p>
+                                <p className="TextP">Le programme permet, en fonction de plusieurs paramètres d’entrée, de générer des cycles machine en boucle, d’avancer pas à pas, d’optimiser les performances et d’identifier toutes les causes possibles d’erreur.</p>
+                                <p className="TextP">Le programme aide ainsi à concevoir mécaniquement les futurs développements matériels d’optimisation.</p>
+                            </div>
+                            :
+                            <div>
+                                <p className="TextP">Development of a program to pilot and test an automated packing machine.</p>
+                                <p className="TextP">The program allows, depending on several input parameters, to generate loop machine cycles, to advance step by step, to optimize performance and to identify all possible causes of error.</p>
+                                <p className="TextP">The program thus helps to mechanically design future hardware optimization developments.</p>
+                            </div>}
                     </div>
                 </div>
             </div>
@@ -111,16 +132,25 @@ const Software = () => {
             <div className="Software_description cppContour">
                 <div className="Software_description_left">
                     <div className="Annee">
-                        <h4 className="Software_h4 cpp resolution">Année</h4>
+                        {french ?
+                            <h4 className="Software_h4 cpp resolution">Année</h4>
+                            :
+                            <h4 className="Software_h4 cpp resolution">Year</h4>}
                     </div>
                     <div className="Categorie">
-                        <h4 className="Software_h4 cpp resolution">Non-disclosure clause</h4>
+                        {french ?
+                            <h4 className="Software_h4 cpp resolution">Clause de non-divulgation</h4>
+                            :
+                            <h4 className="Software_h4 cpp resolution">Non-disclosure clause</h4>}
                     </div>
                     <div className="Client">
                         <h4 className="Software_h4 cpp resolution">I.D.E.</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Software_h4 cpp resolution">Langage</h4>
+                        {french ?
+                            <h4 className="Software_h4 cpp resolution">Language</h4>
+                            :
+                            <h4 className="Software_h4 cpp resolution">Langage</h4>}
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -128,7 +158,10 @@ const Software = () => {
                         <p className="TextP">2023</p>
                     </div>
                     <div className="Annee">
-                        <p className="TextP">Yes</p>
+                        {french ?
+                            <p className="TextP">Oui</p>
+                            :
+                            <p className="TextP">Yes</p>}
                     </div>
                     <div className="Client">
                         <p className="TextP">VS Community 2022</p>
@@ -140,9 +173,18 @@ const Software = () => {
                 <div className="Software_description_right cppDescription">
                     <div className="Software_description_right_description">
                         <h4 className="Software_h4 Saut cpp resolution">Description :</h4>
-                        <p className="TextP">Adaptability of video surveillance management software by means of a network of cameras, to modern operating systems.</p>
-                        <p className="TextP">Addition of functionalities and availability of new foreign languages in the software through dll files.</p>
-                        <p className="TextP">Increased security protocols and implementation of a USB Dongle.</p>
+                        {french ?
+                            <div>
+                                <p className="TextP">Adaptabilité aux systèmes d’exploitation modernes d’un logiciel de gestion pour la vidéosurveillance au moyen d’un réseau de caméras.</p>
+                                <p className="TextP">Ajout de fonctionnalités et mise en place de nouvelles langues étrangères d’interface dans le logiciel par l’intermédiaire de fichiers dll.</p>
+                                <p className="TextP">Intégration de protocoles de sécurité supplémentaires et mise en œuvre d’un Dongle USB.</p>
+                            </div>
+                            :
+                            <div>
+                                <p className="TextP">Adaptability to modern operating systems of management software for video surveillance through a network of cameras.</p>
+                                <p className="TextP">Added features and implemented new foreign interface languages in the software via dll files.</p>
+                                <p className="TextP">Integration of additional security protocols and implementation of a USB dongle.</p>
+                            </div>}
                     </div>
                 </div>
             </div>
@@ -158,16 +200,25 @@ const Software = () => {
             <div className="Software_description preactContour">
                 <div className="Software_description_left">
                     <div className="Annee">
-                        <h4 className="Software_h4 preact resolution">Année</h4>
+                        {french ?
+                            <h4 className="Software_h4 preact resolution">Année</h4>
+                            :
+                            <h4 className="Software_h4 preact resolution">Year</h4>}
                     </div>
                     <div className="Categorie">
-                        <h4 className="Software_h4 preact resolution">Non-disclosure clause</h4>
+                        {french ?
+                            <h4 className="Software_h4 preact resolution">Clause de non-divulgation</h4>
+                            :
+                            <h4 className="Software_h4 preact resolution">Non-disclosure clause</h4>}
                     </div>
                     <div className="Client">
                         <h4 className="Software_h4 preact resolution">I.D.E.</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Software_h4 preact resolution">Langage</h4>
+                        {french ?
+                            <h4 className="Software_h4 preact resolution">Language</h4>
+                            :
+                            <h4 className="Software_h4 preact resolution">Langage</h4>}
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -175,7 +226,10 @@ const Software = () => {
                         <p className="TextP">2023</p>
                     </div>
                     <div className="Annee">
-                        <p className="TextP">Yes</p>
+                        {french ?
+                            <p className="TextP">Oui</p>
+                            :
+                            <p className="TextP">Yes</p>}
                     </div>
                     <div className="Client">
                         <p className="TextP">Visual Studio Code</p>
@@ -187,9 +241,18 @@ const Software = () => {
                 <div className="Software_description_right preactDescription">
                     <div className="Software_description_right_description">
                         <h4 className="Software_h4 Saut preact resolution">Description :</h4>
-                        <p className="TextP">Complete overhaul of a program used to control the lights on board SNCF network trains.</p>
-                        <p className="TextP">This project aimed to fully migrate all old features to a new modern interface.</p>
-                        <p className="TextP">The program being embedded on various computer media, the development was done in the Preact language, for low resource consumption needs.</p>
+                        {french ?
+                            <div>
+                                <p className="TextP">Révision complète d’un programme de contrôle des luminaires à bord des trains et navettes du réseau SNCF.</p>
+                                <p className="TextP">Ce projet visait à migrer toutes les anciennes fonctionnalités vers une nouvelle interface intranet moderne.</p>
+                                <p className="TextP">Le programme étant intégré sur de multiples supports informatiques variés, le développement a été fait dans le langage Preact, pour des besoins de faible consommation en ressources.</p>
+                            </div>
+                            :
+                            <div>
+                                <p className="TextP">Complete revision of a control program for luminaires on board SNCF trains and shuttles.</p>
+                                <p className="TextP">This project aimed to migrate all old features to a new modern intranet interface.</p>
+                                <p className="TextP">As the program is integrated on multiple computer media, the development was done in the Preact language, for low resource consumption needs.</p>
+                            </div>}
                     </div>
                 </div>
             </div>
@@ -205,16 +268,25 @@ const Software = () => {
             <div className="Software_description pascalContour">
                 <div className="Software_description_left">
                     <div className="Annee">
-                        <h4 className="Software_h4 pascal resolution">Année</h4>
+                        {french ?
+                            <h4 className="Software_h4 pascal resolution">Année</h4>
+                            :
+                            <h4 className="Software_h4 pascal resolution">Year</h4>}
                     </div>
                     <div className="Categorie">
-                        <h4 className="Software_h4 pascal resolution">Non-disclosure clause</h4>
+                        {french ?
+                            <h4 className="Software_h4 pascal resolution">Clause de non-divulgation</h4>
+                            :
+                            <h4 className="Software_h4 pascal resolution">Non-disclosure clause</h4>}
                     </div>
                     <div className="Client">
                         <h4 className="Software_h4 pascal resolution">I.D.E.</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Software_h4 pascal resolution">Langage</h4>
+                        {french ?
+                            <h4 className="Software_h4 pascal resolution">Language</h4>
+                            :
+                            <h4 className="Software_h4 pascal resolution">Langage</h4>}
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -222,7 +294,10 @@ const Software = () => {
                         <p className="TextP">2023</p>
                     </div>
                     <div className="Annee">
-                        <p className="TextP">Yes</p>
+                        {french ?
+                            <p className="TextP">Oui</p>
+                            :
+                            <p className="TextP">Yes</p>}
                     </div>
                     <div className="Client">
                         <p className="TextP">Visual I/O</p>
@@ -234,9 +309,18 @@ const Software = () => {
                 <div className="Software_description_right pascalDescription">
                     <div className="Software_description_right_description">
                         <h4 className="Software_h4 Saut pascal resolution">Description :</h4>
-                        <p className="TextP">Maintenance and optimization of a control program for an electromagnetic system for the creep of polymeric materials.</p>
-                        <p className="TextP">Programming under Visual I/O, in expert mode to modify and add functionalities to the mimic diagrams of the software's graphic interface.</p>
-                        <p className="TextP">Programming under Visual I/O, in Pascal language to develop all the additions, corrections and changes with regard to the logic of the software.</p>
+                        {french ?
+                            <div>
+                                <p className="TextP">Maintenance et optimisation d’un programme de contrôle d’un système électromagnétique pour une machine de fluage de matériaux polymères.</p>
+                                <p className="TextP">Programmation sous Visual I/O, en mode expert, pour modifier et ajouter des fonctionnalités aux synoptiques de l’interface graphique du logiciel.</p>
+                                <p className="TextP">Programmation sous Visual I/O, en langage Pascal, pour développer tous les ajouts, corrections et changements concernant la logique du logiciel.</p>
+                            </div>
+                            :
+                            <div>
+                                <p className="TextP">Maintenance and optimization of an electromagnetic control program for a polymer creeping machine.</p>
+                                <p className="TextP">Programming under Visual I/O, in expert mode, to modify and add features to the software’s graphical interface synoptics.</p>
+                                <p className="TextP">Programming under Visual I/O, in Pascal language, to develop all additions, corrections and changes concerning the logic of the software.</p>
+                            </div>}
                     </div>
                 </div>
             </div>

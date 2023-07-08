@@ -16,7 +16,7 @@ export const Button = styled.div`
    left: 96%;
    bottom: 0%;
    // height: 4%;
-   font-size: 4em;
+   font-size: 4.5em;
    cursor: pointer;
    color: var(--text);
    transition : 0.1s ease-in;

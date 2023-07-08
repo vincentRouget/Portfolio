@@ -40,7 +40,7 @@ const Sidebar = ({
     logicielON,
     setLogicielON
 }) => {
-    const { theme, setRefresh, minimize, setMinimize } = useContext(UserContext);
+    const { theme, setRefresh, minimize, setMinimize, french } = useContext(UserContext);
     const navigate = useNavigate();
 
     const scrollToTop = () => {
@@ -62,7 +62,7 @@ const Sidebar = ({
                         {!minimize ?
                             <>
                                 <button
-                                    className="buttonBack"
+                                    className="button"
                                     onClick={() => {
                                         scrollToTop();
                                         setRefresh(true);
@@ -72,11 +72,14 @@ const Sidebar = ({
                                         <img src={Back} alt='' className="icon_back"></img>
                                         :
                                         <img src={BackW} alt='' className="icon_back"></img>}
-                                    <p className="ellipsis">Back</p>
+                                    {french ?
+                                        <p className="ellipsis">Retour</p>
+                                        :
+                                        <p className="ellipsis">Back</p>}
                                 </button>
-                                <div className="Sidebar_theme">
+                                {/* <div className="Sidebar_theme">
                                     <Theme />
-                                </div>
+                                </div> */}
                             </>
                             :
                             <button
@@ -233,7 +236,7 @@ const Sidebar = ({
                                     <img src={App} alt='' className="icon"></img>
                                     :
                                     <img src={AppW} alt='' className="icon"></img>}
-                                <p className="ellipsis">Dating App</p>
+                                <p className="ellipsis">Mobile</p>
                             </button>
                         </div>
                         :
@@ -274,7 +277,10 @@ const Sidebar = ({
                                     <img src={Maison} alt='' className="icon"></img>
                                     :
                                     <img src={MaisonW} alt='' className="icon"></img>}
-                                <p className="ellipsis">La Maison du Lac</p>
+                                {french ?
+                                    <p className="ellipsis">Site web</p>
+                                    :
+                                    <p className="ellipsis">Website</p>}
                             </button>
                         </div>
                         :
@@ -315,7 +321,10 @@ const Sidebar = ({
                                     <img src={Logiciel} alt='' className="icon"></img>
                                     :
                                     <img src={LogicielW} alt='' className="icon"></img>}
-                                <p className="ellipsis">Software</p>
+                                {french ?
+                                    <p className="ellipsis">Logiciel</p>
+                                    :
+                                    <p className="ellipsis">Software</p>}
                             </button>
                         </div>
                         :

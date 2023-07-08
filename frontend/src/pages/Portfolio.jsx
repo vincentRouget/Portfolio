@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/UserContext";
 import Sidebar from '../components/Sidebar';
-import About from "./About";
+import Theme from "@components/Theme";
+import Lang from "@components/Lang";
 import Main from "./Main";
 import Wild from "./Wild";
 import Enecom from "./Enecom";
@@ -55,6 +56,10 @@ const Portfolio = () => {
                         setPresentationON={setPresentationON}
                     />
                 </div>
+            </div>
+            <div className="goutte">
+                <Theme />
+                <Lang />
             </div>
             <div className={!minimize ? 'Right' : 'Right_mini'}>
                 {etiquetteON && <Main

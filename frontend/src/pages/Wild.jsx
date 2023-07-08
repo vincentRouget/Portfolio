@@ -19,7 +19,7 @@ import MYSQL from "../assets/Icon/mysql.png";
 import API from "../assets/Icon/api.png";
 
 const Wild = () => {
-    const { theme } = useContext(UserContext);
+    const { theme, french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
@@ -75,10 +75,16 @@ const Wild = () => {
             <div className="Wild_description">
                 <div className="Wild_description_left">
                     <div className="Categorie">
-                        <h4 className="Wild_h4 resolution">Catégorie</h4>
+                        {french ?
+                            <h4 className="Wild_h4 resolution">Catégorie</h4>
+                            :
+                            <h4 className="Wild_h4 resolution">Category</h4>}
                     </div>
                     <div className="Annee">
-                        <h4 className="Wild_h4 resolution">Année</h4>
+                        {french ?
+                            <h4 className="Wild_h4 resolution">Année</h4>
+                            :
+                            <h4 className="Wild_h4 resolution">Year</h4>}
                     </div>
                     <div className="Client">
                         <h4 className="Wild_h4 resolution">Client</h4>
@@ -95,7 +101,10 @@ const Wild = () => {
                 </div>
                 <div className="Wild_description_middle">
                     <div className="Categorie">
-                        <p className="TextP">Website development</p>
+                        {french ?
+                            <p className="TextP">Site web</p>
+                            :
+                            <p className="TextP">Website</p>}
                     </div>
                     <div className="Annee">
                         <p className="TextP">2022</p>
@@ -116,15 +125,28 @@ const Wild = () => {
                 <div className="Wild_description_right">
                     <div className="Wild_description_right_description">
                         <h4 className="Wild_h4 Saut resolution">Description :</h4>
-                        <p className="TextPi">The Wild Movies project is a website that offers a library of all the movies and series present in the very popular public api TMDB.</p>
-                        <p className="TextPi">This API is intended for those who wish to use their very complete database in a web application.</p>
-                        <p className="TextPi">It allows you to dynamically retrieve all the data relating to films, series, but also those relating to casting.</p>
-                        <p className="TextPi">In addition, it also provides information on which streaming platform(s) the viewing is available.</p>
+                        {french ?
+                            <div>
+                                <p className="TextPi">Le projet Wild Movies est un site internet qui propose une bibliothèque de tous les films et séries présents dans l’API publique très populaire TMDB. </p>
+                                <p className="TextPi">Ce service API REST est destiné à ceux qui souhaitent utiliser leur base de données très complète pour la retranscrire dans une application web.</p>
+                                <p className="TextPi">Il permet de récupérer dynamiquement toutes les données relatives aux films, aux séries, aux bandes-annonces, mais également celles au casting.</p>
+                                <p className="TextPi">Il fournit également des informations sur les plateformes de diffusion de vidéo en continu disponibles.</p>
+                            </div>
+                            :
+                            <div>
+                                <p className="TextPi">The Wild Movies project is a website that offers a library of all the movies and series present in the very popular TMDB public API. </p>
+                                <p className="TextPi">This REST API service is intended for those who want to use their very complete database to transcribe it into a web application.</p>
+                                <p className="TextPi">It makes it possible to dynamically recover all data related to films, series, trailers, but also those related to the casting.</p>
+                                <p className="TextPi">It also provides information on available video streaming platforms.</p>
+                            </div>}
+                        {french ?
+                            <p className="TextP">Lien vers le site : <a href="https://wild-movies.netlify.app/" target="_blank">https://wild-movies.netlify.app/</a></p>
+                            :
+                            <p className="TextP">Link to website : <a href="https://wild-movies.netlify.app/" target="_blank">https://wild-movies.netlify.app/</a></p>}
                     </div>
-                    <p className="TextP">Link to website : <a href="https://wild-movies.netlify.app/" target="_blank">https://wild-movies.netlify.app/</a></p>
                 </div>
             </div>
-            <h4 className="Wild_h4 resolution picture">Screenshots</h4>
+            <h4 className="Wild_h4 resolution picture">Illustrations</h4>
             <div className="Wild_screenshot">
                 <div className="Wild_screenshot_image">
                     <a href={Wild2} target="_blank">

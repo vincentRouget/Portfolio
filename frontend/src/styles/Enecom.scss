@@ -3,8 +3,9 @@
 }
 
 .TextP {
-    font-size: 32px;
+    font-size: 28px;
     font-family: $font-family-5;
+    margin-top: 3%;
 }
 
 .TextPi {
@@ -95,7 +96,6 @@
         justify-content: center;
         align-items: center;
         width: 88%;
-        height: 80vh;
         padding: 5% 1% 5% 1%;
         margin: auto auto 8% auto;
         border: 2px solid var(--enecom);
@@ -114,6 +114,7 @@
             justify-content: space-between;
             width: 16%;
             height: 100%;
+            padding-left: 1%;
         }
 
         &_middle {
@@ -166,8 +167,6 @@
             justify-content: center;
             align-items: flex-start;
             width: 60%;
-            height: 70vh;
-            gap: 8%;
             padding-left: 4%;
             border-left: 1px solid var(--enecom);
 
@@ -176,14 +175,13 @@
             }
 
             &_description {
-
                 display: flex;
                 flex-direction: column;
                 line-height: 2em;
                 color: var(--text);
 
                 .Saut {
-                    margin-bottom: 10px;
+                    margin-bottom: 3%;
                 }
             }
         }

@@ -10,7 +10,7 @@ import CSS from "../assets/Icon/css.png";
 import JS from "../assets/Icon/js.png";
 
 const Enigma = () => {
-    const { theme } = useContext(UserContext);
+    const { theme, french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
@@ -58,10 +58,16 @@ const Enigma = () => {
             <div className="Enigma_description">
                 <div className="Enigma_description_left">
                     <div className="Categorie">
-                        <h4 className="Enigma_h4 resolution">Catégorie</h4>
+                        {french ?
+                            <h4 className="Enigma_h4 resolution">Catégorie</h4>
+                            :
+                            <h4 className="Enigma_h4 resolution">Category</h4>}
                     </div>
                     <div className="Annee">
-                        <h4 className="Enigma_h4 resolution">Année</h4>
+                        {french ?
+                            <h4 className="Enigma_h4 resolution">Année</h4>
+                            :
+                            <h4 className="Enigma_h4 resolution">Year</h4>}
                     </div>
                     <div className="Client">
                         <h4 className="Enigma_h4 resolution">Client</h4>
@@ -72,13 +78,19 @@ const Enigma = () => {
                 </div>
                 <div className="Enigma_description_middle">
                     <div className="Categorie">
-                        <p className="TextP">Algorithm</p>
+                        {french ?
+                            <p className="TextP">Algorithme</p>
+                            :
+                            <p className="TextP">Algorithm</p>}
                     </div>
                     <div className="Annee">
                         <p className="TextP">2021</p>
                     </div>
                     <div className="Client">
-                        <p className="TextP">Self-taught</p>
+                        {french ?
+                            <p className="TextP">Autodidacte</p>
+                            :
+                            <p className="TextP">Self-taught</p>}
                     </div>
                     <div className="Front">
                         <p className="TextP">HTML / CSS / Javascript</p>
@@ -87,28 +99,44 @@ const Enigma = () => {
                 <div className="Enigma_description_right">
                     <div className="Enigma_description_right_description">
                         <h4 className="Enigma_h4 Saut resolution">Description :</h4>
-                        <p className="TextPi">This algorithmic project is an html interface that allows a lot of interactions around text encryption.</p>
-                        <p className="TextPi">Simply choose a key, which is a string of characters that will act as the password necessary for encryption and decryption, then enter the text to be encrypted.</p>
-                        <p className="TextPi">It is then possible to encrypt the message, copy it to the clipboard, or send it by email, with or without comments, in order to give the recipient a clue about the key used to decrypt the message.</p>
-                        <p className="TextPi">There is of course a button that allows you to decrypt an incoming message provided you use the right key.</p>
+                        {french ?
+                            <div>
+                                <p className="TextPi">Ce projet algorithmique est une interface html qui permet beaucoup d’interactions autour du chiffrement de texte.</p>
+                                <p className="TextPi">Choisissez simplement une clé sous forme d’une chaîne de caractères, qui agira comme un mot de passe nécessaire pour le chiffrement et le déchiffrement d’un texte.</p>
+                                <p className="TextPi">Il est alors possible de crypter le message, de le copier dans le presse-papiers, ou de l’envoyer par courriel, avec ou sans commentaires, afin de donner au destinataire un indice sur la clé utilisée pour déchiffrer le message.</p>
+                                <p className="TextPi">Il y a bien sûr un bouton qui vous permet de déchiffrer un message entrant si vous utilisez la bonne clé.</p>
+                            </div>
+                            :
+                            <div>
+                                <p className="TextPi">This algorithmic project is an html interface that allows many interactions around text encryption.</p>
+                                <p className="TextPi">Simply choose a key as a string, which will act as a necessary password for encryption and decryption of a text.</p>
+                                <p className="TextPi">It is then possible to encrypt the message, copy it to the clipboard, or send it by email, with or without comments, in order to give the recipient a clue about the key used to decrypt the message.</p>
+                                <p className="TextPi">There is of course a button that allows you to decipher an incoming message if you use the right key.</p>
+                            </div>}
                     </div>
                 </div>
             </div>
             <div className="Enigma_screenshot Enigma_padding">
                 <div className="Enigma_screenshot_image">
-                    <h4 className="Enigma_h4 resolution picture">Interface</h4>
+                    <h4 className="Enigma_h4 resolution picture">Illustration</h4>
                     <a href={Enigma1} target="_blank">
                         <img src={Enigma1} className="Enigma_screenshot_image"></img>
                     </a>
                 </div>
                 <div className="Enigma_screenshot_image">
-                    <h4 className="Enigma_h4 resolution picture">Encryption</h4>
+                    {french ?
+                        <h4 className="Enigma_h4 resolution picture">Cryptage</h4>
+                        :
+                        <h4 className="Enigma_h4 resolution picture">Encryption</h4>}
                     <a href={Enigma2} target="_blank">
                         <img src={Enigma2} className="Enigma_screenshot_image"></img>
                     </a>
                 </div>
                 <div className="Enigma_screenshot_image">
-                    <h4 className="Enigma_h4 resolution picture">Decryption</h4>
+                    {french ?
+                        <h4 className="Enigma_h4 resolution picture">Décryptage</h4>
+                        :
+                        <h4 className="Enigma_h4 resolution picture">Decryption</h4>}
                     <a href={Enigma3} target="_blank">
                         <img src={Enigma3} className="Enigma_screenshot_image"></img>
                     </a>

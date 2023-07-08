@@ -35,7 +35,7 @@ const Main = ({
     setEnigmaON,
     setLogicielON
 }) => {
-    const { theme } = useContext(UserContext);
+    const { theme, french } = useContext(UserContext);
 
     useEffect(() => {
     }, []);
@@ -76,7 +76,10 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Library site for searching movies and series using a public API</p>
+                        {french ?
+                            <p>Site pour la recherche de films et séries grâce à une API publique</p>
+                            :
+                            <p>Library site for searching movies and series using a public API</p>}
                     </div>
                 </button>
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card MainDark"}
@@ -112,7 +115,10 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Intranet interface for sharing communication plans</p>
+                        {french ?
+                            <p>Interface intranet de gestion de plans de communications</p>
+                            :
+                            <p>Intranet interface for sharing communication plans</p>}
                     </div>
                 </button>
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card MainDark"}
@@ -148,7 +154,10 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Mobile dating app</p>
+                        {french ?
+                            <p>Application mobile de rencontre</p>
+                            :
+                            <p>Mobile dating app</p>}
                     </div>
                 </button>
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card MainDark"}
@@ -178,7 +187,10 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Website for bed and breakfast</p>
+                        {french ?
+                            <p>Site web de présentation pour des chambres d'hôtes</p>
+                            :
+                            <p>Website for bed and breakfast</p>}
                     </div>
                 </button>
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card MainDark"}
@@ -217,7 +229,10 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Software design, maintenance and optimization</p>
+                        {french ?
+                            <p>Conception, maintenance et optimisation de logiciels</p>
+                            :
+                            <p>Software conception, maintenance and optimization</p>}
                     </div>
                 </button>
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card MainDark"}
@@ -247,7 +262,10 @@ const Main = ({
                         </div>
                     </div>
                     <div className="Main_container_card_text">
-                        <p>Algorithm web interface for text encryption</p>
+                        {french ?
+                            <p>Interface web de cryptage de texte</p>
+                            :
+                            <p>Web interface for text encryption</p>}
                     </div>
                 </button>
             </div>

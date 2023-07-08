@@ -15,7 +15,7 @@ import REACTJS from "../assets/Icon/react.png";
 import NODE from "../assets/Icon/node.png";
 
 const Maison = () => {
-    const { theme } = useContext(UserContext);
+    const { theme, french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
@@ -63,10 +63,16 @@ const Maison = () => {
             <div className="House_description">
                 <div className="House_description_left">
                     <div className="Categorie">
-                        <h4 className="House_h4 resolution">Catégorie</h4>
+                        {french ?
+                            <h4 className="House_h4 resolution">Catégorie</h4>
+                            :
+                            <h4 className="House_h4 resolution">Category</h4>}
                     </div>
                     <div className="Annee">
-                        <h4 className="House_h4 resolution">Année</h4>
+                        {french ?
+                            <h4 className="House_h4 resolution">Année</h4>
+                            :
+                            <h4 className="House_h4 resolution">Year</h4>}
                     </div>
                     <div className="Client">
                         <h4 className="House_h4 resolution">Client</h4>
@@ -77,13 +83,19 @@ const Maison = () => {
                 </div>
                 <div className="House_description_middle">
                     <div className="Categorie">
-                        <p className="TextP">Website development</p>
+                        {french ?
+                            <p className="TextP">Site web</p>
+                            :
+                            <p className="TextP">Website</p>}
                     </div>
                     <div className="Annee">
                         <p className="TextP">2023</p>
                     </div>
                     <div className="Client">
-                        <p className="TextP">Establishment owner</p>
+                        {french ?
+                            <p className="TextP">Propriétaire</p>
+                            :
+                            <p className="TextP">Owner</p>}
                     </div>
                     <div className="Front">
                         <p className="TextP">React.js / Node.js / Scss</p>
@@ -92,16 +104,30 @@ const Maison = () => {
                 <div className="House_description_right">
                     <div className="House_description_right_description">
                         <h4 className="House_h4 Saut resolution">Description :</h4>
-                        <p className="TextPiMaison">This site created in React.js aims to present the services and rental rates for accommodation in the establishment "La Maison du Lac", located near Limoges in the department of Haute-Vienne (87), France.</p>
-                        <p className="TextPiMaison">On the home page, it presents a description of the establishment and the different accommodations, with some images to illustrate the places.</p>
-                        <p className="TextPiMaison">It also offers the different possible formulas with a description of each of them, as well as the rates and optional services.</p>
-                        <p className="TextPiMaison">A Contact page with a Google Maps allows you to locate the precise location, find the best route, or even send an email to the owner of the establishment.</p>
-                        <p className="TextPiMaison">At the bottom of the page, we find the various links to all external web pages, such as Facebook, Booking.com or even AirBnB.com.</p>
+                        {french ?
+                            <div>
+                                <p className="TextPiMaison">Ce site créé à React.js a pour but de présenter l’établissement de chambres d’hôtes "La Maison du Lac", situé près de Limoges dans le département de Haute-Vienne (87), en France.</p>
+                                <p className="TextPiMaison">Sur la page d’accueil, il présente une description de l’établissement et des différents hébergements proposés, avec quelques images pour illustrer les lieux.</p>
+                                <p className="TextPiMaison">Il propose également les différentes formules disponibles avec une description de chacune d’entre elles, ainsi que les tarifs et les services optionnels.</p>
+                                <p className="TextPiMaison">Une page « Contact » avec une carte Google Maps permet de localiser l’emplacement précis, de trouver le meilleur itinéraire, ou même d’envoyer un courriel au propriétaire de l’établissement.</p>
+                                <p className="TextPiMaison">Au bas de la page se trouve les différents liens vers toutes les pages Web externes, comme Facebook, Booking.com ou même AirBnB.com.</p>
+                            </div>
+                            :
+                            <div>
+                                <p className="TextPiMaison">This site created in React.js aims to present the establishment of guest houses "La Maison du Lac", located near Limoges in the department of Haute-Vienne (87), in France.</p>
+                                <p className="TextPiMaison">On the homepage, it presents a description of the establishment and the different accommodation offered, with some images to illustrate the places.</p>
+                                <p className="TextPiMaison">It also offers the various formulas available with a description of each of them, as well as rates and optional services.</p>
+                                <p className="TextPiMaison">A “Contact” page with a Google Maps map allows you to locate the exact location, find the best route, or even send an email to the property owner.</p>
+                                <p className="TextPiMaison">At the bottom of the page are the various links to all external web pages, such as Facebook, Booking.com or even AirBnB.com.</p>
+                            </div>}
                     </div>
-                    <p className="TextP">Link to website : <a href="https://lamaisondulac87.fr/" target="_blank">https://lamaisondulac87.fr/</a></p>
+                    {french ?
+                        <p className="TextP">Lien vers le site : <a href="https://lamaisondulac87.fr/" target="_blank">https://lamaisondulac87.fr/</a></p>
+                        :
+                        <p className="TextP">Link to website : <a href="https://lamaisondulac87.fr/" target="_blank">https://lamaisondulac87.fr/</a></p>}
                 </div>
             </div>
-            <h4 className="House_h4 House_padding resolution picture">Screenshots</h4>
+            <h4 className="House_h4 House_padding resolution picture">Illustrations</h4>
             <div className="House_screenshot">
                 <div className="House_screenshot_image">
                     <a href={House2} target="_blank">

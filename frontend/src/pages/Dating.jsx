@@ -17,7 +17,7 @@ import EXPO from "../assets/Icon/expo.png";
 import ANDROID from "../assets/Icon/android.png";
 
 const Dating = () => {
-    const { theme } = useContext(UserContext);
+    const { theme, french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
@@ -71,10 +71,16 @@ const Dating = () => {
             <div className="Hobbi_description">
                 <div className="Hobbi_description_left">
                     <div className="Categorie">
-                        <h4 className="Hobbi_h4 resolution">Catégorie</h4>
+                        {french ?
+                            <h4 className="Hobbi_h4 resolution">Catégorie</h4>
+                            :
+                            <h4 className="Hobbi_h4 resolution">Category</h4>}
                     </div>
                     <div className="Annee">
-                        <h4 className="Hobbi_h4 resolution">Année</h4>
+                        {french ?
+                            <h4 className="Hobbi_h4 resolution">Année</h4>
+                            :
+                            <h4 className="Hobbi_h4 resolution">Year</h4>}
                     </div>
                     <div className="Client">
                         <h4 className="Hobbi_h4 resolution">Client</h4>
@@ -91,7 +97,10 @@ const Dating = () => {
                 </div>
                 <div className="Hobbi_description_middle">
                     <div className="Categorie">
-                        <p className="TextP">Dating App</p>
+                        {french ?
+                            <p className="TextP">Application mobile</p>
+                            :
+                            <p className="TextP">Mobile app</p>}
                     </div>
                     <div className="Annee">
                         <p className="TextP">2023</p>
@@ -112,14 +121,24 @@ const Dating = () => {
                 <div className="Hobbi_description_right">
                     <div className="Hobbi_description_right_description">
                         <h4 className="Hobbi_h4 Saut resolution">Description :</h4>
-                        <p className="TextPi">The Hobbi project is a mobile dating application for users through two axes of selection.</p>
-                        <p className="TextPi">The first axis filters users according to a criterion under non-disclosure agreement. It executed in the back end allows filtering a very large number of users on the server side.</p>
-                        <p className="TextPi">The second axis groups together, at the front end this time, users with the same hobbies or interests.</p>
-                        <p className="TextPi">This application therefore makes it possible to carry out global matchmaking which offers the user a panel of people corresponding to the desired criteria, to manage his contacts, and to interact via instant messaging.</p>
+                        {french ?
+                            <div>
+                                <p className="TextPi">Le projet Hobbi est une application mobile de rencontre à travers deux axes de sélection.</p>
+                                <p className="TextPi">Le premier axe filtre les utilisateurs selon un critère spécifique, en accord de non-divulgation. Il est exécuté en back-end et permet de filtrer un très grand nombre d’utilisateurs du côté serveur.</p>
+                                <p className="TextPi">Le deuxième axe regroupe, cette fois-ci en front-end, les utilisateurs ayant les mêmes hobbies ou intérêts.</p>
+                                <p className="TextPi">Cette application permet donc de réaliser une sélection précise, qui offre à l’utilisateur un panel de personnes correspondant aux critères souhaités, de gérer ses contacts, et d’interagir avec eux par messagerie instantanée.</p>
+                            </div>
+                            :
+                            <div>
+                                <p className="TextPi">The Hobbi project is a mobile meeting application through two selection axes.</p>
+                                <p className="TextPi">The first axis filters users according to a specific criterion, in non-disclosure agreement. It is run as a back-end and allows filtering a very large number of users on the server side.</p>
+                                <p className="TextPi">The second axis brings together, this time in front-end, users with the same hobbies or interests.</p>
+                                <p className="TextPi">This application allows to make a precise selection, which offers the user a panel of people corresponding to the desired criteria, to manage his contacts, and to interact with them by instant messaging.</p>
+                            </div>}
                     </div>
                 </div>
             </div>
-            <h4 className="Hobbi_h4 resolution picture">Screenshots</h4>
+            <h4 className="Hobbi_h4 resolution picture">Illustrations</h4>
             <div className="Hobbi_screenshot">
                 <div className="Hobbi_screenshot_image">
                     <a href={Hobbi7} target="_blank">

@@ -160,7 +160,6 @@
         justify-content: center;
         align-items: center;
         width: 88%;
-        height: 80vh;
         padding: 5% 1% 5% 1%;
         margin: auto auto 8% auto;
         border-radius: 20px;
@@ -177,6 +176,7 @@
             justify-content: space-between;
             width: 30%;
             height: 100%;
+            padding-left: 1%;
         }
 
         &_middle {
@@ -229,7 +229,6 @@
             justify-content: center;
             align-items: flex-start;
             width: 50%;
-            height: 70vh;
 
             a {
                 color: var(--link);
@@ -277,7 +276,6 @@
         }
 
         &_description {
-            height: 90vh;
 
             &_left {
 
@@ -287,7 +285,6 @@
             }
 
             &_right {
-                height: 80vh;
                 gap: 20px;
 
                 .resolution {

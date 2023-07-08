@@ -13,7 +13,7 @@ import WhiteArrow from "../assets/Icon/icons8-right-arrow-96-white.png";
 import BlackArrow from "../assets/Icon/icons8-right-arrow-96.png";
 
 const Accueil = () => {
-    const { theme, french, setFrench } = useContext(UserContext);
+    const { theme, french } = useContext(UserContext);
     const [handleAbout, setHandleAbout] = useState(false);
 
     // const handleDownload = () => {
@@ -114,60 +114,43 @@ const Accueil = () => {
                 <div className="TitleAbout_container">
                     {french ?
                         <>
-                            <h4 className="Paragraphe">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="TitleAbout">Hi !</span>&nbsp;&nbsp;</h4>
-                            <h4 className="Paragraphe">
-                                I am a passionate <span className="accent">Full Stack developer.</span>
+                            {/* <h4 className="Paragraphe">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="TitleAbout">Salut !</span>&nbsp;&nbsp;</h4> */}
+                            <h4 className="Paragraphe space">
+                                <span className="accent">Développeur Full Stack passionné.</span>
                             </h4>
                         </>
                         :
                         <>
-                            <h4 className="Paragraphe">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="TitleAbout">Hi !</span>&nbsp;&nbsp;</h4>
-                            <h4 className="Paragraphe">
-                                I am a passionate <span className="accent">Full Stack developer.</span>
+                            {/* <h4 className="Paragraphe">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="TitleAbout">Hi !</span>&nbsp;&nbsp;</h4> */}
+                            <h4 className="Paragraphe space">
+                                <span className="accent">Passionate Full Stack developer.</span>
                             </h4>
                         </>}
                 </div>
                 <div className="Section">
                     {french ?
                         <h4 className="Paragraphe">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J'ai commencé comme beaucoup en autodidacte, puis j'ai pu
-                            monter en compétences grâce à une formation en <span className="accent">développement web et mobile</span> à l'école « Wild Code
-                            School” de Nantes.
+                            J'ai commencé comme beaucoup en autodidacte, avant de monter en compétences grâce à une formation en <span className="accent">développement web et mobile</span> à l'école « Wild Code School” de Nantes.
                         </h4>
                         :
                         <h4 className="Paragraphe">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I started like many as an autodidact, then I
-                            quickly increase my skills thanks to training in<span className="accent"> web and mobile development</span> at the “Wild Code
-                            School” in Nantes.
-                        </h4>
-                    }
-                    {french ?
-                        <h4 className="Paragraphe">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suite à cette
-                            formation intensive basée sur la pratique, j'ai effectué un stage dans
-                            une société de développement logiciel à Poitiers,
-                            où j'ai pu consolider et étendre
-                            mes connaissances en développement informatique.
-                        </h4>
-                        :
-                        <h4 className="Paragraphe">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Following this intensive
-                            training based on practice, I did an internship in
-                            a software development company in Poitiers
-                            where I was able to consolidate and extend
-                            my knowledge in IT development.
+                            I started as a self-taught student, before going up in skills through a training in <span className="accent">web and mobile development</span> at the Wild Code School in Nantes.
                         </h4>}
                     {french ?
                         <h4 className="Paragraphe">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J'aime particulièrement le web et le mobile, mais j'ai
-                            également réalisé quelques projets <span className="accent">dans le secteur industriel,
-                                dans la recherche et la défense.</span>
+                            Suite à cette formation intensive basée sur la pratique, j'ai effectué un stage dans une société de développement logiciel à Poitiers, où j'ai pu consolider et étendre mes connaissances en développement informatique.
                         </h4>
                         :
                         <h4 className="Paragraphe">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I particularly like the web and mobile, but I have
-                            also carried out a some projects <span className="accent">in the industrial
-                                sector, in research and defence.</span>
+                            Following this intensive training based on practice, I did an internship at a software development company in Poitiers, where I was able to consolidate and expand my knowledge in computer development.
+                        </h4>}
+                    {french ?
+                        <h4 className="Paragraphe">
+                            J'aime particulièrement le web et le mobile, mais j'ai également réalisé quelques projets <span className="accent">dans le secteur industriel, dans la recherche et la défense.</span>
+                        </h4>
+                        :
+                        <h4 className="Paragraphe">
+                            I particularly like the web and mobile, but I also did some projects <span className="accent">in the industrial sector, in research and defence.</span>
                         </h4>}
                 </div>
             </div>

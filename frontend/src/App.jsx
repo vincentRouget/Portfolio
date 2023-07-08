@@ -4,7 +4,6 @@ import UserContext from "./context/UserContext";
 import './styles/App.scss';
 import Accueil from "@pages/Accueil";
 import Portfolio from './pages/Portfolio';
-import Presentation from "@pages/About";
 import CV from "@components/CV";
 import ScrollButton from "@components/ScrollButton";
 
@@ -31,11 +30,6 @@ function App() {
           <Route path="/portfolio" element={
             <Wrapper>
               <Portfolio />
-            </Wrapper>
-          } />
-          <Route path="/Presentation" element={
-            <Wrapper>
-              <Presentation />
             </Wrapper>
           } />
           <Route path="/Cv" element={

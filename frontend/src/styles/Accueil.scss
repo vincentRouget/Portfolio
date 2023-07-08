@@ -46,7 +46,7 @@
             .Texte1 {
                 font-family: $font-family;
                 color: var(--text);
-                font-size: 104px;
+                font-size: 96px;
                 letter-spacing: -4px;
                 font-weight: 900;
             }
@@ -179,6 +179,7 @@
 
                 .ButtonAbout {}
             }
+
             .Div_cv {
                 display: flex;
                 justify-content: center;
@@ -294,16 +295,20 @@
             .Paragraphe {
                 font-family: $font-family;
                 color: var(--text);
-                font-size: 48px;
+                font-size: 40px;
                 font-weight: normal;
 
                 .accent {
                     font-family: $font-family;
                     color: #f0c75f;
-                    font-size: 64px;
+                    font-size: 56px;
                     font-weight: 900;
                     text-shadow: 0px 0px 8px #000000;
                 }
+            }
+
+            .space {
+                margin-bottom: 2%;
             }
         }
 
@@ -312,14 +317,14 @@
             .Paragraphe {
                 font-family: $font-family;
                 color: var(--text);
-                font-size: 48px;
+                font-size: 40px;
                 font-weight: normal;
                 line-height: 1.2;
 
                 .accent {
                     font-family: $font-family;
                     color: #f0c75f;
-                    font-size: 64px;
+                    font-size: 56px;
                     font-weight: 900;
                     text-shadow: 0px 0px 8px #000000;
                 }
@@ -392,7 +397,7 @@
         &_page {
 
             h1 {
-                font-size: 80px;
+                font-size: 44px;
                 letter-spacing: -4px;
             }
 
@@ -440,7 +445,7 @@
             &_left {
 
                 .Texte1 {
-                    font-size: 88px;
+                    font-size: 104px;
                     letter-spacing: -2px;
                 }
 
@@ -478,7 +483,7 @@
 
         &_page {
             h1 {
-                font-size: 128px;
+                font-size: 104px;
             }
 
             p {
