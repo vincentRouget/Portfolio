@@ -1,22 +1,23 @@
 import styled from 'styled-components';
 
-export const Heading = styled.h1`
-   text-align: center;
-   color: green;
-`;
+// export const Heading = styled.h1`
+//    text-align: center;
+//    color: green;
+// `;
 
-export const Content = styled.div`
-   overflowY: scroll;
-   height: 2500px;
-`;
+// export const Content = styled.div`
+//    overflowY: scroll;
+//    height: 2500px;
+// `;
 
 export const Button = styled.div`
    position: fixed; 
-   width: 100%;
-   left: 96%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   right: 0%;
    bottom: 0%;
-   // height: 4%;
-   font-size: 4.5em;
+   font-size: 5em;
    cursor: pointer;
    color: var(--text);
    transition : 0.1s ease-in;

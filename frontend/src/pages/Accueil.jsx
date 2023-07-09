@@ -52,41 +52,43 @@ const Accueil = () => {
                         </div>
                     </div>
                 </div>
-                <div className="Accueil_topbar_middle">
-                </div>
                 <div className="Accueil_topbar_right">
-                    {!handleAbout ?
-                        <div className="Div_about">
-                            <button
-                                className='Accueil_topbar_right_link ButtonAbout'
-                                onClick={() => {
-                                    setHandleAbout(!handleAbout);
-                                }}>
-                                {french ? <>A propos</> : <>About</>}</button>
+                    <div className="Accueil_topbar_right_about">
+                        <div className="Accueil_topbar_right_about_button">
+                            {!handleAbout ?
+                                <div className="Accueil_topbar_right_about_button_space">
+                                    <button
+                                        className='ButtonAbout'
+                                        onClick={() => {
+                                            setHandleAbout(!handleAbout);
+                                        }}>
+                                        {french ? <>A propos</> : <>About</>}</button>
+                                </div>
+                                :
+                                <div className="Accueil_topbar_right_about_button_space">
+                                    <button
+                                        className='ButtonAbout'
+                                        onClick={() => {
+                                            setHandleAbout(!handleAbout);
+                                        }}>
+                                        {french ? <>Accueil</> : <>Home</>}</button>
+                                </div>}
                         </div>
-                        :
-                        <div className="Div_about">
-                            <button
-                                className='Accueil_topbar_right_link ButtonAbout'
-                                onClick={() => {
-                                    setHandleAbout(!handleAbout);
-                                }}>
-                                {french ? <>Accueil</> : <>Home</>}</button>
-                        </div>}
-                    <div className="Div_about">
-                        <a href={`mailto:vincent.rouget86@gmail.com`} className='Accueil_topbar_right_link contact'>Contact</a>
                     </div>
-                    <div className="Div_cv">
-                        <a href={CVpdf} target='_blank' className='Accueil_topbar_right_link cv'>CV</a>
+                    <div className="Accueil_topbar_right_contact">
+                        <a href={`mailto:vincent.rouget86@gmail.com`}>Contact</a>
+                    </div>
+                    <div className="Accueil_topbar_right_CV">
+                        <a href={CVpdf} target='_blank'>CV</a>
                     </div>
                     <a href="https://www.linkedin.com/in/vincent-rouget-22996118a/" target="_blank" className="Linkedin">
                         <img src={LinkedIn} alt=" " className="Linkedin"></img></a>
                     <a href="https://github.com/vincentRouget" target="_blank" className="Github">
                         <img src={GitHub} alt=" " className="Github"></img></a>
-                    <div className='theme'>
+                    <div className='Accueil_theme'>
                         <Theme />
                     </div>
-                    <div className='theme'>
+                    <div className='Accueil_theme'>
                         <Lang />
                     </div>
                 </div>
@@ -99,15 +101,21 @@ const Accueil = () => {
                 <div className="Animation">
                     <Texte />
                 </div>
-                <NavLink to='/Portfolio' onClick={scrollToTop} className="Link">
-                    {theme == 'light' ?
-                        <img src={BlackArrow} alt=" " className="Arrow"></img>
-                        :
-                        <img src={WhiteArrow} alt=" " className="Arrow"></img>}
-                    {french ?
-                        <p>Voir mes projets</p>
-                        :
-                        <p>See my projects</p>}
+                <NavLink to='/Portfolio' onClick={scrollToTop} className="Div_fleche">
+                    <div className="Fleche">
+                        {theme == 'light' ?
+                            <div className="Fleche_img">
+                                <img src={BlackArrow} alt="" className="Arrow"></img>
+                            </div>
+                            :
+                            <div className="Fleche_img">
+                                <img src={WhiteArrow} alt="" className="Arrow"></img>
+                            </div>}
+                        {french ?
+                            <p className="Project">Voir mes projets</p>
+                            :
+                            <p className="Project">See my projects</p>}
+                    </div>
                 </NavLink>
             </div>
             <div className={!handleAbout ? "Page" : "Page aboutTEXT"}>
@@ -126,8 +134,6 @@ const Accueil = () => {
                                 <span className="accent">Passionate Full Stack developer.</span>
                             </h4>
                         </>}
-                </div>
-                <div className="Section">
                     {french ?
                         <h4 className="Paragraphe">
                             J'ai commencé comme beaucoup en autodidacte, avant de monter en compétences grâce à une formation en <span className="accent">développement web et mobile,</span> à l'école « Wild Code School” de Nantes.

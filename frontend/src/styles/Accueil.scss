@@ -18,7 +18,6 @@
         width: 100%;
 
         &_left {
-            // background-color: pink;
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
@@ -26,7 +25,6 @@
             width: 100%;
 
             .Texte_first {
-                // background-color: yellow;
                 display: inline-block;
                 justify-content: center;
                 align-items: center;
@@ -129,30 +127,57 @@
             }
         }
 
-        &_middle {
-            display: flex;
-            flex-direction: row;
-            width: 20%;
-        }
-
         &_right {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
             width: 100%;
-            margin: auto 40px auto auto;
 
-            &_link {
+            &_about {
+                display: flex;
+                justify-content: flex-end;
+                width: 20vh;
+
+                &_button {
+
+                    &_space {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: linear-gradient(to top,
+                                transparent 16%,
+                                var(--link)16.01%,
+                                var(--link)20%,
+                                transparent 20.01%) no-repeat;
+                        transition: all 200ms ease-out;
+                        background-position: 50%;
+                        background-size: 0% 100%;
+                        padding-bottom: 10px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-position: 50%;
+                            transition: all 200ms ease-in;
+                            background-size: 90% 100%;
+                        }
+                    }
+
+                    .ButtonAbout {
+                        white-space: nowrap;
+                        font-family: $font-family-3;
+                        font-size: 40px;
+                        letter-spacing: -2px;
+                        color: var(--link);
+                    }
+                }
+            }
+
+
+            &_contact {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-family: $font-family-3;
-                font-size: 40px;
-                color: var(--link);
-                letter-spacing: -2px;
-                text-decoration: none;
-                text-align: center;
                 background: linear-gradient(to top,
                         transparent 16%,
                         var(--link)16.01%,
@@ -169,34 +194,60 @@
                     transition: all 200ms ease-in;
                     background-size: 90% 100%;
                 }
+
+                a {
+                    text-decoration: none;
+                    color: var(--link);
+                    font-size: 40px;
+                    letter-spacing: -2px;
+                }
             }
 
-            .Div_about {
+            &_CV {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 180px;
+                background: linear-gradient(to top,
+                        transparent 16%,
+                        var(--link)16.01%,
+                        var(--link)20%,
+                        transparent 20.01%) no-repeat;
+                transition: all 200ms ease-out;
+                background-position: 50%;
+                background-size: 0% 100%;
+                padding-bottom: 10px;
+                cursor: pointer;
 
-                .ButtonAbout {}
-            }
+                &:hover {
+                    background-position: 50%;
+                    transition: all 200ms ease-in;
+                    background-size: 90% 100%;
+                }
 
-            .Div_cv {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100px;
+                a {
+                    text-decoration: none;
+                    color: var(--link);
+                    font-size: 40px;
+                }
             }
 
             .Linkedin {
                 display: flex;
                 width: 60px;
-                padding-bottom: 4px;
+                padding-bottom: 2px;
             }
 
             .Github {
                 display: flex;
                 width: 60px;
-                padding-bottom: 4px;
+                padding-bottom: 2px;
+            }
+
+            .Accueil_theme {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 2px;
             }
         }
     }
@@ -204,38 +255,31 @@
     &_page {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        height: 50vh;
         width: 80%;
         margin: auto;
-        gap: 60%;
         transition: 1200ms ease-in;
 
 
         h1 {
             font-size: 96px;
             color: var(--text);
-            margin-bottom: -80px;
             letter-spacing: -6px;
         }
 
-        p {
-            font-size: 56px;
-            color: var(--text);
-        }
-
-        a {
+        .Div_fleche {
             display: flex;
             justify-content: center;
             align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
             text-decoration: none;
-            width: 36%;
-            height: 1%;
-            font-size: 32px;
-            font-weight: bold;
-            color: var(--text);
             border-radius: 20px;
-            padding-right: 20px;
+            padding: 1% 2% 1% 2%;
             transition: 300ms ease-in;
             border: 1px solid var(--text);
 
@@ -246,22 +290,37 @@
                 box-shadow: 5px 5px 20px -2px black;
             }
 
-            p {
+            .Fleche {
                 display: flex;
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                height: 100px;
-                font-size: 48px;
-                font-weight: bold;
-                letter-spacing: -1px;
-                color: var(--text);
-                padding-bottom: 6px;
-            }
-        }
+                height: 100%;
 
-        .Arrow {
-            scale: 0.5;
+                &_img {
+                    display: flex;
+                    justify-content: flex-start;
+                    width: 4vw;
+
+                    .Arrow {
+                        width: 80%;
+                    }
+                }
+
+                .Project {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Libre Baskerville', serif;
+                    font-weight: bold;
+                    font-size: 56px;
+                    font-weight: bold;
+                    color: var(--text);
+                    letter-spacing: -2px;
+                    white-space: nowrap;
+                }
+            }
         }
     }
 
@@ -280,28 +339,19 @@
 
         .TitleAbout_container {
             display: flex;
-            flex-direction: row;
-            align-items: center;
-
-            .TitleAbout {
-                font-family: $font-family;
-                color: #f0c75f;
-                font-size: 80px;
-                font-weight: 900;
-                margin-bottom: 20px;
-                text-shadow: 0px 0px 8px #000000;
-            }
+            flex-direction: column;
+            align-items: flex-start;
 
             .Paragraphe {
                 font-family: $font-family;
                 color: var(--text);
-                font-size: 40px;
+                font-size: 48px;
                 font-weight: normal;
 
                 .accent {
                     font-family: $font-family;
                     color: #f0c75f;
-                    font-size: 56px;
+                    font-size: 64px;
                     font-weight: 900;
                     text-shadow: 0px 0px 8px #000000;
                 }
@@ -309,25 +359,6 @@
 
             .space {
                 margin-bottom: 2%;
-            }
-        }
-
-        .Section {
-
-            .Paragraphe {
-                font-family: $font-family;
-                color: var(--text);
-                font-size: 40px;
-                font-weight: normal;
-                line-height: 1.2;
-
-                .accent {
-                    font-family: $font-family;
-                    color: #f0c75f;
-                    font-size: 56px;
-                    font-weight: 900;
-                    text-shadow: 0px 0px 8px #000000;
-                }
             }
         }
     }
@@ -360,76 +391,83 @@
 
 @media screen and (max-width: 1900px) {
     .Accueil {
-
         &_topbar {
-
             &_left {
 
                 .Texte1 {
-                    font-size: 44px;
-                    letter-spacing: -2px;
-                }
-
-                .Texte2 {
-                    font-size: 44px;
-                    letter-spacing: -2px;
+                    font-size: 64px;
+                    letter-spacing: -4px;
                 }
 
                 &_logo {
-                    width: 140px;
-                    height: 140px;
+                    width: 120px;
+                    height: 120px;
                 }
             }
 
             &_right {
-                margin: auto 20px auto auto;
-
-                &_link {
-                    font-size: 30px;
+                &_about {
+                    &_button {
+                        .ButtonAbout {
+                            font-size: 32px;
+                        }
+                    }
                 }
 
-                .ButtonAbout {
-                    width: 90px;
+                &_contact {
+                    a {
+                        font-size: 32px;
+                    }
+                }
+
+                &_CV {
+                    a {
+                        font-size: 32px;
+                    }
+                }
+
+                .Linkedin {
+                    width: 50px;
+                    padding-bottom: 1%;
+                }
+
+                .Github {
+                    width: 50px;
+                    padding-bottom: 1%;
+                }
+
+                .Accueil_theme {
+                    padding-bottom: 1%;
                 }
             }
         }
 
         &_page {
-
             h1 {
-                font-size: 44px;
+                font-size: 64px;
                 letter-spacing: -4px;
             }
 
-            p {
-                font-size: 56px;
-            }
-        }
+            .Div_fleche {
+                .Fleche {
+                    &_img {
+                        width: 6vw;
+                    }
 
-        .Page {
-
-            .TitleAbout_container {
-
-                .TitleAbout {
-                    font-size: 48px;
-                }
-
-                .Paragraphe {
-                    font-size: 32px;
-
-                    .accent {
+                    .Project {
                         font-size: 48px;
                     }
                 }
             }
+        }
 
-            .Section {
-
+        .Page {
+            .TitleAbout_container {
                 .Paragraphe {
                     font-size: 32px;
 
                     .accent {
-                        font-size: 48px;
+                        font-size: 40px;
                     }
                 }
             }
@@ -439,19 +477,95 @@
 
 @media screen and (min-width: 2200px) {
     .Accueil {
-
         &_topbar {
-
             &_left {
 
                 .Texte1 {
                     font-size: 104px;
-                    letter-spacing: -2px;
+                    letter-spacing: -4px;
                 }
 
-                .Texte2 {
-                    font-size: 88px;
-                    letter-spacing: -2px;
+                &_logo {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            &_right {
+                &_about {
+                    &_button {
+                        .ButtonAbout {
+                            font-size: 56px;
+                        }
+                    }
+                }
+
+                &_contact {
+                    a {
+                        font-size: 56px;
+                    }
+                }
+
+                &_CV {
+                    a {
+                        font-size: 56px;
+                    }
+                }
+
+                .Linkedin {
+                    width: 80px;
+                }
+
+                .Github {
+                    width: 80px;
+                }
+            }
+        }
+
+        &_page {
+            h1 {
+                font-size: 104px;
+                letter-spacing: -4px;
+            }
+
+            .Div_fleche {
+                .Fleche {
+                    &_img {
+                        .Arrow {
+                            width: 80%;
+                        }
+                    }
+
+                    .Project {
+                        font-size: 72px;
+                    }
+                }
+            }
+        }
+
+        .Page {
+            .TitleAbout_container {
+                .Paragraphe {
+                    font-size: 72px;
+
+                    .accent {
+                        font-size: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .Accueil {
+
+        &_topbar {
+            &_left {
+
+                .Texte1 {
+                    font-size: 156px;
+                    letter-spacing: -4px;
                 }
 
                 &_logo {
@@ -460,45 +574,53 @@
                 }
             }
 
-            &_right {
-                margin: auto 60px auto auto;
 
-                &_link {
-                    font-size: 56px;
+            &_right {
+                &_about {
+                    &_button {
+                        .ButtonAbout {
+                            font-size: 88px;
+                        }
+                    }
                 }
 
-                .ButtonAbout {
-                    width: 170px;
+                &_contact {
+                    a {
+                        font-size: 88px;
+                    }
+                }
+
+                &_CV {
+                    a {
+                        font-size: 88px;
+                    }
                 }
 
                 .Linkedin {
-                    width: 100px;
+                    width: 120px;
                 }
 
                 .Github {
-                    width: 100px;
+                    width: 120px;
                 }
             }
         }
 
         &_page {
             h1 {
-                font-size: 104px;
+                font-size: 156px;
             }
 
-            p {
-                font-size: 88px;
-            }
+            .Div_fleche {
+                .Fleche {
+                    &_img {
+                        width: 4vw;
+                    }
 
-            a {
-                height: 140px;
-                font-size: 64px;
-                padding-right: 40px;
-            }
-
-            .Arrow {
-                scale: 0.8;
-                margin: auto 20px auto 20px;
+                    .Project {
+                        font-size: 88px;
+                    }
+                }
             }
         }
 
@@ -509,27 +631,11 @@
         .Page {
 
             .TitleAbout_container {
-
-                .TitleAbout {
-                    font-size: 88px;
-                }
-
                 .Paragraphe {
-                    font-size: 72px;
+                    font-size: 112px;
 
                     .accent {
-                        font-size: 88px;
-                    }
-                }
-            }
-
-            .Section {
-
-                .Paragraphe {
-                    font-size: 72px;
-
-                    .accent {
-                        font-size: 88px;
+                        font-size: 120px;
                     }
                 }
             }

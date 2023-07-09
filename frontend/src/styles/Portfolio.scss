@@ -62,14 +62,12 @@
 }
 
 .goutte {
-    // background-color: red;
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    top: 3%;
-    left: 97%;
-    gap: 20px;
+    top: 2%;
+    right: 1%;
+    gap: 2vh;
 }

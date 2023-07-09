@@ -1,4 +1,5 @@
 .cursor {
+    font-size: 72px;
     animation-duration: .6s;
     animation-name: clignoter;
     animation-iteration-count: infinite;
@@ -24,5 +25,35 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .cursor {
+        font-size: 56px;
+    }
+
+    .wrap {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    .cursor {
+        font-size: 88px;
+    }
+
+    .wrap {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .cursor {
+        font-size: 104px;
+    }
+
+    .wrap {
+        font-size: 96px;
     }
 }
