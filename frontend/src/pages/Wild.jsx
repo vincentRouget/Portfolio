@@ -128,16 +128,16 @@ const Wild = () => {
                         {french ?
                             <div>
                                 <p className="TextPi">Le projet Wild Movies est un site internet qui propose une bibliothèque de tous les films et séries présents dans l’API publique très populaire TMDB. </p>
-                                <p className="TextPi">Ce service API REST est destiné à ceux qui souhaitent utiliser leur base de données très complète pour la retranscrire dans une application web.</p>
-                                <p className="TextPi">Il permet de récupérer dynamiquement toutes les données relatives aux films, aux séries, aux bandes-annonces, mais également celles au casting.</p>
-                                <p className="TextPi">Il fournit également des informations sur les plateformes de diffusion de vidéo en continu disponibles.</p>
+                                <p className="TextPi">Ce service API REST est destiné à ceux qui souhaitent utiliser leur base de données très complète, pour la retranscrire dans une application web.</p>
+                                <p className="TextPi">Il permet de récupérer dynamiquement toutes les données relatives aux films, aux séries, aux bandes-annonces, ou au casting.</p>
+                                <p className="TextPi">Il fournit également des informations sur les plateformes de diffusion de vidéo en continu disponibles en temps réel.</p>
                             </div>
                             :
                             <div>
                                 <p className="TextPi">The Wild Movies project is a website that offers a library of all the movies and series present in the very popular TMDB public API. </p>
-                                <p className="TextPi">This REST API service is intended for those who want to use their very complete database to transcribe it into a web application.</p>
-                                <p className="TextPi">It makes it possible to dynamically recover all data related to films, series, trailers, but also those related to the casting.</p>
-                                <p className="TextPi">It also provides information on available video streaming platforms.</p>
+                                <p className="TextPi">This REST API service is intended for those who want to use their very complete database, to transcribe it into a web application.</p>
+                                <p className="TextPi">It makes it possible to dynamically recover all data related to films, series, trailers, or casting.</p>
+                                <p className="TextPi">It also provides information on streaming video platforms available in real time.</p>
                             </div>}
                         {french ?
                             <p className="TextP">Lien vers le site : <a href="https://wild-movies.netlify.app/" target="_blank">https://wild-movies.netlify.app/</a></p>
