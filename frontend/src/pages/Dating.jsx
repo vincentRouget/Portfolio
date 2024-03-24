@@ -11,18 +11,20 @@ import Hobbi7 from "../assets/Image/Hobbi/Hobbi7.png";
 import Hobbi8 from "../assets/Image/Hobbi/Hobbi8.png";
 import Hobbi9 from "../assets/Image/Hobbi/Hobbi9.png";
 import EXPRESS from "../assets/Icon/express.png";
+import NODE from "../assets/Icon/node.png";
 import MYSQL from "../assets/Icon/mysql.png";
 import NATIVE from "../assets/Icon/native.png";
-import EXPO from "../assets/Icon/expo.png";
 import ANDROID from "../assets/Icon/android.png";
 
 const Dating = () => {
-    const { theme, french } = useContext(UserContext);
+
+    const { french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
         setScrollPosition(window.scrollY);
     };
+    
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -49,10 +51,10 @@ const Dating = () => {
                     <img src={NATIVE} alt='React Native' className="icone"></img>
                 </div>
                 <div className="Hobbi_icones_icone">
-                    <img src={EXPO} alt='Expo Go' className="icone"></img>
+                    <img src={ANDROID} alt='Android Studio' className="icone"></img>
                 </div>
                 <div className="Hobbi_icones_icone">
-                    <img src={ANDROID} alt='Android Studio' className="icone"></img>
+                    <img src={NODE} alt='Node.js' className="icone"></img>
                 </div>
                 <div className="Hobbi_icones_icone">
                     <img src={EXPRESS} alt='Express.js' className="icone"></img>
@@ -72,27 +74,27 @@ const Dating = () => {
                 <div className="Hobbi_description_left">
                     <div className="Categorie">
                         {french ?
-                            <h4 className="Hobbi_h4 resolution">Catégorie</h4>
+                            <h4 className="Hobbi_h4 resolution">Catégorie :</h4>
                             :
-                            <h4 className="Hobbi_h4 resolution">Category</h4>}
+                            <h4 className="Hobbi_h4 resolution">Category :</h4>}
                     </div>
                     <div className="Annee">
                         {french ?
-                            <h4 className="Hobbi_h4 resolution">Année</h4>
+                            <h4 className="Hobbi_h4 resolution">Année :</h4>
                             :
-                            <h4 className="Hobbi_h4 resolution">Year</h4>}
+                            <h4 className="Hobbi_h4 resolution">Year :</h4>}
                     </div>
                     <div className="Client">
-                        <h4 className="Hobbi_h4 resolution">Client</h4>
+                        <h4 className="Hobbi_h4 resolution">Client :</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Hobbi_h4 resolution">Front end</h4>
+                        <h4 className="Hobbi_h4 resolution">Front end :</h4>
                     </div>
                     <div className="Back">
-                        <h4 className="Hobbi_h4 resolution">Back end</h4>
+                        <h4 className="Hobbi_h4 resolution">Back end :</h4>
                     </div>
                     <div className="Sgbd">
-                        <h4 className="Hobbi_h4 resolution">SGBD</h4>
+                        <h4 className="Hobbi_h4 resolution">SGBD :</h4>
                     </div>
                 </div>
                 <div className="Hobbi_description_middle">
@@ -112,7 +114,7 @@ const Dating = () => {
                         <p className="TextPi">React Native / Android Studio</p>
                     </div>
                     <div className="Back">
-                        <p className="TextPi">Express.js</p>
+                        <p className="TextPi">Node.js / Express.js</p>
                     </div>
                     <div className="Sgbd">
                         <p className="TextPi">MySql</p>
@@ -124,14 +126,14 @@ const Dating = () => {
                         {french ?
                             <div>
                                 <p className="TextPi">Le projet Hobbi est une application mobile de rencontre à travers deux axes de sélection.</p>
-                                <p className="TextPi">Le premier axe filtre les utilisateurs selon un critère spécifique, en accord de non-divulgation. Il est exécuté en back-end et permet de filtrer un très grand nombre d’utilisateurs du côté serveur.</p>
+                                <p className="TextPi">Le premier axe, en accord de non-divulgation, filtre les utilisateurs selon un critère spécifique. Il est exécuté en back-end et permet de filtrer un très grand nombre d’utilisateurs du côté serveur.</p>
                                 <p className="TextPi">Le deuxième axe regroupe, cette fois-ci en front-end, les utilisateurs ayant les mêmes hobbies ou intérêts.</p>
                                 <p className="TextPi">Cette application permet donc de réaliser une sélection précise, qui offre à l’utilisateur un panel de personnes correspondant aux critères souhaités, de gérer ses contacts, et d’interagir avec eux par messagerie instantanée.</p>
                             </div>
                             :
                             <div>
                                 <p className="TextPi">The Hobbi project is a mobile meeting application through two selection axes.</p>
-                                <p className="TextPi">The first axis filters users according to a specific criterion, in non-disclosure agreement. It is run as a back-end and allows filtering a very large number of users on the server side.</p>
+                                <p className="TextPi">The first axis, under a non-disclosure agreement, filters users according to a specific criterion. It is run as a back-end and allows filtering a very large number of users on the server side.</p>
                                 <p className="TextPi">The second axis brings together, this time in front-end, users with the same hobbies or interests.</p>
                                 <p className="TextPi">This application allows to make a precise selection, which offers the user a panel of people corresponding to the desired criteria, to manage his contacts, and to interact with them by instant messaging.</p>
                             </div>}

@@ -347,18 +347,19 @@
                 color: var(--text);
                 font-size: 40px;
                 font-weight: normal;
+                line-height: 3rem;
 
                 .accent {
                     font-family: $font-family;
                     color: #f0c75f;
-                    font-size: 56px;
+                    font-size: 50px;
                     font-weight: 900;
                     text-shadow: 0px 0px 8px #000000;
                 }
             }
 
             .space {
-                margin-bottom: 2%;
+                margin-bottom: 1%;
             }
         }
     }

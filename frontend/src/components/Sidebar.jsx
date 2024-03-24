@@ -1,23 +1,24 @@
 import React, { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import UserContext from "../context/UserContext";
-import Theme from "./Theme";
-import Main from "../assets/Icon/Sidebar/icons8-home-page-90.png"
-import Wild from "../assets/Icon/Sidebar/icons8-movie-90.png"
-import Enecom from "../assets/Icon/Sidebar/icons8-battery-90.png"
-import App from "../assets/Icon/Sidebar/icons8-smartphone-100.png"
-import Maison from "../assets/Icon/Sidebar/icons8-web-64.png"
-import Enigma from "../assets/Icon/Sidebar/icons8-lock-90.png"
-import Logiciel from "../assets/Icon/Sidebar/icons8-python-100.png"
 import Back from "../assets/Icon/Sidebar/icons8-left-64.png"
 import BackW from "../assets/Icon/Sidebar/icons8-left-64W.png"
+import Main from "../assets/Icon/Sidebar/icons8-home-page-90.png"
 import MainW from "../assets/Icon/Sidebar/icons8-home-page-90W.png"
+import Wild from "../assets/Icon/Sidebar/icons8-movie-90.png"
 import WildW from "../assets/Icon/Sidebar/icons8-movie-90W.png"
+import Blog from "../assets/Icon/Sidebar/icons8-blog-100.png"
+import BlogW from "../assets/Icon/Sidebar/icons8-blog-100W.png"
+import Enecom from "../assets/Icon/Sidebar/icons8-battery-90.png"
 import EnecomW from "../assets/Icon/Sidebar/icons8-battery-90W.png"
+import App from "../assets/Icon/Sidebar/icons8-smartphone-100.png"
 import AppW from "../assets/Icon/Sidebar/icons8-smartphone-100W.png"
+import Maison from "../assets/Icon/Sidebar/icons8-web-64.png"
 import MaisonW from "../assets/Icon/Sidebar/icons8-web-64W.png"
-import EnigmaW from "../assets/Icon/Sidebar/icons8-lock-90W.png"
+import Logiciel from "../assets/Icon/Sidebar/icons8-python-100.png"
 import LogicielW from "../assets/Icon/Sidebar/icons8-python-100W.png"
+import Enigma from "../assets/Icon/Sidebar/icons8-lock-90.png"
+import EnigmaW from "../assets/Icon/Sidebar/icons8-lock-90W.png"
 import TriangleLeftBlack from "../assets/Icon/Sidebar/triangleLeftBlack.png";
 import TriangleLeftWhite from "../assets/Icon/Sidebar/triangleLeftWhite.png";
 import TriangleRightBlack from "../assets/Icon/Sidebar/triangleRightBlack.png";
@@ -27,6 +28,8 @@ const Sidebar = ({
     etiquetteON,
     setEtiquetteON,
     setPresentationON,
+    feederON,
+    setFeederON,
     wildON,
     setWildON,
     enecomON,
@@ -40,6 +43,7 @@ const Sidebar = ({
     logicielON,
     setLogicielON
 }) => {
+
     const { theme, setRefresh, minimize, setMinimize, french } = useContext(UserContext);
     const navigate = useNavigate();
 
@@ -77,9 +81,6 @@ const Sidebar = ({
                                         :
                                         <p className="ellipsis">Back</p>}
                                 </button>
-                                {/* <div className="Sidebar_theme">
-                                    <Theme />
-                                </div> */}
                             </>
                             :
                             <button
@@ -101,6 +102,7 @@ const Sidebar = ({
                                 className={(etiquetteON) ? "button_selected" : "button"}
                                 onClick={() => {
                                     setEtiquetteON(true)
+                                    setFeederON(false)
                                     setWildON(false)
                                     setEnecomON(false)
                                     setAppON(false)
@@ -122,6 +124,7 @@ const Sidebar = ({
                                 className={(etiquetteON) ? "button_selected mini" : "button mini"}
                                 onClick={() => {
                                     setEtiquetteON(true)
+                                    setFeederON(false)
                                     setWildON(false)
                                     setEnecomON(false)
                                     setAppON(false)
@@ -142,6 +145,7 @@ const Sidebar = ({
                                 className={(wildON) ? "button_selected" : "button"}
                                 onClick={() => {
                                     setEtiquetteON(false)
+                                    setFeederON(false)
                                     setWildON(true)
                                     setEnecomON(false)
                                     setAppON(false)
@@ -163,6 +167,7 @@ const Sidebar = ({
                                 className={(wildON) ? "button_selected mini" : "button mini"}
                                 onClick={() => {
                                     setEtiquetteON(false)
+                                    setFeederON(false)
                                     setWildON(true)
                                     setEnecomON(false)
                                     setAppON(false)
@@ -180,9 +185,53 @@ const Sidebar = ({
                     {!minimize ?
                         <div className={theme == 'light' ? "Sidebar_container_middle_div" : "Sidebar_container_middle_div_dark"}>
                             <button
+                                className={(feederON) ? "button_selected" : "button"}
+                                onClick={() => {
+                                    setEtiquetteON(false)
+                                    setFeederON(true)
+                                    setWildON(false)
+                                    setEnecomON(false)
+                                    setAppON(false)
+                                    setMaisonON(false)
+                                    setLogicielON(false)
+                                    setEnigmaON(false)
+                                    setPresentationON(false)
+                                }}>
+                                {theme == 'light' ?
+                                    <img src={Blog} alt='' className="icon"></img>
+                                    :
+                                    <img src={BlogW} alt='' className="icon"></img>}
+                                <p className="ellipsis">Blog Feeder</p>
+                            </button>
+                        </div>
+                        :
+                        <div className={theme == 'light' ? "Sidebar_container_middle_div" : "Sidebar_container_middle_div_dark"}>
+                            <button
+                                className={(feederON) ? "button_selected mini" : "button mini"}
+                                onClick={() => {
+                                    setEtiquetteON(false)
+                                    setFeederON(true)
+                                    setWildON(false)
+                                    setEnecomON(false)
+                                    setAppON(false)
+                                    setMaisonON(false)
+                                    setLogicielON(false)
+                                    setEnigmaON(false)
+                                    setPresentationON(false)
+                                }}>
+                                {theme == 'light' ?
+                                    <img src={Blog} alt='' className="icon"></img>
+                                    :
+                                    <img src={BlogW} alt='' className="icon"></img>}
+                            </button>
+                        </div>}
+                    {!minimize ?
+                        <div className={theme == 'light' ? "Sidebar_container_middle_div" : "Sidebar_container_middle_div_dark"}>
+                            <button
                                 className={(enecomON) ? "button_selected" : "button"}
                                 onClick={() => {
                                     setEtiquetteON(false)
+                                    setFeederON(false)
                                     setWildON(false)
                                     setEnecomON(true)
                                     setAppON(false)
@@ -204,6 +253,7 @@ const Sidebar = ({
                                 className={(enecomON) ? "button_selected mini" : "button mini"}
                                 onClick={() => {
                                     setEtiquetteON(false)
+                                    setFeederON(false)
                                     setWildON(false)
                                     setEnecomON(true)
                                     setAppON(false)
@@ -224,6 +274,7 @@ const Sidebar = ({
                                 className={(appON) ? "button_selected" : "button"}
                                 onClick={() => {
                                     setEtiquetteON(false)
+                                    setFeederON(false)
                                     setWildON(false)
                                     setEnecomON(false)
                                     setAppON(true)
@@ -245,6 +296,7 @@ const Sidebar = ({
                                 className={(appON) ? "button_selected mini" : "button mini"}
                                 onClick={() => {
                                     setEtiquetteON(false)
+                                    setFeederON(false)
                                     setWildON(false)
                                     setEnecomON(false)
                                     setAppON(true)
@@ -265,6 +317,7 @@ const Sidebar = ({
                                 className={(maisonON) ? "button_selected" : "button"}
                                 onClick={() => {
                                     setEtiquetteON(false)
+                                    setFeederON(false)
                                     setWildON(false)
                                     setEnecomON(false)
                                     setAppON(false)
@@ -289,6 +342,7 @@ const Sidebar = ({
                                 className={(maisonON) ? "button_selected mini" : "button mini"}
                                 onClick={() => {
                                     setEtiquetteON(false)
+                                    setFeederON(false)
                                     setWildON(false)
                                     setEnecomON(false)
                                     setAppON(false)
@@ -309,6 +363,7 @@ const Sidebar = ({
                                 className={(logicielON) ? "button_selected" : "button"}
                                 onClick={() => {
                                     setEtiquetteON(false)
+                                    setFeederON(false)
                                     setWildON(false)
                                     setEnecomON(false)
                                     setAppON(false)
@@ -333,6 +388,7 @@ const Sidebar = ({
                                 className={(logicielON) ? "button_selected mini" : "button mini"}
                                 onClick={() => {
                                     setEtiquetteON(false)
+                                    setFeederON(false)
                                     setWildON(false)
                                     setEnecomON(false)
                                     setAppON(false)
@@ -353,6 +409,7 @@ const Sidebar = ({
                                 className={(enigmaON) ? "button_selected" : "button"}
                                 onClick={() => {
                                     setEtiquetteON(false)
+                                    setFeederON(false)
                                     setWildON(false)
                                     setEnecomON(false)
                                     setAppON(false)
@@ -374,6 +431,7 @@ const Sidebar = ({
                                 className={(enigmaON) ? "button_selected mini" : "button mini"}
                                 onClick={() => {
                                     setEtiquetteON(false)
+                                    setFeederON(false)
                                     setWildON(false)
                                     setEnecomON(false)
                                     setAppON(false)

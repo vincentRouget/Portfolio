@@ -10,12 +10,14 @@ import CSS from "../assets/Icon/css.png";
 import JS from "../assets/Icon/js.png";
 
 const Enigma = () => {
-    const { theme, french } = useContext(UserContext);
+
+    const { french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
         setScrollPosition(window.scrollY);
     };
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -59,21 +61,21 @@ const Enigma = () => {
                 <div className="Enigma_description_left">
                     <div className="Categorie">
                         {french ?
-                            <h4 className="Enigma_h4 resolution">Catégorie</h4>
+                            <h4 className="Enigma_h4 resolution">Catégorie :</h4>
                             :
-                            <h4 className="Enigma_h4 resolution">Category</h4>}
+                            <h4 className="Enigma_h4 resolution">Category :</h4>}
                     </div>
                     <div className="Annee">
                         {french ?
-                            <h4 className="Enigma_h4 resolution">Année</h4>
+                            <h4 className="Enigma_h4 resolution">Année :</h4>
                             :
-                            <h4 className="Enigma_h4 resolution">Year</h4>}
+                            <h4 className="Enigma_h4 resolution">Year :</h4>}
                     </div>
                     <div className="Client">
-                        <h4 className="Enigma_h4 resolution">Client</h4>
+                        <h4 className="Enigma_h4 resolution">Client : </h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Enigma_h4 resolution">Front end</h4>
+                        <h4 className="Enigma_h4 resolution">Langage :</h4>
                     </div>
                 </div>
                 <div className="Enigma_description_middle">

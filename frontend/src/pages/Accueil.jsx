@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { NavLink } from 'react-router-dom';
 import UserContext from "../context/UserContext";
-// import CVpng from "../assets/Image/CV.png";
 import CVpdf from "../assets/data/CV.pdf";
 import Logo from "../assets/Icon/Logo-V1.png";
 import Theme from "@components/Theme";
@@ -13,14 +12,10 @@ import WhiteArrow from "../assets/Icon/icons8-right-arrow-96-white.png";
 import BlackArrow from "../assets/Icon/icons8-right-arrow-96.png";
 
 const Accueil = () => {
+
     const { theme, french } = useContext(UserContext);
     const [handleAbout, setHandleAbout] = useState(false);
 
-    // const handleDownload = () => {
-    //     console.log('handle');
-    //     const fileUrl = "http://localhost:3000/src/assets/Image/CV.png";
-    //     window.open(fileUrl, '_blank');
-    // };
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -44,11 +39,6 @@ const Accueil = () => {
                                 <span className='Texte_two_span Texte1'>BIENVENUE</span>
                                 :
                                 <span className='Texte_two_span Texte1'>WELCOME</span>}
-                            {/* <br></br>
-                            {french ?
-                                <span className='Texte_two_span Texte2'>Mon nom est Vincent Rouget</span>
-                                :
-                                <span className='Texte_two_span Texte2'>My name is Vincent Rouget</span>} */}
                         </div>
                     </div>
                 </div>
@@ -122,41 +112,47 @@ const Accueil = () => {
                 <div className="TitleAbout_container">
                     {french ?
                         <>
-                            {/* <h4 className="Paragraphe">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="TitleAbout">Salut !</span>&nbsp;&nbsp;</h4> */}
                             <h4 className="Paragraphe space">
                                 <span className="accent">Développeur Full Stack passionné.</span>
                             </h4>
                         </>
                         :
                         <>
-                            {/* <h4 className="Paragraphe">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="TitleAbout">Hi !</span>&nbsp;&nbsp;</h4> */}
                             <h4 className="Paragraphe space">
                                 <span className="accent">Passionate Full Stack developer.</span>
                             </h4>
                         </>}
                     {french ?
                         <h4 className="Paragraphe">
-                            J'ai commencé comme beaucoup en autodidacte, avant de monter en compétences grâce à une formation en <span className="accent">développement web et mobile,</span> à l'école « Wild Code School” de Nantes.
+                            Ayant démarré en autodidacte, j'ai progressivement consolidé mes compétences en <span className="accent">développement web et mobile</span> grâce à une formation intensive à l'école "Wild Code School" de Nantes.
                         </h4>
                         :
                         <h4 className="Paragraphe">
-                            I started as a self-taught student, before going up in skills through a training in <span className="accent">web and mobile development</span> at the Wild Code School in Nantes.
+                            Having started as a self-taught person, I gradually consolidated my skills in <span className="accent">web and mobile development</span> thanks to intensive training at the “Wild Code School” in Nantes.
                         </h4>}
                     {french ?
                         <h4 className="Paragraphe">
-                            Suite à cette formation intensive basée sur la pratique, j'ai effectué un stage dans une société de développement logiciel à Poitiers, où j'ai pu consolider et étendre mes connaissances en développement informatique.
+                            A la suite de cette formation, axée sur la pratique, j'ai eu l'opportunité d'élargir mes connaissances lors d'un <span className="accent">stage professionnel</span> au sein d'une société de développement logiciel à Poitiers.
                         </h4>
                         :
                         <h4 className="Paragraphe">
-                            Following this intensive training based on practice, I did an internship at a software development company in Poitiers, where I was able to consolidate and expand my knowledge in computer development.
+                            Following this training, focused on practice, I had the opportunity to broaden my knowledge during a <span className="accent">professional internship</span> within a software development company in Poitiers.
                         </h4>}
                     {french ?
                         <h4 className="Paragraphe">
-                            J'aime particulièrement le développement web et mobile, mais j'ai également réalisé quelques projets <span className="accent">dans le secteur industriel, dans la recherche et la défense.</span>
+                            Par la suite, j'ai choisi d'intégrer une deuxième formation en me spécialisant dans d'autres langages et technologies, ce qui m’a permis d'acquérir une expertise plus large dans le domaine.
                         </h4>
                         :
                         <h4 className="Paragraphe">
-                            I particularly like the web development and mobile, but I also did some projects <span className="accent">in the industrial sector, in research and defence.</span>
+                            Subsequently, I chose to join a second training course specializing in other languages and technologies, which allowed me to acquire broader expertise in the field.
+                        </h4>}
+                    {french ?
+                        <h4 className="Paragraphe">
+                            Bien que mon intérêt principal réside dans le développement web et mobile, j'ai également eu l'opportunité de collaborer sur divers projets dans les <span className="accent">secteurs de l'industrie, de la recherche et de la défense.</span>
+                        </h4>
+                        :
+                        <h4 className="Paragraphe">
+                            Although my main interest lies in web and mobile development, I have also had the opportunity to collaborate on various projects <span className="accent">in the industrial, research and defense sectors.</span>
                         </h4>}
                 </div>
             </div>

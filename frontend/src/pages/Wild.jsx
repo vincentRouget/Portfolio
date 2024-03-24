@@ -19,12 +19,14 @@ import MYSQL from "../assets/Icon/mysql.png";
 import API from "../assets/Icon/api.png";
 
 const Wild = () => {
-    const { theme, french } = useContext(UserContext);
+
+    const { french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
         setScrollPosition(window.scrollY);
     };
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -76,27 +78,24 @@ const Wild = () => {
                 <div className="Wild_description_left">
                     <div className="Categorie">
                         {french ?
-                            <h4 className="Wild_h4 resolution">Catégorie</h4>
+                            <h4 className="Wild_h4 resolution">Catégorie :</h4>
                             :
-                            <h4 className="Wild_h4 resolution">Category</h4>}
+                            <h4 className="Wild_h4 resolution">Category :</h4>}
                     </div>
                     <div className="Annee">
                         {french ?
-                            <h4 className="Wild_h4 resolution">Année</h4>
+                            <h4 className="Wild_h4 resolution">Année :</h4>
                             :
-                            <h4 className="Wild_h4 resolution">Year</h4>}
+                            <h4 className="Wild_h4 resolution">Year :</h4>}
                     </div>
                     <div className="Client">
-                        <h4 className="Wild_h4 resolution">Client</h4>
+                        <h4 className="Wild_h4 resolution">Client :</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Wild_h4 resolution">Front end</h4>
-                    </div>
-                    <div className="Back">
-                        <h4 className="Wild_h4 resolution">Back end</h4>
+                        <h4 className="Wild_h4 resolution">Langage :</h4>
                     </div>
                     <div className="Sgbd">
-                        <h4 className="Wild_h4 resolution">SGBD</h4>
+                        <h4 className="Wild_h4 resolution">SGBD :</h4>
                     </div>
                 </div>
                 <div className="Wild_description_middle">
@@ -113,10 +112,7 @@ const Wild = () => {
                         <p className="TextPi">Wild Code School</p>
                     </div>
                     <div className="Front">
-                        <p className="TextPi">React.js / Node.js</p>
-                    </div>
-                    <div className="Back">
-                        <p className="TextPi">API Rest / Express.js</p>
+                        <p className="TextPi">React.js / Node.js / API Rest</p>
                     </div>
                     <div className="Sgbd">
                         <p className="TextPi">MySql</p>

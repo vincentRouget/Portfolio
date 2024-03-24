@@ -15,12 +15,14 @@ import EXPRESS from "../assets/Icon/express.png";
 import MYSQL from "../assets/Icon/mysql.png";
 
 const Enecom = () => {
-    const { theme, french } = useContext(UserContext);
+
+    const { french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
         setScrollPosition(window.scrollY);
     };
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -69,27 +71,24 @@ const Enecom = () => {
                 <div className="Enecom_description_left">
                     <div className="Categorie">
                         {french ?
-                            <h4 className="Enecom_h4 resolution">Catégorie</h4>
+                            <h4 className="Enecom_h4 resolution">Catégorie :</h4>
                             :
-                            <h4 className="Enecom_h4 resolution">Category</h4>}
+                            <h4 className="Enecom_h4 resolution">Category :</h4>}
                     </div>
                     <div className="Annee">
                         {french ?
-                            <h4 className="Enecom_h4 resolution">Année</h4>
+                            <h4 className="Enecom_h4 resolution">Année :</h4>
                             :
-                            <h4 className="Enecom_h4 resolution">Year</h4>}
+                            <h4 className="Enecom_h4 resolution">Year :</h4>}
                     </div>
                     <div className="Client">
-                        <h4 className="Enecom_h4 resolution">Client</h4>
+                        <h4 className="Enecom_h4 resolution">Client :</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="Enecom_h4 resolution">Front end</h4>
-                    </div>
-                    <div className="Back">
-                        <h4 className="Enecom_h4 resolution">Back end</h4>
+                        <h4 className="Enecom_h4 resolution">Langage :</h4>
                     </div>
                     <div className="Sgbd">
-                        <h4 className="Enecom_h4 resolution">SGBD</h4>
+                        <h4 className="Enecom_h4 resolution">SGBD :</h4>
                     </div>
                 </div>
                 <div className="Enecom_description_middle">
@@ -103,10 +102,7 @@ const Enecom = () => {
                         <p className="TextPi">Enedis</p>
                     </div>
                     <div className="Front">
-                        <p className="TextPi">React.js / Node.js</p>
-                    </div>
-                    <div className="Back">
-                        <p className="TextPi">Express.js</p>
+                        <p className="TextPi">React.js / Node.js / Express</p>
                     </div>
                     <div className="Sgbd">
                         <p className="TextPi">MySql</p>

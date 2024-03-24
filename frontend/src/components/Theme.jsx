@@ -3,6 +3,7 @@ import UserContext from "../context/UserContext";
 import Dark from "../assets/Icon/icons8-dark-96ter.png"
 
 const Theme = () => {
+    
     const { theme, setTheme } = useContext(UserContext);
 
     const toggleTheme = () => {

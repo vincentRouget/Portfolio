@@ -3,7 +3,6 @@ import UserContext from "../context/UserContext";
 import ScrollDown from "../components/ScrollDown";
 import ImageLogoMaison from '../assets/Icon/LogoMaison.jpg';
 import House2 from "../assets/Image/House/house2.png";
-import House3 from "../assets/Image/House/house3.png";
 import House4 from "../assets/Image/House/house4.png";
 import House5 from "../assets/Image/House/house5.png";
 import House6 from "../assets/Image/House/house6.png";
@@ -13,14 +12,17 @@ import House9 from "../assets/Image/House/house9.png";
 import SCSS from "../assets/Icon/scss.png";
 import REACTJS from "../assets/Icon/react.png";
 import NODE from "../assets/Icon/node.png";
+import FILEZILLA from "../assets/Icon/filezilla.png";
 
 const Maison = () => {
-    const { theme, french } = useContext(UserContext);
+
+    const { french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
         setScrollPosition(window.scrollY);
     };
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -52,6 +54,9 @@ const Maison = () => {
                 <div className="House_icones_icone">
                     <img src={SCSS} alt='SCSS' className="icone"></img>
                 </div>
+                <div className="House_icones_icone">
+                    <img src={FILEZILLA} alt='Filezilla' className="icone"></img>
+                </div>
             </div>
             <ScrollDown />
             <div className="House_title">
@@ -64,21 +69,27 @@ const Maison = () => {
                 <div className="House_description_left">
                     <div className="Categorie">
                         {french ?
-                            <h4 className="House_h4 resolution">Catégorie</h4>
+                            <h4 className="House_h4 resolution">Catégorie :</h4>
                             :
-                            <h4 className="House_h4 resolution">Category</h4>}
+                            <h4 className="House_h4 resolution">Category :</h4>}
                     </div>
                     <div className="Annee">
                         {french ?
-                            <h4 className="House_h4 resolution">Année</h4>
+                            <h4 className="House_h4 resolution">Année :</h4>
                             :
-                            <h4 className="House_h4 resolution">Year</h4>}
+                            <h4 className="House_h4 resolution">Year :</h4>}
                     </div>
                     <div className="Client">
-                        <h4 className="House_h4 resolution">Client</h4>
+                        <h4 className="House_h4 resolution">Client :</h4>
                     </div>
                     <div className="Front">
-                        <h4 className="House_h4 resolution">Front end</h4>
+                        <h4 className="House_h4 resolution">Langage :</h4>
+                    </div>
+                    <div className="Categorie">
+                        {french ?
+                            <h4 className="House_h4 resolution">Déploiement :</h4>
+                            :
+                            <h4 className="House_h4 resolution">Deployment :</h4>}
                     </div>
                 </div>
                 <div className="House_description_middle">
@@ -99,6 +110,9 @@ const Maison = () => {
                     </div>
                     <div className="Front">
                         <p className="TextPi">React.js / Node.js / Scss</p>
+                    </div>
+                    <div className="Front">
+                        <p className="TextPi">FileZilla</p>
                     </div>
                 </div>
                 <div className="House_description_right">
@@ -122,9 +136,9 @@ const Maison = () => {
                             </div>}
                     </div>
                     {french ?
-                        <p className="TextP">Lien vers le site : <a href="https://lamaisondulac87.fr/" target="_blank">https://lamaisondulac87.fr/</a></p>
+                        <p className="TextP">Lien vers le site : <a href="https://www.lamaisondulac87.fr/" target="_blank">https://www.lamaisondulac87.fr</a></p>
                         :
-                        <p className="TextP">Link to website : <a href="https://lamaisondulac87.fr/" target="_blank">https://lamaisondulac87.fr/</a></p>}
+                        <p className="TextP">Link to website : <a href="https://www.lamaisondulac87.fr/" target="_blank">https://www.lamaisondulac87.fr</a></p>}
                 </div>
             </div>
             <h4 className="House_h4 House_padding resolution picture">Illustrations</h4>

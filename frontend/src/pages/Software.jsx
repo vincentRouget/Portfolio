@@ -10,12 +10,14 @@ import VS from "../assets/Icon/vs.png";
 import IO from "../assets/Icon/io.png";
 
 const Software = () => {
-    const { theme, french } = useContext(UserContext);
+
+    const { french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
         setScrollPosition(window.scrollY);
     };
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -65,24 +67,21 @@ const Software = () => {
                 <div className="Software_description_left">
                     <div className="Annee">
                         {french ?
-                            <h4 className="Software_h4 python resolution">Année</h4>
+                            <h4 className="Software_h4 python resolution">Année :</h4>
                             :
-                            <h4 className="Software_h4 python resolution">Year</h4>}
+                            <h4 className="Software_h4 python resolution">Year :</h4>}
                     </div>
                     <div className="Categorie">
                         {french ?
-                            <h4 className="Software_h4 python resolution">Clause de non-divulgation</h4>
+                            <h4 className="Software_h4 python resolution">Clause de non-divulgation :</h4>
                             :
-                            <h4 className="Software_h4 python resolution">Non-disclosure clause</h4>}
+                            <h4 className="Software_h4 python resolution">Non-disclosure clause :</h4>}
                     </div>
                     <div className="Client">
-                        <h4 className="Software_h4 python resolution">I.D.E.</h4>
+                        <h4 className="Software_h4 python resolution">IDE :</h4>
                     </div>
                     <div className="Front">
-                        {french ?
-                            <h4 className="Software_h4 python resolution">Language</h4>
-                            :
-                            <h4 className="Software_h4 python resolution">Langage</h4>}
+                        <h4 className="Software_h4 python resolution">Langage :</h4>
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -133,24 +132,21 @@ const Software = () => {
                 <div className="Software_description_left">
                     <div className="Annee">
                         {french ?
-                            <h4 className="Software_h4 cpp resolution">Année</h4>
+                            <h4 className="Software_h4 cpp resolution">Année :</h4>
                             :
-                            <h4 className="Software_h4 cpp resolution">Year</h4>}
+                            <h4 className="Software_h4 cpp resolution">Year :</h4>}
                     </div>
                     <div className="Categorie">
                         {french ?
-                            <h4 className="Software_h4 cpp resolution">Clause de non-divulgation</h4>
+                            <h4 className="Software_h4 cpp resolution">Clause de non-divulgation :</h4>
                             :
-                            <h4 className="Software_h4 cpp resolution">Non-disclosure clause</h4>}
+                            <h4 className="Software_h4 cpp resolution">Non-disclosure clause :</h4>}
                     </div>
                     <div className="Client">
-                        <h4 className="Software_h4 cpp resolution">I.D.E.</h4>
+                        <h4 className="Software_h4 cpp resolution">IDE :</h4>
                     </div>
                     <div className="Front">
-                        {french ?
-                            <h4 className="Software_h4 cpp resolution">Language</h4>
-                            :
-                            <h4 className="Software_h4 cpp resolution">Langage</h4>}
+                        <h4 className="Software_h4 cpp resolution">Langage :</h4>
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -182,7 +178,7 @@ const Software = () => {
                             :
                             <div>
                                 <p className="TextPi">Adaptability to modern operating systems of management software for video surveillance through a network of cameras.</p>
-                                <p className="TextPi">Added features and implemented new foreign interface languages in the software via dll files.</p>
+                                <p className="TextPi">Added features and implemented new foreign interface langages in the software via dll files.</p>
                                 <p className="TextPi">Integration of additional security protocols and implementation of a USB dongle.</p>
                             </div>}
                     </div>
@@ -201,24 +197,21 @@ const Software = () => {
                 <div className="Software_description_left">
                     <div className="Annee">
                         {french ?
-                            <h4 className="Software_h4 preact resolution">Année</h4>
+                            <h4 className="Software_h4 preact resolution">Année :</h4>
                             :
-                            <h4 className="Software_h4 preact resolution">Year</h4>}
+                            <h4 className="Software_h4 preact resolution">Year :</h4>}
                     </div>
                     <div className="Categorie">
                         {french ?
-                            <h4 className="Software_h4 preact resolution">Clause de non-divulgation</h4>
+                            <h4 className="Software_h4 preact resolution">Clause de non-divulgation :</h4>
                             :
-                            <h4 className="Software_h4 preact resolution">Non-disclosure clause</h4>}
+                            <h4 className="Software_h4 preact resolution">Non-disclosure clause :</h4>}
                     </div>
                     <div className="Client">
-                        <h4 className="Software_h4 preact resolution">I.D.E.</h4>
+                        <h4 className="Software_h4 preact resolution">IDE :</h4>
                     </div>
                     <div className="Front">
-                        {french ?
-                            <h4 className="Software_h4 preact resolution">Language</h4>
-                            :
-                            <h4 className="Software_h4 preact resolution">Langage</h4>}
+                        <h4 className="Software_h4 preact resolution">Langage :</h4>
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -251,7 +244,7 @@ const Software = () => {
                             <div>
                                 <p className="TextPi">Complete revision of a control program for luminaires on board SNCF trains and shuttles.</p>
                                 <p className="TextPi">This project aimed to migrate all old features to a new modern intranet interface.</p>
-                                <p className="TextPi">As the program is integrated on multiple computer media, the development was done in the Preact language, for low resource consumption needs.</p>
+                                <p className="TextPi">As the program is integrated on multiple computer media, the development was done in the Preact langage, for low resource consumption needs.</p>
                             </div>}
                     </div>
                 </div>
@@ -269,24 +262,21 @@ const Software = () => {
                 <div className="Software_description_left">
                     <div className="Annee">
                         {french ?
-                            <h4 className="Software_h4 pascal resolution">Année</h4>
+                            <h4 className="Software_h4 pascal resolution">Année :</h4>
                             :
-                            <h4 className="Software_h4 pascal resolution">Year</h4>}
+                            <h4 className="Software_h4 pascal resolution">Year :</h4>}
                     </div>
                     <div className="Categorie">
                         {french ?
-                            <h4 className="Software_h4 pascal resolution">Clause de non-divulgation</h4>
+                            <h4 className="Software_h4 pascal resolution">Clause de non-divulgation :</h4>
                             :
-                            <h4 className="Software_h4 pascal resolution">Non-disclosure clause</h4>}
+                            <h4 className="Software_h4 pascal resolution">Non-disclosure clause :</h4>}
                     </div>
                     <div className="Client">
-                        <h4 className="Software_h4 pascal resolution">I.D.E.</h4>
+                        <h4 className="Software_h4 pascal resolution">IDE :</h4>
                     </div>
                     <div className="Front">
-                        {french ?
-                            <h4 className="Software_h4 pascal resolution">Language</h4>
-                            :
-                            <h4 className="Software_h4 pascal resolution">Langage</h4>}
+                        <h4 className="Software_h4 pascal resolution">Langage :</h4>
                     </div>
                 </div>
                 <div className="Software_description_middle">
@@ -319,7 +309,7 @@ const Software = () => {
                             <div>
                                 <p className="TextPi">Maintenance and optimization of an electromagnetic control program for a polymer creeping machine.</p>
                                 <p className="TextPi">Programming under Visual I/O, in expert mode, to modify and add features to the software’s graphical interface synoptics.</p>
-                                <p className="TextPi">Programming under Visual I/O, in Pascal language, to develop all additions, corrections and changes concerning the logic of the software.</p>
+                                <p className="TextPi">Programming under Visual I/O, in Pascal langage, to develop all additions, corrections and changes concerning the logic of the software.</p>
                             </div>}
                     </div>
                 </div>

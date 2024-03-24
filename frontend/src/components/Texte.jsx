@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import UserContext from "../context/UserContext";
 
 const Texte = () => {
+
     const { refresh, setRefresh } = useContext(UserContext);
 
     var TxtRotate = function (el, toRotate, period) {
@@ -13,6 +14,7 @@ const Texte = () => {
         this.tick();
         this.isDeleting = false;
     };
+
     TxtRotate.prototype.tick = function () {
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
@@ -37,6 +39,7 @@ const Texte = () => {
             that.tick();
         }, delta);
     };
+
     window.onload = function () {
         var elements = document.getElementsByClassName('txt-rotate');
         for (var i = 0; i < elements.length; i++) {
@@ -49,7 +52,6 @@ const Texte = () => {
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        // css.innerHTML = ".txt-rotate > .wrap { border-right: 0.6em solid var(--text) }";
         document.body.appendChild(css);
         setRefresh(false)
     };

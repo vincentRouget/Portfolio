@@ -4,6 +4,7 @@ import Sidebar from '../components/Sidebar';
 import Theme from "@components/Theme";
 import Lang from "@components/Lang";
 import Main from "./Main";
+import Feeder from "./Feeder";
 import Wild from "./Wild";
 import Enecom from "./Enecom";
 import Dating from "./Dating";
@@ -12,8 +13,10 @@ import Enigma from "./Enigma";
 import Software from "./Software";
 
 const Portfolio = () => {
+
     const { theme, minimize } = useContext(UserContext);
     const [etiquetteON, setEtiquetteON] = useState(true)
+    const [feederON, setFeederON] = useState(false)
     const [wildON, setWildON] = useState(false)
     const [enecomON, setEnecomON] = useState(false)
     const [appON, setAppON] = useState(false)
@@ -40,6 +43,8 @@ const Portfolio = () => {
                     <Sidebar
                         etiquetteON={etiquetteON}
                         setEtiquetteON={setEtiquetteON}
+                        feederON={feederON}
+                        setFeederON={setFeederON}
                         wildON={wildON}
                         setWildON={setWildON}
                         enecomON={enecomON}
@@ -65,6 +70,27 @@ const Portfolio = () => {
                 {etiquetteON && <Main
                     etiquetteON={etiquetteON}
                     setEtiquetteON={setEtiquetteON}
+                    feederON={feederON}
+                    setFeederON={setFeederON}
+                    wildON={wildON}
+                    setWildON={setWildON}
+                    enecomON={enecomON}
+                    setEnecomON={setEnecomON}
+                    appON={appON}
+                    setAppON={setAppON}
+                    maisonON={maisonON}
+                    setMaisonON={setMaisonON}
+                    logicielON={logicielON}
+                    setLogicielON={setLogicielON}
+                    enigmaON={enigmaON}
+                    setEnigmaON={setEnigmaON}
+                    presentationON={presentationON}
+                    setPresentationON={setPresentationON} />}
+                {feederON && <Feeder
+                    etiquetteON={etiquetteON}
+                    setEtiquetteON={setEtiquetteON}
+                    feederON={feederON}
+                    setFeederON={setFeederON}
                     wildON={wildON}
                     setWildON={setWildON}
                     enecomON={enecomON}
@@ -82,6 +108,8 @@ const Portfolio = () => {
                 {wildON && <Wild
                     etiquetteON={etiquetteON}
                     setEtiquetteON={setEtiquetteON}
+                    feederON={feederON}
+                    setFeederON={setFeederON}
                     wildON={wildON}
                     setWildON={setWildON}
                     enecomON={enecomON}
@@ -99,6 +127,8 @@ const Portfolio = () => {
                 {enecomON && <Enecom
                     etiquetteON={etiquetteON}
                     setEtiquetteON={setEtiquetteON}
+                    feederON={feederON}
+                    setFeederON={setFeederON}
                     wildON={wildON}
                     setWildON={setWildON}
                     enecomON={enecomON}
@@ -116,6 +146,8 @@ const Portfolio = () => {
                 {appON && <Dating
                     etiquetteON={etiquetteON}
                     setEtiquetteON={setEtiquetteON}
+                    feederON={feederON}
+                    setFeederON={setFeederON}
                     wildON={wildON}
                     setWildON={setWildON}
                     enecomON={enecomON}
@@ -133,6 +165,8 @@ const Portfolio = () => {
                 {maisonON && <Maison
                     etiquetteON={etiquetteON}
                     setEtiquetteON={setEtiquetteON}
+                    feederON={feederON}
+                    setFeederON={setFeederON}
                     wildON={wildON}
                     setWildON={setWildON}
                     enecomON={enecomON}
@@ -150,6 +184,8 @@ const Portfolio = () => {
                 {logicielON && <Software
                     etiquetteON={etiquetteON}
                     setEtiquetteON={setEtiquetteON}
+                    feederON={feederON}
+                    setFeederON={setFeederON}
                     wildON={wildON}
                     setWildON={setWildON}
                     enecomON={enecomON}
@@ -167,6 +203,8 @@ const Portfolio = () => {
                 {enigmaON && <Enigma
                     etiquetteON={etiquetteON}
                     setEtiquetteON={setEtiquetteON}
+                    feederON={feederON}
+                    setFeederON={setFeederON}
                     wildON={wildON}
                     setWildON={setWildON}
                     enecomON={enecomON}
@@ -184,6 +222,8 @@ const Portfolio = () => {
                 {presentationON && <About
                     etiquetteON={etiquetteON}
                     setEtiquetteON={setEtiquetteON}
+                    feederON={feederON}
+                    setFeederON={setFeederON}
                     wildON={wildON}
                     setWildON={setWildON}
                     enecomON={enecomON}

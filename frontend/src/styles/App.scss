@@ -44,6 +44,7 @@ body {
     --button: #858585;
     --hover: #EAEAEA;
     --wild: #eb4b52;
+    --feeder: #62a23f;
     --enecom: #5A65E6;
     --hobbi: #2196f3;
     --house: #8c93ee;
@@ -79,6 +80,7 @@ body {
     --button: #575a91;
     --hover: #402a73;
     --wild: #eb4b52;
+    --feeder: #62a23f;
     --enecom: #1423dc;
     --hobbi: #2196f3;
     --house: #8c93ee;
@@ -315,6 +317,7 @@ label {
 @import "./Dating.scss";
 @import "./Enecom.scss";
 @import "./Enigma.scss";
+@import "./Feeder.scss";
 @import "./Main.scss";
 @import "./Maison.scss";
 @import "./Portfolio.scss";
