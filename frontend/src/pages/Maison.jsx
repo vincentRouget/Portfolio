@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/UserContext";
+import Back from "../assets/Icon/icons8-arrow-100.png";
 import ScrollDown from "../components/ScrollDown";
 import ImageLogoMaison from '../assets/Icon/LogoMaison.jpg';
 import House2 from "../assets/Image/House/house2.png";
@@ -14,7 +15,17 @@ import REACTJS from "../assets/Icon/react.png";
 import NODE from "../assets/Icon/node.png";
 import FILEZILLA from "../assets/Icon/filezilla.png";
 
-const Maison = () => {
+const Maison = ({
+    setEtiquetteON,
+    setPresentationON,
+    setFeederON,
+    setWildON,
+    setEnecomON,
+    setAppON,
+    setMaisonON,
+    setEnigmaON,
+    setLogicielON
+}) => {
 
     const { french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -41,6 +52,23 @@ const Maison = () => {
 
     return (
         <div className="House">
+            <div className="back">
+                <button
+                    className="button_back"
+                    onClick={() => {
+                        setEtiquetteON(true)
+                        setFeederON(false)
+                        setWildON(false)
+                        setEnecomON(false)
+                        setAppON(false)
+                        setMaisonON(false)
+                        setLogicielON(false)
+                        setEnigmaON(false)
+                        setPresentationON(false)
+                    }}>
+                    <img src={Back} className="Retour"></img>
+                </button>
+            </div>
             <div className="House_entete">
                 <h1>La Maison du Lac</h1>
             </div>
@@ -58,7 +86,9 @@ const Maison = () => {
                     <img src={FILEZILLA} alt='Filezilla' className="icone"></img>
                 </div>
             </div>
-            <ScrollDown />
+            <div className="scrollContainer">
+                <ScrollDown />
+            </div>
             <div className="House_title">
                 <div className="HouseLogo">
                     <img src={ImageLogoMaison} className="Logo1" alt="Logo House"></img>

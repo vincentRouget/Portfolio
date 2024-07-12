@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/UserContext";
+import Back from "../assets/Icon/icons8-arrow-100.png";
 import ScrollDown from "../components/ScrollDown";
 import Blog from "../assets/Icon/Blog.png";
 import BlogW from "../assets/Icon/BlogW.png";
@@ -14,7 +15,17 @@ import ANGULAR from "../assets/Icon/angular.png";
 import SPRING from "../assets/Icon/spring.png";
 import MYSQL from "../assets/Icon/mysql.png";
 
-const Feeder = () => {
+const Feeder = ({
+    setEtiquetteON,
+    setPresentationON,
+    setFeederON,
+    setWildON,
+    setEnecomON,
+    setAppON,
+    setMaisonON,
+    setEnigmaON,
+    setLogicielON
+}) => {
 
     const { theme, french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -41,6 +52,23 @@ const Feeder = () => {
 
     return (
         <div className="Feeder">
+            <div className="back">
+                <button
+                    className="button_back"
+                    onClick={() => {
+                        setEtiquetteON(true)
+                        setFeederON(false)
+                        setWildON(false)
+                        setEnecomON(false)
+                        setAppON(false)
+                        setMaisonON(false)
+                        setLogicielON(false)
+                        setEnigmaON(false)
+                        setPresentationON(false)
+                    }}>
+                    <img src={Back} className="Retour"></img>
+                </button>
+            </div>
             <div className="Feeder_entete">
                 <h1>BLOG FEEDER</h1>
             </div>
@@ -61,7 +89,9 @@ const Feeder = () => {
                     <img src={MYSQL} alt='MySql' className="icone"></img>
                 </div>
             </div>
-            <ScrollDown />
+            <div className="scrollContainer">
+                <ScrollDown />
+            </div>
             <div className="Page_title">
                 <div className="Logo1">
                     {theme == 'light' ?

@@ -15,6 +15,11 @@ const Accueil = () => {
 
     const { theme, french } = useContext(UserContext);
     const [handleAbout, setHandleAbout] = useState(false);
+    const [isActive, setIsActive] = useState(false);
+
+    const toggleMenu = () => {
+        setIsActive(!isActive);
+    };
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -42,6 +47,36 @@ const Accueil = () => {
                         </div>
                     </div>
                 </div>
+                <nav className="navbar">
+                    <div className="navbar-brand">
+                        <div className="navbar-burger burger" onClick={toggleMenu}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div className={isActive ? "navbar-menu is-active" : "navbar-menu"} onClick={toggleMenu}>
+                        <div className="navbar-end">
+                            {!handleAbout ?
+                                <p className="itemBurger" onClick={() => { setHandleAbout(!handleAbout); }}>
+                                    {french ? <>A propos</> : <>About</>}
+                                </p> :
+                                <p className="itemBurger" onClick={() => { setHandleAbout(!handleAbout); }}>
+                                    {french ? <>Accueil</> : <>Home</>}
+                                </p>}
+                            <p className="itemBurger"><a className="itemBurger" href={`mailto:vincent.rouget86@gmail.com`}>Contact</a></p>
+                            <p className="itemBurger"><a className="itemBurger" href={CVpdf} target='_blank'>CV</a></p>
+                            <p className="itemBurger"><a className="itemBurger" href="https://www.linkedin.com/in/vincent-rouget-22996118a/" target="_blank">LinkedIn</a></p>
+                            <p className="itemBurger"><a className="itemBurger" href="https://github.com/vincentRouget" target="_blank">GitHub</a></p>
+                            <div className="iconeBurger">
+                                <Theme />
+                            </div>
+                            <div className="iconeBurger">
+                                <Lang />
+                            </div>
+                        </div>
+                    </div>
+                </nav>
                 <div className="Accueil_topbar_right">
                     <div className="Accueil_topbar_right_about">
                         <div className="Accueil_topbar_right_about_button">
@@ -85,9 +120,9 @@ const Accueil = () => {
             </div>
             <div className={!handleAbout ? 'Accueil_page' : 'Accueil_page aboutTITLE'}>
                 {french ?
-                    <h1>DEVELOPPEUR WEB & MOBILE</h1>
+                    <h1>DEVELOPPEUR FULL STACK</h1>
                     :
-                    <h1>WEB & MOBILE DEVELOPER</h1>}
+                    <h1>FULL STACK DEVELOPER</h1>}
                 <div className="Animation">
                     <Texte />
                 </div>
@@ -108,7 +143,7 @@ const Accueil = () => {
                     </div>
                 </NavLink>
             </div>
-            <div className={!handleAbout ? "Page" : "Page aboutTEXT"}>
+            <div className={`Page ${handleAbout ? "aboutTEXT" : ""} ${isActive ? "pushToMenu" : ""}`}>
                 <div className="TitleAbout_container">
                     {french ?
                         <>

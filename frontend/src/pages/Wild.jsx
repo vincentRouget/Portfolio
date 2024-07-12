@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/UserContext";
+import Back from "../assets/Icon/icons8-arrow-100.png";
 import Logo1 from "../assets/Icon/logo_wildmovies.svg";
 import Logo2 from "../assets/Icon/logo2_wildmovies.svg";
 import ScrollDown from "../components/ScrollDown";
@@ -18,7 +19,17 @@ import EXPRESS from "../assets/Icon/express.png";
 import MYSQL from "../assets/Icon/mysql.png";
 import API from "../assets/Icon/api.png";
 
-const Wild = () => {
+const Wild = ({
+    setEtiquetteON,
+    setPresentationON,
+    setFeederON,
+    setWildON,
+    setEnecomON,
+    setAppON,
+    setMaisonON,
+    setEnigmaON,
+    setLogicielON
+}) => {
 
     const { french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -45,6 +56,23 @@ const Wild = () => {
 
     return (
         <div className="Wild">
+            <div className="back">
+                <button
+                    className="button_back"
+                    onClick={() => {
+                        setEtiquetteON(true)
+                        setFeederON(false)
+                        setWildON(false)
+                        setEnecomON(false)
+                        setAppON(false)
+                        setMaisonON(false)
+                        setLogicielON(false)
+                        setEnigmaON(false)
+                        setPresentationON(false)
+                    }}>
+                    <img src={Back} className="Retour"></img>
+                </button>
+            </div>
             <div className="Wild_entete">
                 <h1>WILD MOVIES</h1>
             </div>
@@ -65,7 +93,9 @@ const Wild = () => {
                     <img src={MYSQL} alt='MySql' className="icone"></img>
                 </div>
             </div>
-            <ScrollDown />
+            <div className="scrollContainer">
+                <ScrollDown />
+            </div>
             <div className="Page_title">
                 <div className="Logo1">
                     <img src={Logo1} id="Logo1" alt="Logo Wild Movies"></img>
@@ -186,7 +216,7 @@ const Wild = () => {
                 </div>
                 <div className="Wild_screenshot_image">
                     <a href={Wild9} target="_blank">
-                        <img src={Wild9} class="Wild_screenshot_image lessBorder"></img>
+                        <img src={Wild9} className="Wild_screenshot_image lessBorder"></img>
                     </a>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/UserContext";
+import Back from "../assets/Icon/icons8-arrow-100.png";
 import ScrollDown from "../components/ScrollDown";
 import HobbiLogo from "../assets/Icon/ic_launcher.png";
 import Hobbi2 from "../assets/Image/Hobbi/Hobbi2.png";
@@ -16,7 +17,17 @@ import MYSQL from "../assets/Icon/mysql.png";
 import NATIVE from "../assets/Icon/native.png";
 import ANDROID from "../assets/Icon/android.png";
 
-const Dating = () => {
+const Dating = ({
+    setEtiquetteON,
+    setPresentationON,
+    setFeederON,
+    setWildON,
+    setEnecomON,
+    setAppON,
+    setMaisonON,
+    setEnigmaON,
+    setLogicielON
+}) => {
 
     const { french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -24,7 +35,7 @@ const Dating = () => {
     const handleScroll = () => {
         setScrollPosition(window.scrollY);
     };
-    
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -43,6 +54,23 @@ const Dating = () => {
 
     return (
         <div className="Hobbi">
+            <div className="back">
+                <button
+                    className="button_back"
+                    onClick={() => {
+                        setEtiquetteON(true)
+                        setFeederON(false)
+                        setWildON(false)
+                        setEnecomON(false)
+                        setAppON(false)
+                        setMaisonON(false)
+                        setLogicielON(false)
+                        setEnigmaON(false)
+                        setPresentationON(false)
+                    }}>
+                    <img src={Back} className="Retour"></img>
+                </button>
+            </div>
             <div className="Hobbi_entete">
                 <h1>HOBBI</h1>
             </div>
@@ -63,7 +91,9 @@ const Dating = () => {
                     <img src={MYSQL} alt='MySql' className="icone"></img>
                 </div>
             </div>
-            <ScrollDown />
+            <div className="scrollContainer">
+                <ScrollDown />
+            </div>
             <div className="Hobbi_title">
                 <div className="Hobbi_title_icone">
                     <img src={HobbiLogo} alt='Hobbi' className="iconeHobbi"></img>

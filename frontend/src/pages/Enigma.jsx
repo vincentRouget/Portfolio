@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/UserContext";
+import Back from "../assets/Icon/icons8-arrow-100.png";
 import ScrollDown from "../components/ScrollDown";
 import LogoEnigma from '../assets/Image/Enigma/LogoEnigma.png';
 import Enigma1 from "../assets/Image/Enigma/enigma1.png";
@@ -9,7 +10,17 @@ import HTML from "../assets/Icon/html.png";
 import CSS from "../assets/Icon/css.png";
 import JS from "../assets/Icon/js.png";
 
-const Enigma = () => {
+const Enigma = ({
+    setEtiquetteON,
+    setPresentationON,
+    setFeederON,
+    setWildON,
+    setEnecomON,
+    setAppON,
+    setMaisonON,
+    setEnigmaON,
+    setLogicielON
+}) => {
 
     const { french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -36,6 +47,23 @@ const Enigma = () => {
 
     return (
         <div className="Enigma">
+            <div className="back">
+                <button
+                    className="button_back"
+                    onClick={() => {
+                        setEtiquetteON(true)
+                        setFeederON(false)
+                        setWildON(false)
+                        setEnecomON(false)
+                        setAppON(false)
+                        setMaisonON(false)
+                        setLogicielON(false)
+                        setEnigmaON(false)
+                        setPresentationON(false)
+                    }}>
+                    <img src={Back} className="Retour"></img>
+                </button>
+            </div>
             <div className="Enigma_entete">
                 <h1>ENIGMA</h1>
             </div>
@@ -50,7 +78,9 @@ const Enigma = () => {
                     <img src={JS} alt='Javascript' className="icone"></img>
                 </div>
             </div>
-            <ScrollDown />
+            <div className="scrollContainer">
+                <ScrollDown />
+            </div>
             <div className="Enigma_title">
                 <div className="EnigmaLogo">
                     <img src={LogoEnigma} className="LogoEnigma" alt="Logo Enigma"></img>

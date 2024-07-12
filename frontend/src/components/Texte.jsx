@@ -25,7 +25,7 @@ const Texte = () => {
         }
         this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
         var that = this;
-        var delta = 200;
+        var delta = 150;
         if (this.isDeleting) { delta /= 2; }
         if (!this.isDeleting && this.txt === fullTxt) {
             delta = this.period;
@@ -69,7 +69,7 @@ const Texte = () => {
                 <span
                     className="txt-rotate"
                     data-period="1000"
-                    data-rotate='[ "Front-end", "Back-end", "Mobile", "# Passionate"]'>
+                    data-rotate='[ "Web", "Front-end", "Back-end", "Mobile", "# Passionate"]'>
                 </span>
                 <span className='cursor'>&#10072;</span>
             </p>

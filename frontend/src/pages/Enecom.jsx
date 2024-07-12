@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/UserContext";
+import Back from "../assets/Icon/icons8-arrow-100.png";
 import ScrollDown from "../components/ScrollDown";
 import EnecomLogo from "../assets/Icon/enecom.svg";
 import Enecom1 from "../assets/Image/Enecom/enecom1.png";
@@ -14,7 +15,17 @@ import NODE from "../assets/Icon/node.png";
 import EXPRESS from "../assets/Icon/express.png";
 import MYSQL from "../assets/Icon/mysql.png";
 
-const Enecom = () => {
+const Enecom = ({
+    setEtiquetteON,
+    setPresentationON,
+    setFeederON,
+    setWildON,
+    setEnecomON,
+    setAppON,
+    setMaisonON,
+    setEnigmaON,
+    setLogicielON
+}) => {
 
     const { french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -41,6 +52,23 @@ const Enecom = () => {
 
     return (
         <div className="Enecom">
+            <div className="back">
+                <button
+                    className="button_back"
+                    onClick={() => {
+                        setEtiquetteON(true)
+                        setFeederON(false)
+                        setWildON(false)
+                        setEnecomON(false)
+                        setAppON(false)
+                        setMaisonON(false)
+                        setLogicielON(false)
+                        setEnigmaON(false)
+                        setPresentationON(false)
+                    }}>
+                    <img src={Back} className="Retour"></img>
+                </button>
+            </div>
             <div className="Enecom_entete">
                 <h1>ENECOM</h1>
             </div>
@@ -61,7 +89,9 @@ const Enecom = () => {
                     <img src={MYSQL} alt='MySql' className="icone"></img>
                 </div>
             </div>
-            <ScrollDown />
+            <div className="scrollContainer">
+                <ScrollDown />
+            </div>
             <div className="Page_title">
                 <div className="Logo1">
                     <img src={EnecomLogo} id="LogoEnecom" alt="Logo Enecom"></img>

@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import UserContext from "../context/UserContext";
+import Back from "../assets/Icon/icons8-arrow-100.png";
 import ScrollDown from "../components/ScrollDown";
 import PREACT from "../assets/Icon/preact.png";
 import PYTHON from "../assets/Icon/python.png";
@@ -9,7 +10,17 @@ import VSC from "../assets/Icon/vsc.png";
 import VS from "../assets/Icon/vs.png";
 import IO from "../assets/Icon/io.png";
 
-const Software = () => {
+const Software = ({
+    setEtiquetteON,
+    setPresentationON,
+    setFeederON,
+    setWildON,
+    setEnecomON,
+    setAppON,
+    setMaisonON,
+    setEnigmaON,
+    setLogicielON
+}) => {
 
     const { french } = useContext(UserContext);
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -36,6 +47,23 @@ const Software = () => {
 
     return (
         <div className="Software">
+            <div className="back">
+                <button
+                    className="button_back"
+                    onClick={() => {
+                        setEtiquetteON(true)
+                        setFeederON(false)
+                        setWildON(false)
+                        setEnecomON(false)
+                        setAppON(false)
+                        setMaisonON(false)
+                        setLogicielON(false)
+                        setEnigmaON(false)
+                        setPresentationON(false)
+                    }}>
+                    <img src={Back} className="Retour"></img>
+                </button>
+            </div>
             <div className="Software_entete">
                 <h1>SOFTWARE</h1>
             </div>
@@ -53,7 +81,9 @@ const Software = () => {
                     <img src={PASCAL} alt='Pascal' className="icone"></img>
                 </div>
             </div>
-            <ScrollDown />
+            <div className="scrollContainer">
+                <ScrollDown />
+            </div>
             <div className="Software_title">
                 <p className="TitleSoftware python">Seva</p>
                 <div className="Software_icones_icone">
