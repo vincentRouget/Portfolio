@@ -21,6 +21,12 @@
         height: 40px;
     }
 }
+@media screen and (max-width: 1900px) {
+    .Theme {
+        width: 30px;
+        height: 30px;
+    }
+}
 
 @media screen and (min-width: 2200px) {
     .Theme {

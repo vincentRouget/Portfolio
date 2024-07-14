@@ -281,8 +281,6 @@
             position: absolute;
             top: 10px;
             left: 10px;
-            // top:0;
-            // left:0;
             display: flex;
             width: 50px;
             height: 50px;
@@ -318,6 +316,7 @@
             justify-content: space-around;
             align-items: center;
             width: 96%;
+            gap: 1%;
             margin-top: 50px;
             margin-bottom: 20px;
 
@@ -330,7 +329,9 @@
 
             .TitleSoftware {
                 vertical-align: middle;
-                font-size: 72px;
+                font-size: 56px;
+                padding-bottom: 10px;
+                ;
             }
         }
 

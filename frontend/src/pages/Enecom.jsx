@@ -156,10 +156,6 @@ const Enecom = ({
                                 <p className="TextPi">An administrator status gives access to more possibilities, such as archiving a communication plan, deleting it or even creating a new user.</p>
                             </div>}
                     </div>
-                    {french ?
-                        <p className="TextP">Lien vers le site : <a href="http://vps-d5babf40.vps.ovh.net:5007/" target="_blank" className="moreSmall">http://vps-d5babf40.vps.ovh.net:5007/</a></p>
-                        :
-                        <p className="TextP">Link to website : <a href="http://vps-d5babf40.vps.ovh.net:5007/" target="_blank" className="moreSmall">http://vps-d5babf40.vps.ovh.net:5007/</a></p>}
                 </div>
             </div>
             <h4 className="Enecom_h4 resolution picture">Illustrations</h4>

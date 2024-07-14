@@ -166,9 +166,9 @@ const Maison = ({
                             </div>}
                     </div>
                     {french ?
-                        <p className="TextP">Lien vers le site : <a href="https://www.lamaisondulac87.fr/" target="_blank">https://www.lamaisondulac87.fr</a></p>
+                        <p className="TextP">Lien vers le site : <a className="link" href="https://www.lamaisondulac87.fr/" target="_blank">https://www.lamaisondulac87.fr</a></p>
                         :
-                        <p className="TextP">Link to website : <a href="https://www.lamaisondulac87.fr/" target="_blank">https://www.lamaisondulac87.fr</a></p>}
+                        <p className="TextP">Link to website : <a className="link" href="https://www.lamaisondulac87.fr/" target="_blank">https://www.lamaisondulac87.fr</a></p>}
                 </div>
             </div>
             <h4 className="House_h4 House_padding resolution picture">Illustrations</h4>

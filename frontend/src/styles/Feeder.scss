@@ -264,8 +264,6 @@
             position: absolute;
             top: 10px;
             left: 10px;
-            // top:0;
-            // left:0;
             display: flex;
             width: 50px;
             height: 50px;
@@ -303,8 +301,14 @@
             width: 100%;
             margin-bottom: 20px;
 
+            .Logo1 {
+                width: 20%;
+
+            }
+
             .TitleFeeder {
-                font-size: 56px;
+                font-size: 40px;
+                padding-bottom: 10px;
             }
         }
 
@@ -314,6 +318,7 @@
             align-items: center;
             width: 96%;
             height: 100%;
+            margin-bottom: 100px;
 
             &_left {
                 display: none;
@@ -405,6 +410,13 @@
 
         .resolution {
             font-size: 24px;
+        }
+
+        &_screenshot {
+            gap: 100px;
+            width: 86%;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
     }
 }

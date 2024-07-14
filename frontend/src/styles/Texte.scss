@@ -37,6 +37,15 @@
         font-size: 48px;
     }
 }
+@media screen and (max-width: 1200px) {
+    .cursor {
+        font-size: 40px;
+    }
+
+    .wrap {
+        font-size: 32px;
+    }
+}
 
 @media screen and (min-width: 2200px) {
     .cursor {
