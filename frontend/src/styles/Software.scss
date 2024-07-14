@@ -76,6 +76,10 @@
     min-height: 100vh;
     padding-bottom: 100px;
 
+    .back {
+        display: none;
+    }
+
     .Software_h4 {
         font-family: $font-family-5;
         font-size: 32px;

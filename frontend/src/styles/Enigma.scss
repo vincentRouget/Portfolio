@@ -20,6 +20,10 @@
     height: 100%;
     min-height: 100vh;
 
+    .back {
+        display: none;
+    }
+
     .Enigma_h4 {
         color: var(--enigma);
         font-family: $font-family-5;
