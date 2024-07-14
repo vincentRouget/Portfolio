@@ -22,7 +22,7 @@ const ScrollDownMain = () => {
 
     return (
         <div className='Scroll_container_main'>
-            {(scrollPosition <= 300) &&
+            {(scrollPosition <= 200) &&
                 <div className="Scroll_container_main_image">
                     {theme == "light" ?
                         <img src={ScrollB} className="Scroll_container_main_image_icone"></img>
