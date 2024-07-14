@@ -548,7 +548,7 @@ $burger-hover-color: #ccc;
                     display: none;
                     position: absolute;
                     top: $navbar-height;
-                    top: 80px;
+                    top: 70px;
                     right: 10px;
                     flex-direction: column;
                     justify-content: flex-end;
@@ -602,11 +602,13 @@ $burger-hover-color: #ccc;
         &_page {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             width: 100%;
-            height: 50vh;
+            height: 88vh;
+            gap: 14vh;
             margin: 0;
+            transition: 400ms ease-in;
 
             h1 {
                 display: flex;
@@ -635,6 +637,12 @@ $burger-hover-color: #ccc;
 
         .aboutTITLE {
             display: none;
+        }
+
+        .pushTitle {
+            height: 60vh;
+            gap: 3vh;
+            transition: 400ms ease-out 0s;
         }
 
         .Page {

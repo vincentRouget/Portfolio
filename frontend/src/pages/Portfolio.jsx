@@ -1,8 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
+import { NavLink } from 'react-router-dom';
 import UserContext from "../context/UserContext";
 import Sidebar from '../components/Sidebar';
 import Theme from "@components/Theme";
 import Lang from "@components/Lang";
+import Back from "../assets/Icon/icons8-arrow-100.png";
 import Main from "./Main";
 import Feeder from "./Feeder";
 import Wild from "./Wild";
@@ -38,6 +40,13 @@ const Portfolio = () => {
 
     return (
         <div className={theme == 'light' ? 'Portfolio' : 'Portfolio PortfolioDark'}>
+            <div className="back">
+                <NavLink to='/'>
+                    <button className="button_back">
+                        <img src={Back} className="Retour"></img>
+                    </button>
+                </NavLink>
+            </div>
             <div className={!minimize ? "Portfolio_left" : "Portfolio_left version_mini"}>
                 <div className={!minimize ? 'Sidebar' : 'Sidebar_mini'}>
                     <Sidebar

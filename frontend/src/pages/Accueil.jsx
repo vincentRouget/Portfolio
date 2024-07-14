@@ -118,7 +118,7 @@ const Accueil = () => {
                     </div>
                 </div>
             </div>
-            <div className={!handleAbout ? 'Accueil_page' : 'Accueil_page aboutTITLE'}>
+            <div className={`${!handleAbout ? "Accueil_page" : "Accueil_page aboutTITLE"} ${isActive ? "pushTitle" : ""}`}>
                 {french ?
                     <h1>DEVELOPPEUR FULL STACK</h1>
                     :
