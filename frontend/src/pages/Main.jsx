@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import UserContext from "../context/UserContext";
+import ScrollDownMain from "../components/ScrollDownMain";
 import HTML from "../assets/Icon/html.png";
 import CSS from "../assets/Icon/css.png";
 import SCSS from "../assets/Icon/scss.png";
@@ -90,6 +91,7 @@ const Main = ({
                             <p>Library site for searching movies and series using a public API</p>}
                     </div>
                 </button>
+                <ScrollDownMain />
                 <button className={theme == 'light' ? "Main_container_card" : "Main_container_card MainDark"}
                     onClick={() => {
                         setEtiquetteON(false)
